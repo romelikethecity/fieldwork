@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 48" fill="none">
+  <!-- fieldwork wordmark for dark backgrounds -->
+  <!-- Font: Sora Medium (500), tracking: -1px equivalent -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&amp;display=swap');
+    .wordmark { font-family: 'Sora', sans-serif; font-weight: 500; font-size: 36px; letter-spacing: -0.8px; }
+  </style>
+  <text class="wordmark" x="0" y="36" fill="#DDE0E6">fieldwork</text>
+  <!-- Squared data-point period -->
+  <rect x="247" y="28" width="8" height="8" rx="2" fill="#E07850"/>
+</svg>

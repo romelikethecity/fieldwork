@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitive Hiring Intelligence, Delivered Monthly | Fieldwork</title>
+    <meta name="description" content="Track what your competitors are hiring, how much they're paying, and what it signals about their strategy. Data from 27,000+ real job postings across 11,000+ companies.">
+    <link rel="canonical" href="https://runfieldwork.com/">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="icon" href="/assets/favicons/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicons/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#14171C" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#F0EDE8" media="(prefers-color-scheme: light)">
+    <meta name="msapplication-TileColor" content="#14171C">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://runfieldwork.com/">
+    <meta property="og:title" content="Competitive Hiring Intelligence, Delivered Monthly | Fieldwork">
+    <meta property="og:description" content="Track what your competitors are hiring, how much they're paying, and what it signals about their strategy. 80% of Lightcast's insight at 10% of the price.">
+    <meta property="og:site_name" content="Fieldwork">
+    <meta property="og:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Competitive Hiring Intelligence | Fieldwork">
+    <meta name="twitter:description" content="Know what your competitors are hiring before they announce it. Data from 27,000+ job postings, delivered monthly.">
+    <meta name="twitter:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://runfieldwork.com/#website",
+                "name": "Fieldwork",
+                "url": "https://runfieldwork.com",
+                "description": "Competitive hiring intelligence, delivered monthly.",
+                "publisher": { "@id": "https://runfieldwork.com/#organization" }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://runfieldwork.com/#organization",
+                "name": "Fieldwork",
+                "url": "https://runfieldwork.com",
+                "parentOrganization": {
+                    "@type": "Organization",
+                    "name": "Pariter Media Inc."
+                },
+                "foundingDate": "2026",
+                "areaServed": "United States",
+                "knowsAbout": [
+                    "Competitive Hiring Intelligence",
+                    "Compensation Benchmarking",
+                    "Talent Acquisition Analytics",
+                    "Workforce Planning",
+                    "Job Market Analysis"
+                ]
+            },
+            {
+                "@type": "HowTo",
+                "name": "How Fieldwork Delivers Competitive Hiring Intelligence",
+                "step": [
+                    {
+                        "@type": "HowToStep",
+                        "position": 1,
+                        "name": "Pick your competitors",
+                        "text": "Tell us which companies you want to track. Up to 10 on Starter, 25 on Professional."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "position": 2,
+                        "name": "We gather the data",
+                        "text": "We scan 27,000+ active job postings weekly, normalizing company names and extracting hiring signals."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "position": 3,
+                        "name": "We build your report",
+                        "text": "Every month you get a structured report covering hiring volume, compensation, signals, tech stack, and geography."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "position": 4,
+                        "name": "You make better decisions",
+                        "text": "Use the data to benchmark comp, anticipate competitive moves, and brief your leadership with real numbers."
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <!-- Fonts (non-blocking) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"></noscript>
+
+    <!-- Brand CSS -->
+    <link rel="stylesheet" href="/css/fieldwork.css?v=1">
+
+    <style>
+        /* ─── LAYOUT ─── */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        a { color: var(--fw-primary); text-decoration: none; transition: color var(--fw-transition-fast); }
+        a:hover { color: var(--fw-primary-hover); }
+        html { scroll-behavior: smooth; }
+        img { max-width: 100%; height: auto; }
+
+        /* ─── HEADER ─── */
+        .site-header {
+            background: rgba(20, 23, 28, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--fw-border);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-link {
+            text-decoration: none;
+            color: var(--fw-text);
+        }
+        .nav-links { display: flex; gap: 28px; align-items: center; list-style: none; margin: 0; padding: 0; }
+        .nav-links a {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            font-weight: 500;
+            transition: color var(--fw-transition-fast);
+        }
+        .nav-links a:hover { color: var(--fw-text); }
+        .mobile-toggle { display: none; background: none; border: none; color: var(--fw-text); font-size: 1.5rem; cursor: pointer; padding: 4px; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--fw-bg); border-bottom: 1px solid var(--fw-border); padding: 16px 24px; gap: 16px; }
+            .nav-links.open { display: flex; }
+            .mobile-toggle { display: block; }
+        }
+
+        /* ─── HERO ─── */
+        .hero {
+            padding: 96px 0 72px;
+            text-align: center;
+            background:
+                radial-gradient(ellipse at 30% 20%, rgba(224, 120, 80, 0.04) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 30%, rgba(91, 158, 166, 0.03) 0%, transparent 50%);
+            border-bottom: 1px solid var(--fw-border);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.012'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .hero .container { position: relative; z-index: 1; }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 6px 16px;
+            background: var(--fw-primary-alpha-12);
+            border: 1px solid var(--fw-border-accent);
+            border-radius: var(--fw-radius-full);
+            margin-bottom: 28px;
+        }
+        .hero-badge .pulse {
+            width: 6px; height: 6px;
+            background: var(--fw-primary);
+            border-radius: 50%;
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+        @keyframes pulse-dot { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+        .hero h1 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-5xl);
+            font-weight: 700;
+            color: var(--fw-text-strong);
+            letter-spacing: -1.5px;
+            line-height: var(--fw-leading-tight);
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, var(--fw-primary), #E8A060);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: var(--fw-text-lg);
+            color: var(--fw-text);
+            max-width: 640px;
+            margin: 0 auto 40px;
+            line-height: var(--fw-leading-loose);
+        }
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-bottom: 40px;
+        }
+        .hero-stat-num {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-3xl);
+            font-weight: 700;
+            color: var(--fw-primary);
+            line-height: 1;
+        }
+        .hero-stat-label {
+            font-family: var(--fw-font-mono);
+            font-size: var(--fw-text-xs);
+            color: var(--fw-text-muted);
+            margin-top: 6px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .hero-cta-row { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+        @media (max-width: 768px) {
+            .hero { padding: 64px 0 48px; }
+            .hero h1 { font-size: var(--fw-text-3xl); letter-spacing: -1px; }
+            .hero .subtitle { font-size: var(--fw-text-base); }
+            .hero-stats { gap: 24px; }
+            .hero-stat-num { font-size: var(--fw-text-2xl); }
+        }
+
+        /* ─── PROOF BAR ─── */
+        .proof-bar { padding: 36px 0; border-bottom: 1px solid var(--fw-border); text-align: center; }
+        .proof-bar .proof-label { margin-bottom: 8px; }
+        .proof-bar .proof-detail { font-size: var(--fw-text-sm); color: var(--fw-text-muted); }
+        .proof-bar .proof-detail span { font-family: var(--fw-font-mono); color: var(--fw-primary); font-weight: 500; }
+
+        /* ─── SECTIONS ─── */
+        .section { padding: 80px 0; }
+        .section-divider { border-bottom: 1px solid var(--fw-border); }
+        .section-header { margin-bottom: 48px; }
+        .section-header.center { text-align: center; }
+        .section-header .section-subtitle {
+            font-size: var(--fw-text-base);
+            color: var(--fw-text);
+            max-width: 600px;
+            line-height: var(--fw-leading-loose);
+        }
+        .section-header.center .section-subtitle { margin: 0 auto; }
+        .section-title {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-4xl);
+            font-weight: 700;
+            color: var(--fw-text-strong);
+            letter-spacing: -1px;
+            line-height: var(--fw-leading-tight);
+            margin: 12px 0;
+        }
+        @media (max-width: 768px) {
+            .section { padding: 56px 0; }
+            .section-title { font-size: var(--fw-text-2xl); }
+        }
+
+        /* ─── SEARCH DEMO ─── */
+        .demo-search-wrapper { max-width: 560px; margin: 0 auto 48px; }
+        .demo-search { position: relative; }
+        .demo-search-input {
+            width: 100%;
+            padding: 16px 20px 16px 48px;
+            background: var(--fw-surface);
+            border: 2px solid var(--fw-border-strong);
+            border-radius: var(--fw-radius-lg);
+            color: var(--fw-text);
+            font-family: var(--fw-font-body);
+            font-size: var(--fw-text-base);
+            transition: border-color var(--fw-transition-fast);
+        }
+        .demo-search-input:focus { outline: none; border-color: var(--fw-primary); }
+        .demo-search-input::placeholder { color: var(--fw-text-dim); }
+        .demo-search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--fw-text-dim); }
+        .demo-dropdown {
+            position: absolute; top: calc(100% + 4px); left: 0; right: 0;
+            background: var(--fw-surface); border: 1px solid var(--fw-border-strong);
+            border-radius: var(--fw-radius-lg); overflow: hidden; z-index: 10;
+            display: none; box-shadow: var(--fw-shadow-lg);
+            max-height: 320px; overflow-y: auto;
+        }
+        .demo-dropdown.open { display: block; }
+        .demo-dropdown-item {
+            padding: 12px 20px; cursor: pointer;
+            display: flex; justify-content: space-between; align-items: center;
+            transition: background var(--fw-transition-fast);
+        }
+        .demo-dropdown-item:hover { background: var(--fw-surface-raised); }
+        .demo-dropdown-item .company-name { font-weight: 600; color: var(--fw-text); }
+        .demo-dropdown-item .company-count { font-family: var(--fw-font-mono); font-size: var(--fw-text-xs); color: var(--fw-text-muted); }
+
+        /* ─── COMPETITOR CARDS ─── */
+        .competitor-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; position: relative; }
+        .competitor-card {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border);
+            border-radius: var(--fw-radius-xl);
+            padding: 28px;
+            transition: border-color var(--fw-transition-normal);
+        }
+        .competitor-card:hover { border-color: var(--fw-border-accent); }
+        .competitor-card.featured { border-color: var(--fw-border-accent); box-shadow: var(--fw-shadow-glow); }
+        .competitor-card.blurred { filter: blur(4px); pointer-events: none; user-select: none; }
+        .card-company { font-family: var(--fw-font-display); font-size: var(--fw-text-xl); font-weight: 700; color: var(--fw-text-strong); margin-bottom: 4px; }
+        .card-industry { font-size: var(--fw-text-xs); color: var(--fw-text-dim); margin-bottom: 20px; }
+        .card-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+        .card-stat { text-align: center; padding: 12px; background: var(--fw-primary-alpha-06); border-radius: var(--fw-radius-md); }
+        .card-stat-val { font-family: var(--fw-font-mono); font-size: var(--fw-text-xl); font-weight: 600; line-height: 1; }
+        .card-stat-val.ember { color: var(--fw-primary); }
+        .card-stat-val.teal { color: var(--fw-secondary); }
+        .card-stat-label { font-family: var(--fw-font-mono); font-size: 10px; color: var(--fw-text-muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .card-section-title { font-family: var(--fw-font-mono); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--fw-text-dim); margin-bottom: 8px; }
+        .card-fn-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+        .card-fn-tag { padding: 4px 10px; background: var(--fw-primary-alpha-12); border: 1px solid var(--fw-border-accent); border-radius: var(--fw-radius-sm); font-family: var(--fw-font-mono); font-size: 11px; font-weight: 500; color: var(--fw-primary); }
+        .card-signal { display: flex; align-items: center; gap: 8px; padding: 10px 14px; background: var(--fw-secondary-alpha-12); border-left: 3px solid var(--fw-secondary); border-radius: 0 var(--fw-radius-md) var(--fw-radius-md) 0; margin-top: 12px; }
+        .card-signal-text { font-size: var(--fw-text-sm); color: var(--fw-text); font-weight: 500; }
+        .card-ai-bar { margin-top: 16px; }
+        .card-ai-label { display: flex; justify-content: space-between; margin-bottom: 6px; }
+        .card-ai-label span:first-child { font-family: var(--fw-font-mono); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--fw-text-dim); }
+        .card-ai-label span:last-child { font-family: var(--fw-font-mono); font-size: var(--fw-text-sm); color: var(--fw-primary); font-weight: 500; }
+        .card-ai-track { height: 6px; background: rgba(255,255,255,0.04); border-radius: 3px; overflow: hidden; }
+        .card-ai-fill { height: 100%; background: linear-gradient(90deg, var(--fw-primary), var(--fw-primary-hover)); border-radius: 3px; transition: width 0.8s ease; }
+
+        .blur-overlay {
+            position: absolute; top: 0; right: 0; bottom: 0;
+            width: calc(33.333% + 10px);
+            display: flex; align-items: center; justify-content: center; z-index: 5;
+        }
+        .blur-cta {
+            background: rgba(20, 23, 28, 0.85);
+            backdrop-filter: blur(4px);
+            border: 1px solid var(--fw-border-accent);
+            border-radius: var(--fw-radius-lg);
+            padding: 24px; text-align: center; max-width: 240px;
+        }
+        .blur-cta p { font-size: var(--fw-text-sm); color: var(--fw-text); margin-bottom: 12px; }
+
+        @media (max-width: 1024px) {
+            .competitor-cards { grid-template-columns: 1fr 1fr; }
+            .blur-overlay { width: calc(50% + 10px); }
+        }
+        @media (max-width: 640px) {
+            .competitor-cards { grid-template-columns: 1fr; }
+            .blur-overlay { width: 100%; top: auto; bottom: 0; height: 200px; background: linear-gradient(to top, rgba(20,23,28,0.95), transparent); }
+        }
+
+        /* ─── COMPARISON TABLE ─── */
+        .comparison-table-wrapper {
+            overflow-x: auto;
+            border-radius: var(--fw-radius-xl);
+            border: 1px solid var(--fw-border);
+            background: var(--fw-surface);
+        }
+        .comparison-table { width: 100%; border-collapse: collapse; min-width: 700px; }
+        .comparison-table th {
+            padding: 16px 20px;
+            font-family: var(--fw-font-mono);
+            font-size: 10px; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 1px;
+            color: var(--fw-text-dim); text-align: left;
+            border-bottom: 1px solid var(--fw-border);
+            background: rgba(255,255,255,0.02);
+        }
+        .comparison-table td {
+            padding: 18px 20px; font-size: var(--fw-text-sm);
+            color: var(--fw-text); border-bottom: 1px solid rgba(255,255,255,0.03);
+            vertical-align: top;
+        }
+        .comparison-table tr:last-child td { border-bottom: none; }
+        .comparison-table tr:hover td { background: var(--fw-primary-alpha-06); }
+        .table-company { font-weight: 700; color: var(--fw-text-strong); font-family: var(--fw-font-display); font-size: var(--fw-text-base); }
+        .table-mono { font-family: var(--fw-font-mono); font-weight: 500; }
+        .table-ember { color: var(--fw-primary); }
+        .table-teal { color: var(--fw-secondary); }
+        .table-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+        .table-tag { padding: 2px 8px; background: var(--fw-primary-alpha-12); border-radius: var(--fw-radius-sm); font-family: var(--fw-font-mono); font-size: 11px; color: var(--fw-primary); font-weight: 500; white-space: nowrap; }
+        .table-signal { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: var(--fw-secondary-alpha-12); border-radius: var(--fw-radius-sm); font-family: var(--fw-font-mono); font-size: var(--fw-text-xs); font-weight: 600; color: var(--fw-secondary); }
+
+        /* ─── REPORT GRID ─── */
+        .report-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .report-card {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border);
+            border-radius: var(--fw-radius-xl);
+            padding: 28px;
+            transition: border-color var(--fw-transition-normal), transform var(--fw-transition-normal);
+        }
+        .report-card:hover { border-color: var(--fw-border-accent); transform: translateY(-2px); }
+        .report-card-icon {
+            width: 42px; height: 42px;
+            border-radius: var(--fw-radius-lg);
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 16px;
+        }
+        .report-card-icon.ember { background: var(--fw-primary-alpha-12); color: var(--fw-primary); }
+        .report-card-icon.teal { background: var(--fw-secondary-alpha-12); color: var(--fw-secondary); }
+        .report-card h3 { font-family: var(--fw-font-display); font-size: var(--fw-text-lg); font-weight: 700; color: var(--fw-text-strong); margin-bottom: 8px; }
+        .report-card p { font-size: var(--fw-text-sm); color: var(--fw-text-muted); line-height: var(--fw-leading-normal); }
+        .report-card .sample-data { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--fw-border); font-family: var(--fw-font-mono); font-size: var(--fw-text-xs); color: var(--fw-text-dim); }
+        @media (max-width: 1024px) { .report-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 640px) { .report-grid { grid-template-columns: 1fr; } }
+
+        /* ─── VS SECTION ─── */
+        .vs-section { background: var(--fw-surface); border-top: 1px solid var(--fw-border); border-bottom: 1px solid var(--fw-border); }
+        .vs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 48px; }
+        .vs-card { background: var(--fw-bg); border: 1px solid var(--fw-border); border-radius: var(--fw-radius-xl); padding: 28px; }
+        .vs-card h3 { font-family: var(--fw-font-display); font-size: var(--fw-text-lg); font-weight: 700; color: var(--fw-text-strong); margin-bottom: 4px; }
+        .vs-card .vs-price { font-family: var(--fw-font-mono); font-size: var(--fw-text-sm); color: var(--fw-text-dim); margin-bottom: 16px; }
+        .vs-card p { font-size: var(--fw-text-sm); color: var(--fw-text-muted); line-height: var(--fw-leading-normal); }
+        .vs-card .vs-verdict { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--fw-border); font-size: var(--fw-text-sm); font-weight: 600; color: var(--fw-primary); }
+        .vs-highlight { text-align: center; padding: 32px; background: var(--fw-bg); border: 2px solid var(--fw-border-accent); border-radius: var(--fw-radius-xl); }
+        .vs-highlight .big-num { font-family: var(--fw-font-display); font-size: var(--fw-text-4xl); font-weight: 700; color: var(--fw-primary); line-height: 1; }
+        .vs-highlight p { font-size: var(--fw-text-base); color: var(--fw-text); margin-top: 8px; }
+        @media (max-width: 768px) { .vs-grid { grid-template-columns: 1fr; } }
+
+        /* ─── PRICING ─── */
+        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1000px; margin: 0 auto; }
+        .pricing-card {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border);
+            border-radius: var(--fw-radius-xl);
+            padding: 32px; position: relative;
+            display: flex; flex-direction: column;
+        }
+        .pricing-card.featured { border-color: var(--fw-primary); box-shadow: var(--fw-shadow-glow); }
+        .pricing-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); padding: 4px 14px; background: var(--fw-primary); color: #fff; font-family: var(--fw-font-mono); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; border-radius: var(--fw-radius-sm); }
+        .pricing-name { font-family: var(--fw-font-display); font-size: var(--fw-text-xl); font-weight: 700; color: var(--fw-text-strong); margin-bottom: 4px; }
+        .pricing-desc { font-size: var(--fw-text-sm); color: var(--fw-text-muted); margin-bottom: 20px; }
+        .pricing-amount { font-family: var(--fw-font-display); font-size: var(--fw-text-4xl); font-weight: 700; color: var(--fw-text-strong); line-height: 1; }
+        .pricing-period { font-size: var(--fw-text-sm); color: var(--fw-text-muted); }
+        .pricing-annual { font-size: var(--fw-text-xs); color: var(--fw-text-dim); margin-top: 4px; margin-bottom: 24px; }
+        .pricing-features { list-style: none; margin: 0 0 24px; padding: 0; flex: 1; }
+        .pricing-features li { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; font-size: var(--fw-text-sm); color: var(--fw-text); border-bottom: 1px solid rgba(255,255,255,0.03); }
+        .pricing-features li:last-child { border-bottom: none; }
+        .pricing-check { color: var(--fw-primary); font-weight: 700; flex-shrink: 0; }
+        @media (max-width: 768px) { .pricing-grid { grid-template-columns: 1fr; max-width: 400px; } }
+
+        /* ─── CTA FORM ─── */
+        .cta-section {
+            padding: 80px 0; text-align: center;
+            background: radial-gradient(ellipse at 50% 50%, rgba(224, 120, 80, 0.04) 0%, transparent 60%);
+        }
+        .cta-form { max-width: 540px; margin: 0 auto; }
+        .cta-form-row { display: flex; gap: 12px; margin-bottom: 12px; }
+        .cta-input {
+            flex: 1; padding: 14px 18px;
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border-strong);
+            border-radius: var(--fw-radius-lg);
+            color: var(--fw-text);
+            font-family: var(--fw-font-body);
+            font-size: var(--fw-text-sm);
+            transition: border-color var(--fw-transition-fast);
+        }
+        .cta-input:focus { outline: none; border-color: var(--fw-primary); }
+        .cta-input::placeholder { color: var(--fw-text-dim); }
+        .cta-fine-print { font-family: var(--fw-font-mono); font-size: var(--fw-text-xs); color: var(--fw-text-dim); margin-top: 8px; }
+        .cta-success { display: none; padding: 24px; background: var(--fw-primary-alpha-12); border: 1px solid var(--fw-border-accent); border-radius: var(--fw-radius-lg); }
+        .cta-success h3 { color: var(--fw-primary); font-family: var(--fw-font-display); font-size: var(--fw-text-xl); margin-bottom: 8px; }
+        .cta-success p { color: var(--fw-text); font-size: var(--fw-text-sm); }
+        @media (max-width: 640px) { .cta-form-row { flex-direction: column; } }
+
+        /* ─── FOOTER ─── */
+        .site-footer { border-top: 1px solid var(--fw-border); padding: 32px 0; }
+        .footer-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: var(--fw-text-sm); color: var(--fw-text-muted);
+        }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a { color: var(--fw-text-muted); font-size: var(--fw-text-sm); }
+        .footer-links a:hover { color: var(--fw-text); }
+        @media (max-width: 768px) { .footer-inner { flex-direction: column; gap: 16px; } }
+
+        /* ─── ANIMATIONS ─── */
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo-link">
+            <span class="fw-wordmark fw-wordmark--sm">fieldwork<span class="fw-dot"></span></span>
+        </a>
+        <nav class="nav-links" id="main-nav">
+            <a href="#demo">Demo</a>
+            <a href="#reports">Reports</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#sample-report" class="fw-btn fw-btn--primary fw-btn--sm">Get Free Sample</a>
+        </nav>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+</header>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-badge">
+            <span class="pulse"></span>
+            <span class="fw-label">Competitive Hiring Intelligence</span>
+        </div>
+        <h1>Your Competitors' <span class="highlight">Hiring Playbook</span>, Delivered Monthly</h1>
+        <p class="subtitle">Track what your competitors are hiring, how much they're paying, and what it signals about their strategy. We do the fieldwork so you don't have to.</p>
+
+        <div class="hero-stats">
+            <div>
+                <div class="hero-stat-num" id="stat-jobs">27,127</div>
+                <div class="hero-stat-label">Active Postings</div>
+            </div>
+            <div>
+                <div class="hero-stat-num" id="stat-companies">11,063</div>
+                <div class="hero-stat-label">Companies Tracked</div>
+            </div>
+            <div>
+                <div class="hero-stat-num">Weekly</div>
+                <div class="hero-stat-label">Data Refresh</div>
+            </div>
+        </div>
+
+        <div class="hero-cta-row">
+            <a href="#sample-report" class="fw-btn fw-btn--primary fw-btn--lg">Get a Free Sample Report</a>
+            <a href="#demo" class="fw-btn fw-btn--ghost fw-btn--lg">See the Demo</a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ PROOF BAR ═══ -->
+<div class="proof-bar">
+    <div class="container">
+        <div class="fw-label proof-label">Data sources updated weekly</div>
+        <div class="proof-detail">Currently tracking <span>585</span> Amazon roles, <span>346</span> JPMorgan roles, <span>265</span> Deloitte roles, <span>257</span> Google roles, and <span>11,059</span> more companies</div>
+    </div>
+</div>
+
+<!-- ═══ INTERACTIVE DEMO ═══ -->
+<section class="section section-divider" id="demo">
+    <div class="container">
+        <div class="section-header center">
+            <span class="fw-label">Interactive Demo</span>
+            <h2 class="section-title">Search Any Company. See What They're Hiring.</h2>
+            <p class="section-subtitle">Type a company name to preview the intelligence we deliver every month. Real data from live job postings.</p>
+        </div>
+
+        <div class="demo-search-wrapper">
+            <div class="demo-search">
+                <svg class="demo-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" class="demo-search-input" id="company-search" placeholder="Search a company (e.g. Salesforce, Google, Deloitte...)" autocomplete="off">
+                <div class="demo-dropdown" id="company-dropdown"></div>
+            </div>
+        </div>
+
+        <div class="competitor-cards" id="competitor-cards"></div>
+    </div>
+</section>
+
+<!-- ═══ COMPARISON TABLE ═══ -->
+<section class="section section-divider">
+    <div class="container">
+        <div class="section-header">
+            <span class="fw-label">Head-to-Head Comparison</span>
+            <h2 class="section-title">Enterprise SaaS: Who's Hiring Hardest?</h2>
+            <p class="section-subtitle">Side-by-side hiring data across four major SaaS competitors. This is a sample from an actual report.</p>
+        </div>
+
+        <div class="comparison-table-wrapper fade-in">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Open Roles</th>
+                        <th>Avg Max Salary</th>
+                        <th>Top Functions</th>
+                        <th>AI Adoption</th>
+                        <th>Signal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="table-company">Salesforce</span></td>
+                        <td><span class="table-mono table-ember">62</span></td>
+                        <td><span class="table-mono">$287,601</span></td>
+                        <td><div class="table-tags"><span class="table-tag">Sales</span><span class="table-tag">Engineering</span><span class="table-tag">Finance</span></div></td>
+                        <td><span class="table-mono table-ember">12.9%</span></td>
+                        <td><span class="table-signal">Aggressive Growth</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="table-company">ServiceNow</span></td>
+                        <td><span class="table-mono table-ember">52</span></td>
+                        <td><span class="table-mono">$286,280</span></td>
+                        <td><div class="table-tags"><span class="table-tag">Sales</span><span class="table-tag">Engineering</span><span class="table-tag">People</span></div></td>
+                        <td><span class="table-mono table-ember">48.1%</span></td>
+                        <td><span class="table-signal">AI-First Pivot</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="table-company">Intuit</span></td>
+                        <td><span class="table-mono table-ember">42</span></td>
+                        <td><span class="table-mono">$251,648</span></td>
+                        <td><div class="table-tags"><span class="table-tag">Engineering</span><span class="table-tag">Product</span><span class="table-tag">Data</span></div></td>
+                        <td><span class="table-mono table-ember">9.5%</span></td>
+                        <td><span class="table-signal">Steady Build</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="table-company">Twilio</span></td>
+                        <td><span class="table-mono table-ember">43</span></td>
+                        <td><span class="table-mono">$205,541</span></td>
+                        <td><div class="table-tags"><span class="table-tag">Sales</span><span class="table-tag">Engineering</span><span class="table-tag">Marketing</span></div></td>
+                        <td><span class="table-mono table-ember">7.0%</span></td>
+                        <td><span class="table-signal">Rebuilding</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ WHAT'S IN A REPORT ═══ -->
+<section class="section section-divider" id="reports">
+    <div class="container">
+        <div class="section-header center">
+            <span class="fw-label">What You Get</span>
+            <h2 class="section-title">Every Report, Six Dimensions of Intelligence</h2>
+            <p class="section-subtitle">Each monthly report covers your competitive set across the hiring signals that matter for strategic decisions.</p>
+        </div>
+
+        <div class="report-grid">
+            <div class="report-card fade-in">
+                <div class="report-card-icon ember"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg></div>
+                <h3>Hiring Volume & Velocity</h3>
+                <p>Total open roles per competitor, month-over-month change, and velocity signals. Know who's ramping before it's public.</p>
+                <div class="sample-data">Salesforce: 62 active roles (+14 vs last month)</div>
+            </div>
+            <div class="report-card fade-in">
+                <div class="report-card-icon teal"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+                <h3>Compensation Benchmarks</h3>
+                <p>Average and max salary data by function and seniority. See exactly what competitors offer for roles you're also hiring.</p>
+                <div class="sample-data">Salesforce avg max: $288K | Google: $236K</div>
+            </div>
+            <div class="report-card fade-in">
+                <div class="report-card-icon ember"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <h3>Hiring Signals</h3>
+                <p>Growth hire, turnaround, backfill, immediate fill. Algorithmic classification reveals strategic intent behind every posting.</p>
+                <div class="sample-data">ServiceNow: 48% of roles flag AI skills</div>
+            </div>
+            <div class="report-card fade-in">
+                <div class="report-card-icon teal"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                <h3>Tech Stack & AI Adoption</h3>
+                <p>Tools and technologies mentioned in postings. Track which competitors are adopting AI tools and which are lagging.</p>
+                <div class="sample-data">Workday: 83% AI mention rate</div>
+            </div>
+            <div class="report-card fade-in">
+                <div class="report-card-icon ember"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                <h3>Geographic Footprint</h3>
+                <p>Where competitors are posting roles. Identify new market expansion, office openings, and remote vs. in-office preferences.</p>
+                <div class="sample-data">Amazon: 585 roles across 40+ markets</div>
+            </div>
+            <div class="report-card fade-in">
+                <div class="report-card-icon teal"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                <h3>Cross-Company Comparison</h3>
+                <p>Side-by-side tables comparing all tracked companies on every dimension. Export as CSV for your own analysis or board decks.</p>
+                <div class="sample-data">Report includes Markdown + JSON + CSV</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ MARKET POSITIONING ═══ -->
+<section class="section vs-section">
+    <div class="container">
+        <div class="section-header center">
+            <span class="fw-label">Market Position</span>
+            <h2 class="section-title">Enterprise Intelligence, Without the Enterprise Price Tag</h2>
+            <p class="section-subtitle">We deliver the competitive hiring data you actually use. Not the 200-slide workforce analytics deck that sits in a shared drive.</p>
+        </div>
+
+        <div class="vs-grid fade-in">
+            <div class="vs-card">
+                <h3>Lightcast (Burning Glass / EMSI)</h3>
+                <div class="vs-price">$15,000 - $50,000 / year</div>
+                <p>The market leader. Deepest data, longest history, broadest coverage. But you need a multi-month sales process, an annual contract, and a team to operate it.</p>
+                <div class="vs-verdict">We deliver the 20% you actually use for 1/10th the cost.</div>
+            </div>
+            <div class="vs-card">
+                <h3>LinkedIn Talent Insights</h3>
+                <div class="vs-price">$10,000+ / year</div>
+                <p>Great for talent pool sizing from LinkedIn's profile data. But it's not focused on active postings, comp is self-reported, and it's designed for enterprise TA teams.</p>
+                <div class="vs-verdict">We focus on what's being hired right now.</div>
+            </div>
+            <div class="vs-card">
+                <h3>Revelio Labs</h3>
+                <div class="vs-price">$20,000+ / year</div>
+                <p>Workforce analytics at scale: headcount trends, attrition, DEI metrics. Sophisticated and comprehensive. If you just need competitive hiring intelligence, it's overkill.</p>
+                <div class="vs-verdict">We do one thing, and we do it well.</div>
+            </div>
+            <div class="vs-card">
+                <h3>"I'll Just Search Indeed Myself"</h3>
+                <div class="vs-price">4-6 hours / month of your time</div>
+                <p>You can. But you won't normalize company names, track month-over-month changes, benchmark comp, or deliver a structured report your CHRO can read in 10 minutes.</p>
+                <div class="vs-verdict">We save your team a full day every month.</div>
+            </div>
+        </div>
+
+        <div class="vs-highlight fade-in">
+            <div class="big-num">80% of the insight. 10% of the price.</div>
+            <p>Starting at $500/mo versus $15,000+/year for enterprise alternatives.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ PRICING ═══ -->
+<section class="section section-divider" id="pricing">
+    <div class="container">
+        <div class="section-header center">
+            <span class="fw-label">Pricing</span>
+            <h2 class="section-title">Simple Pricing. Real Data. No Annual Lock-In.</h2>
+            <p class="section-subtitle">Every plan includes full reports in Markdown, JSON, and CSV. Cancel anytime.</p>
+        </div>
+
+        <div class="pricing-grid fade-in">
+            <div class="pricing-card">
+                <div class="pricing-name">Starter</div>
+                <div class="pricing-desc">For teams tracking a focused competitive set</div>
+                <div class="pricing-amount">$500</div>
+                <span class="pricing-period">/month</span>
+                <div class="pricing-annual">$5,000/yr (2 months free)</div>
+                <ul class="pricing-features">
+                    <li><span class="pricing-check">&#10003;</span> Up to 10 tracked companies</li>
+                    <li><span class="pricing-check">&#10003;</span> Monthly competitive report</li>
+                    <li><span class="pricing-check">&#10003;</span> Comp benchmarks by function & level</li>
+                    <li><span class="pricing-check">&#10003;</span> Hiring signals & velocity tracking</li>
+                    <li><span class="pricing-check">&#10003;</span> Markdown + JSON + CSV delivery</li>
+                    <li><span class="pricing-check">&#10003;</span> Swap companies month to month</li>
+                </ul>
+                <a href="#sample-report" class="fw-btn fw-btn--ghost" style="width:100%;justify-content:center;">Start with a Free Sample</a>
+            </div>
+            <div class="pricing-card featured">
+                <div class="pricing-badge">Most Popular</div>
+                <div class="pricing-name">Professional</div>
+                <div class="pricing-desc">For TA leaders and HR consultants</div>
+                <div class="pricing-amount">$1,000</div>
+                <span class="pricing-period">/month</span>
+                <div class="pricing-annual">$10,000/yr (2 months free)</div>
+                <ul class="pricing-features">
+                    <li><span class="pricing-check">&#10003;</span> Up to 25 tracked companies</li>
+                    <li><span class="pricing-check">&#10003;</span> Monthly report + function deep dives</li>
+                    <li><span class="pricing-check">&#10003;</span> Comp benchmarks by function & level</li>
+                    <li><span class="pricing-check">&#10003;</span> Hiring signals & velocity tracking</li>
+                    <li><span class="pricing-check">&#10003;</span> AI adoption & tech stack analysis</li>
+                    <li><span class="pricing-check">&#10003;</span> Geographic footprint mapping</li>
+                    <li><span class="pricing-check">&#10003;</span> Priority delivery</li>
+                    <li><span class="pricing-check">&#10003;</span> Trend analysis after 3 months</li>
+                </ul>
+                <a href="#sample-report" class="fw-btn fw-btn--primary" style="width:100%;justify-content:center;">Get Your Free Sample</a>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-name">One-Time Report</div>
+                <div class="pricing-desc">For board decks and strategy sessions</div>
+                <div class="pricing-amount">$750</div>
+                <span class="pricing-period">flat</span>
+                <div class="pricing-annual">No subscription required</div>
+                <ul class="pricing-features">
+                    <li><span class="pricing-check">&#10003;</span> Up to 10 companies analyzed</li>
+                    <li><span class="pricing-check">&#10003;</span> Full competitive report</li>
+                    <li><span class="pricing-check">&#10003;</span> Comp benchmarks included</li>
+                    <li><span class="pricing-check">&#10003;</span> Hiring signals & AI adoption</li>
+                    <li><span class="pricing-check">&#10003;</span> Markdown + JSON + CSV</li>
+                    <li><span class="pricing-check">&#10003;</span> Delivered within 1 week</li>
+                </ul>
+                <a href="#sample-report" class="fw-btn fw-btn--ghost" style="width:100%;justify-content:center;">Request a One-Time Report</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ CTA / SAMPLE REPORT ═══ -->
+<section class="cta-section" id="sample-report">
+    <div class="container">
+        <h2 class="section-title" style="text-align:center;">Get a Free Sample Report</h2>
+        <p class="section-subtitle" style="text-align:center;margin:12px auto 40px;max-width:600px;">Tell us your company and your top competitor. We'll send a sample report within 48 hours. No commitment, no credit card.</p>
+
+        <div class="cta-form" id="cta-form">
+            <div class="cta-form-row">
+                <input type="text" class="cta-input" id="cta-name" placeholder="Your name" required>
+                <input type="email" class="cta-input" id="cta-email" placeholder="Work email" required>
+            </div>
+            <div class="cta-form-row">
+                <input type="text" class="cta-input" id="cta-company" placeholder="Your company">
+                <input type="text" class="cta-input" id="cta-competitor" placeholder="Top competitor to track">
+            </div>
+            <div class="cta-form-row">
+                <button class="fw-btn fw-btn--primary fw-btn--lg" id="cta-submit" style="width:100%;justify-content:center;">Send Me a Free Sample Report</button>
+            </div>
+            <div class="cta-fine-print">Free sample report. No credit card. We'll follow up within 48 hours.</div>
+        </div>
+
+        <div class="cta-success" id="cta-success">
+            <h3>Request received.</h3>
+            <p>We're building your sample competitive hiring report. Expect it in your inbox within 48 hours.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>&copy; 2026 Fieldwork. A product of Pariter Media Inc.</span>
+        <div class="footer-links">
+            <a href="mailto:hello@runfieldwork.com">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/main.js?v=1"></script>
+</body>
+</html>

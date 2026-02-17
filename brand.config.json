@@ -1,0 +1,132 @@
+{
+  "brand": "Fieldwork",
+  "domain": "runfieldwork.com",
+  "tagline": "We do the fieldwork so you don't have to.",
+  "description": "Competitive hiring intelligence, delivered monthly.",
+  "palette": "Slate Ember",
+  "logo_direction": "Direction B — The Data Point",
+
+  "colors": {
+    "dark_mode": {
+      "background": "#14171C",
+      "surface": "#1C2028",
+      "surface_raised": "#222832",
+      "primary": "#E07850",
+      "primary_hover": "#E8895F",
+      "primary_active": "#D06840",
+      "secondary": "#5B9EA6",
+      "secondary_hover": "#6DB2BA",
+      "text": "#DDE0E6",
+      "text_strong": "#FFFFFF",
+      "text_muted": "#7C8290",
+      "text_dim": "#4A4F5A",
+      "border": "rgba(255, 255, 255, 0.06)",
+      "border_accent": "rgba(224, 120, 80, 0.15)",
+      "border_strong": "rgba(255, 255, 255, 0.12)"
+    },
+    "light_mode": {
+      "background": "#F0EDE8",
+      "surface": "#FFFFFF",
+      "primary": "#D0683E",
+      "text": "#1A1D24",
+      "text_muted": "#6B7080",
+      "border": "rgba(0, 0, 0, 0.08)"
+    },
+    "semantic": {
+      "success": "#6DC98C",
+      "warning": "#E0A850",
+      "danger": "#E07850",
+      "info": "#5B9EA6"
+    }
+  },
+
+  "typography": {
+    "fonts": {
+      "display": {
+        "family": "Sora",
+        "import": "https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap",
+        "usage": "Headings, wordmark, metrics, large numbers"
+      },
+      "body": {
+        "family": "DM Sans",
+        "import": "https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap",
+        "usage": "Body text, paragraphs, UI elements"
+      },
+      "mono": {
+        "family": "IBM Plex Mono",
+        "import": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap",
+        "usage": "Labels, badges, data values, code, metadata"
+      }
+    },
+    "scale": {
+      "xs": "12px",
+      "sm": "13px",
+      "base": "15px",
+      "lg": "17px",
+      "xl": "20px",
+      "2xl": "24px",
+      "3xl": "32px",
+      "4xl": "40px",
+      "5xl": "48px"
+    },
+    "wordmark": {
+      "font": "Sora",
+      "weight": 500,
+      "tracking": "-1px",
+      "case": "lowercase",
+      "period": {
+        "shape": "rounded square",
+        "border_radius": "2.5px",
+        "color_dark": "#E07850",
+        "color_light": "#D0683E",
+        "scale": "~22% of cap height"
+      }
+    }
+  },
+
+  "assets": {
+    "logos": {
+      "wordmark_dark_svg": "logos/fieldwork-wordmark-dark.svg",
+      "wordmark_light_svg": "logos/fieldwork-wordmark-light.svg",
+      "wordmark_white_svg": "logos/fieldwork-wordmark-white.svg",
+      "wordmark_dark_png": "logos/fieldwork-logo-dark-bg.png",
+      "wordmark_light_png": "logos/fieldwork-logo-light-bg.png",
+      "grid_mark_svg": "logos/fieldwork-grid-mark.svg",
+      "grid_mark_light_svg": "logos/fieldwork-grid-mark-light.svg",
+      "grid_mark_png": "logos/fieldwork-grid-mark-256.png",
+      "og_image": "logos/og-image.png"
+    },
+    "favicons": {
+      "svg": "favicons/favicon.svg",
+      "ico": "favicons/favicon.ico",
+      "png_16": "favicons/favicon-16.png",
+      "png_32": "favicons/favicon-32.png",
+      "png_48": "favicons/favicon-48.png",
+      "icon_192": "favicons/icon-192.png",
+      "icon_512": "favicons/icon-512.png",
+      "apple_touch": "favicons/apple-touch-icon.png",
+      "brand_16": "favicons/favicon-brand-16.png",
+      "brand_32": "favicons/favicon-brand-32.png",
+      "brand_48": "favicons/favicon-brand-48.png",
+      "brand_192": "favicons/icon-brand-192.png",
+      "brand_512": "favicons/icon-brand-512.png"
+    },
+    "css": {
+      "main": "css/fieldwork.css",
+      "tailwind_config": "css/tailwind.config.js"
+    },
+    "html": {
+      "head_snippet": "head.html",
+      "manifest": "site.webmanifest"
+    }
+  },
+
+  "component_patterns": {
+    "badge_ember": "font:mono, size:10px, tracking:1px, uppercase, bg:primary@12%, text:primary",
+    "badge_teal": "font:mono, size:10px, tracking:1px, uppercase, bg:secondary@12%, text:secondary",
+    "label": "font:mono, size:10px, tracking:2px, uppercase, color:primary",
+    "card": "bg:surface, border:default, radius:xl, padding:24px, hover:border-accent",
+    "button_primary": "bg:primary, text:white, radius:md, font-weight:600, hover:primary-hover",
+    "button_ghost": "bg:transparent, text:text, border:border-strong, radius:md"
+  }
+}

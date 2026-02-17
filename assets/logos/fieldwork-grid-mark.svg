@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <!-- Dot grid mark: 3x3 grid, one ember dot (signal found), one teal dot (secondary data) -->
+  <!-- Row 1 -->
+  <rect x="2" y="2" width="8" height="8" rx="2" fill="#4A4F5A"/>
+  <rect x="16" y="2" width="8" height="8" rx="2" fill="#4A4F5A"/>
+  <rect x="30" y="2" width="8" height="8" rx="2" fill="#4A4F5A"/>
+  <!-- Row 2 -->
+  <rect x="2" y="16" width="8" height="8" rx="2" fill="#4A4F5A"/>
+  <rect x="16" y="16" width="8" height="8" rx="2" fill="#E07850"/>
+  <rect x="30" y="16" width="8" height="8" rx="2" fill="#4A4F5A"/>
+  <!-- Row 3 -->
+  <rect x="2" y="30" width="8" height="8" rx="2" fill="#4A4F5A"/>
+  <rect x="16" y="30" width="8" height="8" rx="2" fill="#4A4F5A"/>
+  <rect x="30" y="30" width="8" height="8" rx="2" fill="#5B9EA6"/>
+</svg>

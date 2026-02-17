@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Fieldwork</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+    <meta name="theme-color" content="#14171C">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="/css/fieldwork.css?v=1">
+    <style>
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        a { color: var(--fw-primary); text-decoration: none; }
+        a:hover { color: var(--fw-primary-hover); }
+        .site-header {
+            background: rgba(20, 23, 28, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--fw-border);
+            padding: 14px 0;
+        }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; }
+        .logo-link { text-decoration: none; color: var(--fw-text); }
+        .error-page {
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            min-height: 60vh; text-align: center; padding: 80px 24px;
+        }
+        .error-code { font-family: var(--fw-font-display); font-size: 120px; font-weight: 700; color: var(--fw-primary); line-height: 1; opacity: 0.3; }
+        .error-title { font-family: var(--fw-font-display); font-size: var(--fw-text-3xl); font-weight: 700; color: var(--fw-text-strong); margin: 16px 0 12px; }
+        .error-desc { font-size: var(--fw-text-base); color: var(--fw-text-muted); max-width: 480px; margin: 0 auto 32px; }
+        .site-footer { border-top: 1px solid var(--fw-border); padding: 32px 0; text-align: center; font-size: var(--fw-text-sm); color: var(--fw-text-muted); }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo-link">
+                <span class="fw-wordmark fw-wordmark--sm">fieldwork<span class="fw-dot"></span></span>
+            </a>
+            <a href="/" class="fw-btn fw-btn--ghost fw-btn--sm">Back to Home</a>
+        </div>
+    </header>
+    <main class="error-page">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Page not found</h1>
+        <p class="error-desc">The page you're looking for doesn't exist or has been moved.</p>
+        <a href="/" class="fw-btn fw-btn--primary fw-btn--lg">Back to Fieldwork</a>
+    </main>
+    <footer class="site-footer">
+        <div class="container">&copy; 2026 Fieldwork. A product of Pariter Media Inc.</div>
+    </footer>
+</body>
+</html>

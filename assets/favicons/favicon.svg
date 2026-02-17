@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#14171C"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@700&amp;display=swap');
+    .fav-letter { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 22px; }
+  </style>
+  <text class="fav-letter" x="7" y="23" fill="#E07850">F</text>
+</svg>

@@ -1,0 +1,335 @@
+/* ============================================================
+   FIELDWORK — Brand Design System
+   Palette: Slate Ember  |  Logo: Direction B (The Data Point)
+   ============================================================ */
+
+/* Fonts loaded via <link> in HTML head for non-blocking rendering */
+
+/* ── Color Tokens ── */
+:root {
+  /* Core palette */
+  --fw-bg:               #14171C;
+  --fw-surface:          #1C2028;
+  --fw-surface-raised:   #222832;
+  --fw-primary:          #E07850;
+  --fw-primary-hover:    #E8895F;
+  --fw-primary-active:   #D06840;
+  --fw-secondary:        #5B9EA6;
+  --fw-secondary-hover:  #6DB2BA;
+
+  /* Text */
+  --fw-text:             #DDE0E6;
+  --fw-text-strong:      #FFFFFF;
+  --fw-text-muted:       #7C8290;
+  --fw-text-dim:         #4A4F5A;
+
+  /* Borders */
+  --fw-border:           rgba(255, 255, 255, 0.06);
+  --fw-border-accent:    rgba(224, 120, 80, 0.15);
+  --fw-border-strong:    rgba(255, 255, 255, 0.12);
+
+  /* Translucent fills */
+  --fw-primary-alpha-12: rgba(224, 120, 80, 0.12);
+  --fw-primary-alpha-06: rgba(224, 120, 80, 0.06);
+  --fw-secondary-alpha-12: rgba(91, 158, 166, 0.12);
+  --fw-secondary-alpha-06: rgba(91, 158, 166, 0.06);
+
+  /* Semantic colors */
+  --fw-success:          #6DC98C;
+  --fw-success-alpha:    rgba(109, 201, 140, 0.12);
+  --fw-warning:          #E0A850;
+  --fw-warning-alpha:    rgba(224, 168, 80, 0.12);
+  --fw-danger:           #E07850; /* same as primary — intentional for this palette */
+  --fw-danger-alpha:     rgba(224, 120, 80, 0.12);
+  --fw-info:             #5B9EA6; /* same as secondary */
+  --fw-info-alpha:       rgba(91, 158, 166, 0.12);
+
+  /* Light-mode overrides (for emails, OG images, light sections) */
+  --fw-light-bg:         #F0EDE8;
+  --fw-light-surface:    #FFFFFF;
+  --fw-light-text:       #1A1D24;
+  --fw-light-text-muted: #6B7080;
+  --fw-light-primary:    #D0683E;
+  --fw-light-border:     rgba(0, 0, 0, 0.08);
+
+  /* Shadows */
+  --fw-shadow-sm:  0 1px 2px rgba(0, 0, 0, 0.2);
+  --fw-shadow-md:  0 4px 12px rgba(0, 0, 0, 0.25);
+  --fw-shadow-lg:  0 8px 32px rgba(0, 0, 0, 0.3);
+  --fw-shadow-glow: 0 0 24px rgba(224, 120, 80, 0.15);
+
+  /* Radii */
+  --fw-radius-sm:  4px;
+  --fw-radius-md:  8px;
+  --fw-radius-lg:  12px;
+  --fw-radius-xl:  16px;
+  --fw-radius-full: 9999px;
+
+  /* Spacing scale */
+  --fw-space-1:  4px;
+  --fw-space-2:  8px;
+  --fw-space-3:  12px;
+  --fw-space-4:  16px;
+  --fw-space-5:  20px;
+  --fw-space-6:  24px;
+  --fw-space-8:  32px;
+  --fw-space-10: 40px;
+  --fw-space-12: 48px;
+  --fw-space-16: 64px;
+  --fw-space-20: 80px;
+
+  /* Typography scale */
+  --fw-font-display:  'Sora', -apple-system, BlinkMacSystemFont, sans-serif;
+  --fw-font-body:     'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --fw-font-mono:     'IBM Plex Mono', 'SF Mono', 'Consolas', monospace;
+
+  --fw-text-xs:   12px;
+  --fw-text-sm:   13px;
+  --fw-text-base: 15px;
+  --fw-text-lg:   17px;
+  --fw-text-xl:   20px;
+  --fw-text-2xl:  24px;
+  --fw-text-3xl:  32px;
+  --fw-text-4xl:  40px;
+  --fw-text-5xl:  48px;
+
+  --fw-leading-tight:  1.15;
+  --fw-leading-snug:   1.3;
+  --fw-leading-normal: 1.6;
+  --fw-leading-loose:  1.75;
+
+  /* Transitions */
+  --fw-transition-fast:   150ms ease;
+  --fw-transition-normal: 250ms ease;
+  --fw-transition-slow:   400ms ease;
+}
+
+
+/* ── Base Resets ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fw-bg);
+  color: var(--fw-text);
+  font-family: var(--fw-font-body);
+  font-size: var(--fw-text-base);
+  line-height: var(--fw-leading-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* ── Typography Classes ── */
+
+/* Headings — use Sora */
+.fw-h1, .fw-h2, .fw-h3, .fw-h4, .fw-h5 {
+  font-family: var(--fw-font-display);
+  color: var(--fw-text-strong);
+  line-height: var(--fw-leading-tight);
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+.fw-h1 { font-size: var(--fw-text-5xl); font-weight: 700; letter-spacing: -1.5px; }
+.fw-h2 { font-size: var(--fw-text-4xl); font-weight: 700; letter-spacing: -1px; }
+.fw-h3 { font-size: var(--fw-text-3xl); font-weight: 600; }
+.fw-h4 { font-size: var(--fw-text-2xl); font-weight: 600; }
+.fw-h5 { font-size: var(--fw-text-xl);  font-weight: 600; }
+
+/* Body text */
+.fw-body    { font-size: var(--fw-text-base); color: var(--fw-text); }
+.fw-body-sm { font-size: var(--fw-text-sm);   color: var(--fw-text-muted); }
+.fw-body-lg { font-size: var(--fw-text-lg);   color: var(--fw-text); }
+
+/* Mono labels (badges, meta, data) */
+.fw-label {
+  font-family: var(--fw-font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--fw-primary);
+}
+.fw-mono {
+  font-family: var(--fw-font-mono);
+  font-size: var(--fw-text-sm);
+}
+
+/* Metric / large number display */
+.fw-metric {
+  font-family: var(--fw-font-display);
+  font-weight: 700;
+  font-size: var(--fw-text-4xl);
+  letter-spacing: -1.5px;
+  line-height: 1;
+  color: var(--fw-text-strong);
+}
+
+
+/* ── Wordmark Component ── */
+.fw-wordmark {
+  font-family: var(--fw-font-display);
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: baseline;
+  color: var(--fw-text);
+}
+.fw-wordmark--light {
+  color: var(--fw-light-text);
+}
+.fw-wordmark--white {
+  color: #fff;
+}
+
+/* The squared data-point period */
+.fw-wordmark .fw-dot {
+  display: inline-block;
+  background: var(--fw-primary);
+  border-radius: 2.5px;
+  margin-left: 1px;
+  /* Scale: ~22% of the wordmark's font-size */
+}
+.fw-wordmark--light .fw-dot {
+  background: var(--fw-light-primary);
+}
+
+/* Size variants */
+.fw-wordmark--xl  { font-size: 48px; }
+.fw-wordmark--xl .fw-dot  { width: 10px; height: 10px; position: relative; bottom: 5px; }
+
+.fw-wordmark--lg  { font-size: 36px; }
+.fw-wordmark--lg .fw-dot  { width: 8px; height: 8px; position: relative; bottom: 4px; }
+
+.fw-wordmark--md  { font-size: 24px; }
+.fw-wordmark--md .fw-dot  { width: 5px; height: 5px; position: relative; bottom: 3px; }
+
+.fw-wordmark--sm  { font-size: 18px; }
+.fw-wordmark--sm .fw-dot  { width: 4px; height: 4px; position: relative; bottom: 2px; }
+
+.fw-wordmark--xs  { font-size: 14px; }
+.fw-wordmark--xs .fw-dot  { width: 3px; height: 3px; position: relative; bottom: 1.5px; }
+
+
+/* ── Button Components ── */
+.fw-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--fw-radius-md);
+  font-family: var(--fw-font-body);
+  font-size: var(--fw-text-sm);
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  border: none;
+  transition: all var(--fw-transition-fast);
+  text-decoration: none;
+}
+
+.fw-btn--primary {
+  background: var(--fw-primary);
+  color: #fff;
+}
+.fw-btn--primary:hover { background: var(--fw-primary-hover); }
+.fw-btn--primary:active { background: var(--fw-primary-active); }
+
+.fw-btn--secondary {
+  background: var(--fw-secondary);
+  color: #fff;
+}
+.fw-btn--secondary:hover { background: var(--fw-secondary-hover); }
+
+.fw-btn--ghost {
+  background: transparent;
+  color: var(--fw-text);
+  border: 1px solid var(--fw-border-strong);
+}
+.fw-btn--ghost:hover { border-color: var(--fw-text-muted); }
+
+.fw-btn--outline-primary {
+  background: transparent;
+  color: var(--fw-primary);
+  border: 1px solid var(--fw-border-accent);
+}
+.fw-btn--outline-primary:hover { background: var(--fw-primary-alpha-06); }
+
+.fw-btn--lg { padding: 14px 28px; font-size: var(--fw-text-base); border-radius: var(--fw-radius-lg); }
+.fw-btn--sm { padding: 6px 14px; font-size: var(--fw-text-xs); }
+
+
+/* ── Card Components ── */
+.fw-card {
+  background: var(--fw-surface);
+  border: 1px solid var(--fw-border);
+  border-radius: var(--fw-radius-xl);
+  padding: var(--fw-space-6);
+  transition: border-color var(--fw-transition-normal);
+}
+.fw-card:hover { border-color: var(--fw-border-accent); }
+
+.fw-card--raised {
+  background: var(--fw-surface-raised);
+}
+
+
+/* ── Badge Components ── */
+.fw-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: var(--fw-radius-sm);
+  font-family: var(--fw-font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.fw-badge--ember   { background: var(--fw-primary-alpha-12);   color: var(--fw-primary); }
+.fw-badge--teal    { background: var(--fw-secondary-alpha-12); color: var(--fw-secondary); }
+.fw-badge--success { background: var(--fw-success-alpha);      color: var(--fw-success); }
+.fw-badge--warning { background: var(--fw-warning-alpha);      color: var(--fw-warning); }
+.fw-badge--neutral { background: rgba(255,255,255,0.05);       color: var(--fw-text-muted); }
+
+
+/* ── Utility Classes ── */
+.fw-text-primary  { color: var(--fw-primary); }
+.fw-text-secondary { color: var(--fw-secondary); }
+.fw-text-success  { color: var(--fw-success); }
+.fw-text-muted    { color: var(--fw-text-muted); }
+.fw-text-dim      { color: var(--fw-text-dim); }
+.fw-text-strong   { color: var(--fw-text-strong); }
+
+.fw-bg-surface    { background: var(--fw-surface); }
+.fw-bg-raised     { background: var(--fw-surface-raised); }
+.fw-bg-primary-subtle { background: var(--fw-primary-alpha-06); }
+
+.fw-border        { border: 1px solid var(--fw-border); }
+.fw-border-accent { border: 1px solid var(--fw-border-accent); }
+
+.fw-mono          { font-family: var(--fw-font-mono); }
+.fw-display       { font-family: var(--fw-font-display); }
+
+
+/* ── Selection Color ── */
+::selection {
+  background: var(--fw-primary-alpha-12);
+  color: var(--fw-text-strong);
+}
+
+
+/* ── Focus Ring ── */
+:focus-visible {
+  outline: 2px solid var(--fw-primary);
+  outline-offset: 2px;
+}
+
+
+/* ── Scrollbar (dark theme) ── */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--fw-bg); }
+::-webkit-scrollbar-thumb { background: var(--fw-text-dim); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--fw-text-muted); }
