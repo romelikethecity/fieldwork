@@ -1,0 +1,301 @@
+{
+  "board": "carta",
+  "generated_at": "2026-02-18T01:06:53.219453+00:00",
+  "frequency": "quarterly",
+  "data_points": 16,
+  "timeline": [
+    {
+      "date": "2021-03-22",
+      "timestamp": "20210322154212",
+      "open_roles": 187,
+      "format": "old",
+      "page_size": 6035,
+      "departments": {
+        "Customer Implementations": 2,
+        "Customer Success": 2,
+        "Customer Support": 2,
+        "Data &amp; Machine Learning": 3,
+        "Design": 9,
+        "Engineering": 56,
+        "Fund Administration": 17,
+        "Legal": 3,
+        "Operations": 2,
+        "People": 4,
+        "Product": 3,
+        "Sales": 1,
+        "Technical Account Management": 3,
+        "Valuations": 2
+      }
+    },
+    {
+      "date": "2021-06-24",
+      "timestamp": "20210624012037",
+      "open_roles": 269,
+      "format": "old",
+      "page_size": 8757,
+      "departments": {
+        "Customer Implementations": 6,
+        "Customer Success": 7,
+        "Customer Support": 3,
+        "Data &amp; Machine Learning": 15,
+        "Design": 10,
+        "Engineering": 73,
+        "Equity Capital Markets": 2,
+        "Fund Administration": 19,
+        "Legal": 2,
+        "Marketing": 5,
+        "People": 3,
+        "Product": 9,
+        "R&amp;D Operations": 2,
+        "Sales": 4,
+        "Valuations": 3
+      }
+    },
+    {
+      "date": "2021-09-29",
+      "timestamp": "20210929022505",
+      "open_roles": 427,
+      "format": "old",
+      "page_size": 11438,
+      "departments": {
+        "Customer Implementations": 16,
+        "Customer Success": 17,
+        "Customer Support": 13,
+        "Data &amp; Machine Learning": 21,
+        "Design": 11,
+        "Engineering": 124,
+        "Equity Capital Markets": 6,
+        "Finance": 2,
+        "Fund Administration": 38,
+        "Marketing": 2,
+        "People": 4,
+        "Product": 19,
+        "R&amp;D Operations": 3,
+        "Sales": 5,
+        "Sales Strategy &amp; Operations": 7,
+        "Valuations": 2
+      }
+    },
+    {
+      "date": "2022-03-05",
+      "timestamp": "20220305102719",
+      "open_roles": 187,
+      "format": "old",
+      "page_size": 8630,
+      "departments": {
+        "Administrative": 1,
+        "Broker &amp; Market Operations": 3,
+        "Business Systems": 3,
+        "Customer Implementations": 16,
+        "Customer Success": 11,
+        "Customer Support": 28,
+        "Data &amp; Machine Learning": 2,
+        "Delivery Operations": 5,
+        "Design": 5,
+        "Engineering": 21,
+        "Equity Capital Markets": 1,
+        "Fund Administration": 5,
+        "Information Security &amp; IT": 5,
+        "Legal": 4,
+        "Marketing": 7,
+        "People": 3,
+        "Portfolio Insights": 2,
+        "Product": 10,
+        "R&amp;D Operations": 1,
+        "Sales": 3,
+        "Sales Strategy &amp; Operations": 4,
+        "Valuations": 3
+      }
+    },
+    {
+      "date": "2022-06-30",
+      "timestamp": "20220630113923",
+      "open_roles": 135,
+      "format": "old",
+      "page_size": 7354,
+      "departments": {
+        "Business Systems": 2,
+        "Customer Implementations": 10,
+        "Customer Success": 7,
+        "Customer Support": 11,
+        "Data &amp; Machine Learning": 3,
+        "Delivery Operations": 7,
+        "Design": 3,
+        "Engineering": 16,
+        "Fund Administration": 6,
+        "Information Security &amp; IT": 4,
+        "Marketing": 12,
+        "People": 1,
+        "Product": 8,
+        "Tax Advisory": 1,
+        "Valuations": 2
+      }
+    },
+    {
+      "date": "2022-09-28",
+      "timestamp": "20220928172607",
+      "open_roles": 91,
+      "format": "old",
+      "page_size": 9328,
+      "departments": {
+        "Business Systems": 1,
+        "Customer Implementations": 5,
+        "Customer Success": 2,
+        "Customer Support": 9,
+        "Data &amp; Machine Learning": 1,
+        "Delivery Operations": 2,
+        "Design": 2,
+        "Engineering": 17,
+        "Finance": 1,
+        "Fund Administration": 5,
+        "Information Security &amp; IT": 4,
+        "Legal": 1,
+        "Marketing": 5,
+        "Portfolio Insights": 1,
+        "Product": 6,
+        "Sales Strategy &amp; Operations": 1,
+        "Tax Advisory": 1,
+        "Valuations": 4
+      }
+    },
+    {
+      "date": "2022-12-09",
+      "timestamp": "20221209201812",
+      "open_roles": 65,
+      "format": "old",
+      "page_size": 8879,
+      "departments": {
+        "Business Systems": 1,
+        "Customer Implementations": 3,
+        "Customer Success": 2,
+        "Customer Support": 6,
+        "Delivery Operations": 1,
+        "Design": 2,
+        "Engineering": 11,
+        "Finance": 1,
+        "Fund Administration": 8,
+        "Marketing": 3,
+        "Product": 2,
+        "Tax Advisory": 4
+      }
+    },
+    {
+      "date": "2023-03-31",
+      "timestamp": "20230331102805",
+      "open_roles": 46,
+      "format": "old",
+      "page_size": 8262,
+      "departments": {
+        "Business Systems": 1,
+        "Customer Implementations": 1,
+        "Customer Success": 1,
+        "Customer Support": 4,
+        "Engineering": 7,
+        "Fund Administration": 5,
+        "Legal": 1,
+        "People": 2,
+        "Tax Advisory": 2
+      }
+    },
+    {
+      "date": "2023-06-27",
+      "timestamp": "20230627010704",
+      "open_roles": 38,
+      "format": "old",
+      "page_size": 6550,
+      "departments": {
+        "Business Systems": 1,
+        "Customer Implementations": 2,
+        "Customer Success": 1,
+        "Customer Support": 5,
+        "Design": 4,
+        "Engineering": 8,
+        "Fund Administration": 2,
+        "Legal": 1,
+        "People": 1,
+        "Product": 1
+      }
+    },
+    {
+      "date": "2023-12-11",
+      "timestamp": "20231211063013",
+      "open_roles": 32,
+      "format": "old",
+      "page_size": 8013,
+      "departments": {
+        "Administrative": 1,
+        "Customer Implementations": 2,
+        "Customer Support": 3,
+        "Engineering": 2,
+        "Finance": 1,
+        "Fund Administration": 2,
+        "Product": 1,
+        "R&amp;D Operations": 1,
+        "Sales": 1
+      }
+    },
+    {
+      "date": "2024-03-05",
+      "timestamp": "20240305135141",
+      "open_roles": 58,
+      "format": "old",
+      "page_size": 9247,
+      "departments": {
+        "Administrative": 1,
+        "Business Systems": 2,
+        "Customer Implementations": 2,
+        "Customer Success": 1,
+        "Customer Support": 6,
+        "Data &amp; Machine Learning": 2,
+        "Design": 1,
+        "Engineering": 1,
+        "Finance": 3,
+        "Fund Administration": 11,
+        "Marketing": 2,
+        "Product": 3,
+        "Sales": 2,
+        "Sales Strategy &amp; Operations": 2
+      }
+    },
+    {
+      "date": "2024-09-19",
+      "timestamp": "20240919034438",
+      "open_roles": 92,
+      "format": "new",
+      "page_size": 70150,
+      "departments": null
+    },
+    {
+      "date": "2024-12-14",
+      "timestamp": "20241214230921",
+      "open_roles": 89,
+      "format": "new",
+      "page_size": 54534,
+      "departments": null
+    },
+    {
+      "date": "2025-03-27",
+      "timestamp": "20250327230207",
+      "open_roles": 91,
+      "format": "new",
+      "page_size": 56243,
+      "departments": null
+    },
+    {
+      "date": "2025-06-23",
+      "timestamp": "20250623215747",
+      "open_roles": 93,
+      "format": "new",
+      "page_size": 69557,
+      "departments": null
+    },
+    {
+      "date": "2026-02-18",
+      "timestamp": "live",
+      "open_roles": 88,
+      "format": "api",
+      "page_size": 0,
+      "departments": null
+    }
+  ]
+}

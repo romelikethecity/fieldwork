@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fieldwork — Carta vs Pulley Hiring Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --fw-bg: #14171C;
+  --fw-surface: #1C2028;
+  --fw-surface-raised: #222832;
+  --fw-primary: #E07850;
+  --fw-primary-hover: #E8895F;
+  --fw-secondary: #5B9EA6;
+  --fw-text: #DDE0E6;
+  --fw-text-strong: #FFFFFF;
+  --fw-text-muted: #7C8290;
+  --fw-text-dim: #4A4F5A;
+  --fw-border: rgba(255,255,255,0.06);
+  --fw-border-accent: rgba(224,120,80,0.15);
+  --fw-success: #6DC98C;
+  --fw-warning: #E0A850;
+  --fw-font-display: 'Sora', sans-serif;
+  --fw-font-body: 'DM Sans', sans-serif;
+  --fw-font-mono: 'IBM Plex Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--fw-bg); color: var(--fw-text);
+  font-family: var(--fw-font-body); font-size: 15px; line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+/* ── Header ── */
+.report-header {
+  padding: 48px 0 40px;
+  border-bottom: 1px solid var(--fw-border);
+}
+.report-header .wordmark {
+  font-family: var(--fw-font-display); font-size: 24px; font-weight: 500;
+  color: var(--fw-text); letter-spacing: -1px; margin-bottom: 32px;
+}
+.report-header .dot {
+  display: inline-block; width: 5px; height: 5px; background: var(--fw-primary);
+  border-radius: 2.5px; margin-left: 1px; position: relative; bottom: 3px;
+}
+.report-header h1 {
+  font-family: var(--fw-font-display); font-size: 40px; font-weight: 700;
+  color: var(--fw-text-strong); letter-spacing: -1.5px; line-height: 1.15;
+  margin: 0 0 12px;
+}
+.report-header .subtitle {
+  font-size: 17px; color: var(--fw-text-muted); max-width: 600px;
+}
+.report-header .meta {
+  margin-top: 20px; display: flex; gap: 24px; flex-wrap: wrap;
+}
+.report-header .meta-item {
+  font-family: var(--fw-font-mono); font-size: 11px; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--fw-text-dim);
+}
+.report-header .meta-item span { color: var(--fw-text-muted); }
+
+/* ── Sections ── */
+.section { padding: 48px 0; border-bottom: 1px solid var(--fw-border); }
+.section:last-child { border-bottom: none; }
+.section-label {
+  font-family: var(--fw-font-mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 2px; text-transform: uppercase; color: var(--fw-primary);
+  margin-bottom: 8px;
+}
+.section-title {
+  font-family: var(--fw-font-display); font-size: 28px; font-weight: 700;
+  color: var(--fw-text-strong); letter-spacing: -0.5px; margin: 0 0 24px;
+}
+
+/* ── Stat Cards ── */
+.stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 32px; }
+.stat-card {
+  background: var(--fw-surface); border: 1px solid var(--fw-border);
+  border-radius: 12px; padding: 20px;
+}
+.stat-card .value {
+  font-family: var(--fw-font-display); font-size: 32px; font-weight: 700;
+  color: var(--fw-text-strong); line-height: 1; letter-spacing: -1px;
+}
+.stat-card .value.ember { color: var(--fw-primary); }
+.stat-card .value.teal { color: var(--fw-secondary); }
+.stat-card .value.green { color: var(--fw-success); }
+.stat-card .label {
+  font-size: 13px; color: var(--fw-text-muted); margin-top: 6px;
+}
+
+/* ── Trend Chart ── */
+.trend-chart { position: relative; height: 280px; margin: 24px 0; padding: 0 0 32px 48px; }
+.trend-chart svg { width: 100%; height: 100%; overflow: visible; }
+.trend-y-labels { position: absolute; left: 0; top: 0; bottom: 32px; width: 44px; display: flex; flex-direction: column; justify-content: space-between; }
+.trend-y-label { font-family: var(--fw-font-mono); font-size: 10px; color: var(--fw-text-dim); text-align: right; }
+.trend-x-labels { display: flex; justify-content: space-between; padding-left: 48px; margin-top: 4px; }
+.trend-x-label { font-family: var(--fw-font-mono); font-size: 10px; color: var(--fw-text-dim); }
+.trend-event { position: absolute; display: flex; flex-direction: column; align-items: center; }
+.trend-event .event-line { width: 1px; background: var(--fw-warning); opacity: 0.4; }
+.trend-event .event-label {
+  font-family: var(--fw-font-mono); font-size: 9px; letter-spacing: 0.5px;
+  color: var(--fw-warning); text-transform: uppercase; white-space: nowrap;
+  transform: rotate(-90deg); transform-origin: center; margin-top: 8px;
+}
+.trend-annotation {
+  background: var(--fw-surface); border: 1px solid var(--fw-border); border-radius: 6px;
+  padding: 6px 10px; font-size: 11px; color: var(--fw-text-muted); position: absolute;
+  white-space: nowrap; pointer-events: none;
+}
+.trend-annotation strong { color: var(--fw-text-strong); }
+
+/* ── People Cards ── */
+.people-role {
+  background: var(--fw-surface); border: 1px solid var(--fw-border);
+  border-radius: 10px; padding: 16px 20px; margin-bottom: 8px;
+  display: grid; grid-template-columns: 1fr auto auto; gap: 16px; align-items: center;
+}
+.people-role .role-title { font-size: 14px; font-weight: 600; color: var(--fw-text-strong); }
+.people-role .role-meta { font-size: 12px; color: var(--fw-text-muted); margin-top: 2px; }
+.people-role .role-salary { font-family: var(--fw-font-mono); font-size: 13px; color: var(--fw-primary); text-align: right; }
+.people-role .role-location { font-size: 12px; color: var(--fw-text-dim); text-align: right; }
+
+/* ── Company Cards ── */
+.company-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.company-card {
+  background: var(--fw-surface); border: 1px solid var(--fw-border);
+  border-radius: 16px; padding: 28px; position: relative; overflow: hidden;
+}
+.company-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+}
+.company-card.carta::before { background: var(--fw-primary); }
+.company-card.pulley::before { background: var(--fw-secondary); }
+.company-card .co-name {
+  font-family: var(--fw-font-display); font-size: 24px; font-weight: 700;
+  color: var(--fw-text-strong); margin-bottom: 4px;
+}
+.company-card .co-industry {
+  font-size: 13px; color: var(--fw-text-muted); margin-bottom: 20px;
+}
+.company-card .co-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+.company-card .co-stat-val {
+  font-family: var(--fw-font-display); font-size: 28px; font-weight: 700;
+  line-height: 1; letter-spacing: -1px;
+}
+.company-card.carta .co-stat-val { color: var(--fw-primary); }
+.company-card.pulley .co-stat-val { color: var(--fw-secondary); }
+.company-card .co-stat-label { font-size: 12px; color: var(--fw-text-muted); margin-top: 4px; }
+
+/* ── Horizontal bar charts ── */
+.bar-chart { margin-bottom: 24px; }
+.bar-row { display: flex; align-items: center; margin-bottom: 8px; }
+.bar-label { width: 100px; font-size: 13px; color: var(--fw-text-muted); flex-shrink: 0; }
+.bar-track { flex: 1; height: 24px; background: rgba(255,255,255,0.03); border-radius: 4px; overflow: hidden; position: relative; display: flex; }
+.bar-fill { height: 100%; border-radius: 4px; display: flex; align-items: center; padding: 0 8px; font-size: 11px; font-weight: 600; color: #fff; min-width: fit-content; transition: width 0.6s ease; }
+.bar-fill.ember { background: var(--fw-primary); }
+.bar-fill.teal { background: var(--fw-secondary); }
+.bar-value { margin-left: 8px; font-size: 12px; font-weight: 600; color: var(--fw-text-muted); flex-shrink: 0; }
+
+/* ── Stacked comparison bars ── */
+.compare-row { margin-bottom: 12px; }
+.compare-label { font-size: 13px; color: var(--fw-text-muted); margin-bottom: 4px; }
+.compare-bars { display: flex; gap: 4px; }
+.compare-bar {
+  height: 28px; border-radius: 4px; display: flex; align-items: center;
+  padding: 0 10px; font-size: 11px; font-weight: 600; color: #fff;
+  min-width: 36px; transition: width 0.6s ease;
+}
+.compare-bar.ember { background: var(--fw-primary); }
+.compare-bar.teal { background: var(--fw-secondary); }
+
+/* ── Data Tables ── */
+.data-table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+.data-table th {
+  text-align: left; font-family: var(--fw-font-mono); font-size: 10px;
+  letter-spacing: 1.5px; text-transform: uppercase; color: var(--fw-text-dim);
+  padding: 8px 12px; border-bottom: 1px solid var(--fw-border);
+}
+.data-table th:not(:first-child) { text-align: right; }
+.data-table td { padding: 10px 12px; font-size: 14px; color: var(--fw-text); border-bottom: 1px solid var(--fw-border); }
+.data-table td:not(:first-child) { text-align: right; font-family: var(--fw-font-mono); font-size: 13px; }
+.data-table tr:hover td { background: rgba(255,255,255,0.02); }
+.data-table .highlight { color: var(--fw-primary); font-weight: 600; }
+
+/* ── Signal Tags ── */
+.signal-group { margin-bottom: 20px; }
+.signal-group-title { font-size: 13px; font-weight: 600; color: var(--fw-text-muted); margin-bottom: 8px; }
+.signal-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.signal-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 12px; border-radius: 4px;
+  font-family: var(--fw-font-mono); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.5px; text-transform: uppercase;
+}
+.signal-tag.ember { background: rgba(224,120,80,0.12); color: var(--fw-primary); }
+.signal-tag.teal { background: rgba(91,158,166,0.12); color: var(--fw-secondary); }
+.signal-tag.green { background: rgba(109,201,140,0.12); color: var(--fw-success); }
+.signal-tag.gold { background: rgba(224,168,80,0.12); color: var(--fw-warning); }
+.signal-tag .count { font-weight: 700; }
+
+/* ── Tool Grid ── */
+.tool-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+.tool-item {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 8px 12px; background: var(--fw-surface); border: 1px solid var(--fw-border);
+  border-radius: 6px; font-size: 13px;
+}
+.tool-item .name { color: var(--fw-text); }
+.tool-item .counts { display: flex; gap: 12px; font-family: var(--fw-font-mono); font-size: 12px; }
+.tool-item .c-ember { color: var(--fw-primary); }
+.tool-item .c-teal { color: var(--fw-secondary); }
+
+/* ── Location dots ── */
+.location-list { list-style: none; padding: 0; margin: 0; }
+.location-list li {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 8px 0; border-bottom: 1px solid var(--fw-border); font-size: 14px;
+}
+.location-list li:last-child { border-bottom: none; }
+.location-list .loc-name { color: var(--fw-text); }
+.location-list .loc-count { font-family: var(--fw-font-mono); font-size: 13px; color: var(--fw-primary); }
+
+/* ── Key Insights ── */
+.insight-card {
+  background: var(--fw-surface); border: 1px solid var(--fw-border);
+  border-left: 3px solid var(--fw-primary); border-radius: 0 12px 12px 0;
+  padding: 20px 24px; margin-bottom: 12px;
+}
+.insight-card p { margin: 0; font-size: 15px; color: var(--fw-text); line-height: 1.6; }
+.insight-card strong { color: var(--fw-text-strong); }
+
+/* ── Footer ── */
+.report-footer {
+  padding: 40px 0; border-top: 1px solid var(--fw-border);
+  font-size: 13px; color: var(--fw-text-dim);
+}
+.report-footer .methodology { margin-bottom: 24px; }
+.report-footer h3 {
+  font-family: var(--fw-font-display); font-size: 16px; font-weight: 600;
+  color: var(--fw-text-muted); margin: 0 0 12px;
+}
+.report-footer ul { padding-left: 20px; margin: 0; line-height: 1.8; }
+.report-footer .branding {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-top: 24px; border-top: 1px solid var(--fw-border);
+}
+.report-footer .branding .wordmark { font-family: var(--fw-font-display); font-size: 18px; font-weight: 500; color: var(--fw-text-muted); letter-spacing: -0.5px; }
+.report-footer .branding .dot { display: inline-block; width: 4px; height: 4px; background: var(--fw-primary); border-radius: 2px; margin-left: 1px; position: relative; bottom: 2px; }
+
+/* ── Remote Badge ── */
+.remote-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 3px 10px; border-radius: 4px; font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1px; font-family: var(--fw-font-mono);
+}
+.remote-badge.full { background: rgba(109,201,140,0.12); color: var(--fw-success); }
+.remote-badge.none { background: rgba(255,255,255,0.05); color: var(--fw-text-dim); }
+
+/* ── Executive Brief ── */
+.exec-brief {
+  background: var(--fw-surface); border: 1px solid var(--fw-border-accent);
+  border-radius: 16px; padding: 32px; margin-bottom: 32px; position: relative;
+}
+.exec-brief::before {
+  content: 'EXECUTIVE BRIEF'; position: absolute; top: -10px; left: 24px;
+  font-family: var(--fw-font-mono); font-size: 9px; letter-spacing: 2px;
+  color: var(--fw-primary); background: var(--fw-bg); padding: 0 8px;
+}
+.exec-brief p { font-size: 15px; line-height: 1.7; margin: 0 0 12px; color: var(--fw-text); }
+.exec-brief p:last-child { margin-bottom: 0; }
+.exec-brief strong { color: var(--fw-text-strong); }
+
+/* ── Glassdoor Meters ── */
+.gd-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
+.gd-card {
+  background: var(--fw-surface); border: 1px solid var(--fw-border);
+  border-radius: 16px; padding: 28px; text-align: center;
+}
+.gd-score {
+  font-family: var(--fw-font-display); font-size: 56px; font-weight: 700;
+  line-height: 1; margin-bottom: 4px;
+}
+.gd-label { font-size: 14px; color: var(--fw-text-muted); margin-bottom: 16px; }
+.gd-bar { height: 6px; background: rgba(255,255,255,0.06); border-radius: 3px; margin-bottom: 16px; overflow: hidden; }
+.gd-bar-fill { height: 100%; border-radius: 3px; }
+.gd-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; text-align: left; }
+.gd-metric-val { font-family: var(--fw-font-mono); font-size: 18px; font-weight: 700; }
+.gd-metric-label { font-size: 11px; color: var(--fw-text-dim); margin-top: 2px; }
+
+/* ── Battle Card ── */
+.battle-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.battle-card {
+  background: var(--fw-surface); border: 1px solid var(--fw-border);
+  border-radius: 12px; padding: 24px; position: relative;
+}
+.battle-card .scenario {
+  font-family: var(--fw-font-mono); font-size: 11px; letter-spacing: 0.5px;
+  color: var(--fw-warning); text-transform: uppercase; margin-bottom: 8px;
+}
+.battle-card .objection {
+  font-size: 16px; font-weight: 600; color: var(--fw-text-strong);
+  margin-bottom: 12px; font-style: italic;
+}
+.battle-card .response { font-size: 14px; color: var(--fw-text); line-height: 1.6; }
+.battle-card .data-point {
+  margin-top: 12px; font-family: var(--fw-font-mono); font-size: 12px;
+  color: var(--fw-secondary); padding: 8px 12px;
+  background: rgba(91,158,166,0.08); border-radius: 6px;
+}
+
+/* ── Overlap Grid ── */
+.overlap-row {
+  display: grid; grid-template-columns: 1fr 80px 1fr; gap: 0; align-items: center;
+  margin-bottom: 12px;
+}
+.overlap-cell {
+  background: var(--fw-surface); border: 1px solid var(--fw-border);
+  padding: 16px 20px; font-size: 14px;
+}
+.overlap-cell:first-child { border-radius: 10px 0 0 10px; border-right: none; }
+.overlap-cell:last-child { border-radius: 0 10px 10px 0; border-left: none; }
+.overlap-vs {
+  background: var(--fw-surface-raised); border: 1px solid var(--fw-border);
+  text-align: center; padding: 16px 8px; font-family: var(--fw-font-mono);
+  font-size: 10px; letter-spacing: 1px; color: var(--fw-text-dim); text-transform: uppercase;
+}
+.overlap-cell .ol-title { font-weight: 600; color: var(--fw-text-strong); margin-bottom: 4px; }
+.overlap-cell .ol-comp { font-family: var(--fw-font-mono); font-size: 12px; margin-bottom: 2px; }
+.overlap-cell .ol-detail { font-size: 12px; color: var(--fw-text-dim); }
+
+/* ── People Timeline ── */
+.people-timeline { display: flex; align-items: flex-end; gap: 4px; height: 80px; margin-bottom: 8px; }
+.pt-bar {
+  flex: 1; border-radius: 3px 3px 0 0; min-width: 0; position: relative;
+  transition: height 0.4s ease;
+}
+.pt-bar .pt-val {
+  position: absolute; top: -16px; left: 50%; transform: translateX(-50%);
+  font-family: var(--fw-font-mono); font-size: 9px; color: var(--fw-text-muted);
+  white-space: nowrap;
+}
+.pt-labels { display: flex; gap: 4px; }
+.pt-labels span {
+  flex: 1; text-align: center; font-family: var(--fw-font-mono);
+  font-size: 8px; color: var(--fw-text-dim); padding-top: 4px;
+}
+
+/* ── Quote Block ── */
+.gd-quote {
+  background: var(--fw-surface); border: 1px solid var(--fw-border);
+  border-left: 3px solid var(--fw-warning); border-radius: 0 8px 8px 0;
+  padding: 16px 20px; margin-bottom: 8px;
+  font-size: 14px; color: var(--fw-text); font-style: italic; line-height: 1.6;
+}
+.gd-quote .source { font-style: normal; font-size: 11px; color: var(--fw-text-dim); margin-top: 8px; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .stat-row { grid-template-columns: repeat(2, 1fr); }
+  .company-grid { grid-template-columns: 1fr; }
+  .tool-grid { grid-template-columns: 1fr; }
+  .report-header h1 { font-size: 28px; }
+  .gd-grid { grid-template-columns: 1fr; }
+  .battle-grid { grid-template-columns: 1fr; }
+  .overlap-row { grid-template-columns: 1fr; }
+  .overlap-vs { border-radius: 0; }
+  .overlap-cell:first-child { border-radius: 10px 10px 0 0; border-right: 1px solid var(--fw-border); border-bottom: none; }
+  .overlap-cell:last-child { border-radius: 0 0 10px 10px; border-left: 1px solid var(--fw-border); border-top: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- ═══ HEADER ═══ -->
+<header class="report-header">
+    <div class="wordmark">fieldwork<span class="dot"></span></div>
+    <h1>Carta vs Pulley</h1>
+    <p class="subtitle">Competitive hiring intelligence for the equity management space. 94 active roles analyzed across 7 functions.</p>
+    <div class="meta">
+        <div class="meta-item">Generated <span>February 17, 2026</span></div>
+        <div class="meta-item">Data Source <span>Greenhouse ATS</span></div>
+        <div class="meta-item">Industry <span>Equity Management</span></div>
+    </div>
+</header>
+
+<!-- ═══ EXECUTIVE SUMMARY ═══ -->
+<section class="section">
+    <div class="section-label">Executive Summary</div>
+    <div class="stat-row">
+        <div class="stat-card">
+            <div class="value ember">94</div>
+            <div class="label">Active Roles</div>
+        </div>
+        <div class="stat-card">
+            <div class="value teal">$187K</div>
+            <div class="label">Carta Avg Midpoint</div>
+        </div>
+        <div class="stat-card">
+            <div class="value green">100%</div>
+            <div class="label">Pulley Remote</div>
+        </div>
+        <div class="stat-card">
+            <div class="value">14.7x</div>
+            <div class="label">Carta/Pulley Ratio</div>
+        </div>
+    </div>
+
+    <div class="insight-card">
+        <p><strong>Carta is rebuilding, not expanding.</strong> They peaked at 427 roles in Q3 2021 and cratered to 32 after four layoff rounds. At 21% of peak, this is a measured recovery concentrated in sales (26 roles) and global fund admin across 10 countries.</p>
+    </div>
+    <div class="insight-card">
+        <p><strong>Pulley is building surgically.</strong> 6 roles, all remote, all growth hires. Three are first-in-function: AI engineering, channel partnerships, product marketing. New capabilities, lean team.</p>
+    </div>
+    <div class="insight-card">
+        <p><strong>Comp gap is narrower than headcount suggests.</strong> Carta's avg midpoint ($187K) is only 17% above Pulley's ($160K), despite being 14x larger. Engineering comp is within 7%. Pulley posts salary on 100% of listings vs Carta's 49%.</p>
+    </div>
+    <div class="insight-card">
+        <p><strong>Carta's instability creates a recruiting window.</strong> Glassdoor 3.6, CEO approval 55%, fewer than half of employees with a positive business outlook. They're hiring their largest People cohort ever (8 roles) to rebuild what they lost. Pulley's People function is already staffed and stable.</p>
+    </div>
+</section>
+
+<!-- ═══ HIRING TREND ═══ -->
+<section class="section">
+    <div class="section-label">Historical Trend</div>
+    <div class="section-title">Carta's Hiring Arc: 2021–2026</div>
+    <p style="font-size: 14px; color: var(--fw-text-muted); margin-bottom: 16px; max-width: 700px;">
+        Quarterly open role counts from Wayback Machine archives of Carta's Greenhouse board. Carta peaked at 427 open roles in Q3 2021, cratered to 32 after three layoff rounds in 2023, and has stabilized around 88–93.
+    </p>
+
+    <!-- SVG Trend Chart -->
+    <div style="position: relative; margin-bottom: 32px;">
+        <div class="trend-chart">
+            <div class="trend-y-labels">
+                <span class="trend-y-label">450</span>
+                <span class="trend-y-label">300</span>
+                <span class="trend-y-label">150</span>
+                <span class="trend-y-label">0</span>
+            </div>
+            <svg viewBox="0 0 1000 240" preserveAspectRatio="none">
+                <!-- Grid lines -->
+                <line x1="0" y1="0" x2="1000" y2="0" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+                <line x1="0" y1="80" x2="1000" y2="80" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+                <line x1="0" y1="160" x2="1000" y2="160" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+                <line x1="0" y1="240" x2="1000" y2="240" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+                <!-- Layoff markers -->
+                <line x1="133" y1="0" x2="133" y2="240" stroke="rgba(224,168,80,0.25)" stroke-width="1" stroke-dasharray="4,4"/><!-- Apr 2020 COVID -->
+                <line x1="580" y1="0" x2="580" y2="240" stroke="rgba(224,168,80,0.25)" stroke-width="1" stroke-dasharray="4,4"/><!-- Jan 2023 -->
+                <line x1="640" y1="0" x2="640" y2="240" stroke="rgba(224,168,80,0.25)" stroke-width="1" stroke-dasharray="4,4"/><!-- Mid 2023 -->
+                <line x1="680" y1="0" x2="680" y2="240" stroke="rgba(224,168,80,0.25)" stroke-width="1" stroke-dasharray="4,4"/><!-- Nov 2023 -->
+
+                <!-- Area fill -->
+                <polygon points="
+                    60,140
+                    160,97
+                    260,12
+                    360,140
+                    460,108
+                    510,151
+                    560,175
+                    600,195
+                    650,199
+                    700,202
+                    750,171
+                    820,151
+                    870,152
+                    920,149
+                    960,147
+                    1000,153
+                    1000,240
+                    60,240
+                " fill="url(#trend-gradient)" opacity="0.6"/>
+
+                <!-- Line -->
+                <polyline points="
+                    60,140
+                    160,97
+                    260,12
+                    360,140
+                    460,108
+                    510,151
+                    560,175
+                    600,195
+                    650,199
+                    700,202
+                    750,171
+                    820,151
+                    870,152
+                    920,149
+                    960,147
+                    1000,153
+                " fill="none" stroke="#E07850" stroke-width="2.5" stroke-linejoin="round"/>
+
+                <!-- Data points -->
+                <circle cx="60" cy="140" r="4" fill="#E07850"/><!-- Q1 2021: 187 -->
+                <circle cx="160" cy="97" r="4" fill="#E07850"/><!-- Q2 2021: 269 -->
+                <circle cx="260" cy="12" r="5" fill="#E07850" stroke="#fff" stroke-width="2"/><!-- Q3 2021: 427 PEAK -->
+                <circle cx="360" cy="140" r="4" fill="#E07850"/><!-- Q1 2022: 187 -->
+                <circle cx="460" cy="108" r="4" fill="#E07850"/><!-- Q2 2022: 135 -->
+                <circle cx="510" cy="151" r="4" fill="#E07850"/><!-- Q3 2022: 91 -->
+                <circle cx="560" cy="175" r="4" fill="#E07850"/><!-- Q4 2022: 65 -->
+                <circle cx="600" cy="195" r="4" fill="#E07850"/><!-- Q1 2023: 46 -->
+                <circle cx="650" cy="199" r="4" fill="#E07850"/><!-- Q2 2023: 38 -->
+                <circle cx="700" cy="202" r="4" fill="#E07850" stroke="#fff" stroke-width="2"/><!-- Q4 2023: 32 TROUGH -->
+                <circle cx="750" cy="171" r="4" fill="#E07850"/><!-- Q1 2024: 58 -->
+                <circle cx="820" cy="151" r="4" fill="#E07850"/><!-- Q3 2024: 92 -->
+                <circle cx="870" cy="152" r="4" fill="#E07850"/><!-- Q4 2024: 89 -->
+                <circle cx="920" cy="149" r="4" fill="#E07850"/><!-- Q1 2025: 91 -->
+                <circle cx="960" cy="147" r="4" fill="#E07850"/><!-- Q2 2025: 93 -->
+                <circle cx="1000" cy="153" r="5" fill="#E07850" stroke="#5B9EA6" stroke-width="2"/><!-- Now: 88 -->
+
+                <!-- Peak annotation -->
+                <text x="260" y="-4" fill="#fff" font-family="Sora, sans-serif" font-size="12" font-weight="700" text-anchor="middle">427</text>
+
+                <!-- Trough annotation -->
+                <text x="700" y="220" fill="#7C8290" font-family="Sora, sans-serif" font-size="11" font-weight="600" text-anchor="middle">32</text>
+
+                <!-- Current annotation -->
+                <text x="1000" y="143" fill="#5B9EA6" font-family="Sora, sans-serif" font-size="11" font-weight="600" text-anchor="end">88 now</text>
+
+                <defs>
+                    <linearGradient id="trend-gradient" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#E07850" stop-opacity="0.3"/>
+                        <stop offset="100%" stop-color="#E07850" stop-opacity="0"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="trend-x-labels">
+            <span class="trend-x-label">Q1 '21</span>
+            <span class="trend-x-label">Q3 '21</span>
+            <span class="trend-x-label">Q1 '22</span>
+            <span class="trend-x-label">Q3 '22</span>
+            <span class="trend-x-label">Q1 '23</span>
+            <span class="trend-x-label">Q3 '23</span>
+            <span class="trend-x-label">Q1 '24</span>
+            <span class="trend-x-label">Q3 '24</span>
+            <span class="trend-x-label">Q1 '25</span>
+            <span class="trend-x-label">Now</span>
+        </div>
+    </div>
+
+    <!-- Event Timeline -->
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px;">
+        <div style="background: var(--fw-surface); border: 1px solid var(--fw-border); border-top: 2px solid var(--fw-warning); border-radius: 0 0 8px 8px; padding: 14px;">
+            <div style="font-family: var(--fw-font-mono); font-size: 10px; color: var(--fw-warning); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px;">Apr 2020</div>
+            <div style="font-size: 13px; color: var(--fw-text-strong); font-weight: 600;">COVID Layoff</div>
+            <div style="font-size: 12px; color: var(--fw-text-muted); margin-top: 4px;">161 employees (~16% of workforce)</div>
+        </div>
+        <div style="background: var(--fw-surface); border: 1px solid var(--fw-border); border-top: 2px solid var(--fw-warning); border-radius: 0 0 8px 8px; padding: 14px;">
+            <div style="font-family: var(--fw-font-mono); font-size: 10px; color: var(--fw-warning); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px;">Jan 2023</div>
+            <div style="font-size: 13px; color: var(--fw-text-strong); font-weight: 600;">10% RIF</div>
+            <div style="font-size: 12px; color: var(--fw-text-muted); margin-top: 4px;">~200 employees. Amid CTO lawsuit.</div>
+        </div>
+        <div style="background: var(--fw-surface); border: 1px solid var(--fw-border); border-top: 2px solid var(--fw-warning); border-radius: 0 0 8px 8px; padding: 14px;">
+            <div style="font-family: var(--fw-font-mono); font-size: 10px; color: var(--fw-warning); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px;">Mid 2023</div>
+            <div style="font-size: 13px; color: var(--fw-text-strong); font-weight: 600;">2nd & 3rd Rounds</div>
+            <div style="font-size: 12px; color: var(--fw-text-muted); margin-top: 4px;">Undisclosed count. "Broader reorg."</div>
+        </div>
+        <div style="background: var(--fw-surface); border: 1px solid var(--fw-border); border-top: 2px solid var(--fw-warning); border-radius: 0 0 8px 8px; padding: 14px;">
+            <div style="font-family: var(--fw-font-mono); font-size: 10px; color: var(--fw-warning); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px;">Nov 2023</div>
+            <div style="font-size: 13px; color: var(--fw-text-strong); font-weight: 600;">4th Round</div>
+            <div style="font-size: 12px; color: var(--fw-text-muted); margin-top: 4px;">Per Fortune. Some hired 2 months prior.</div>
+        </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+        <div class="stat-card">
+            <div class="value ember">427</div>
+            <div class="label">Peak Open Roles (Q3 2021)</div>
+        </div>
+        <div class="stat-card">
+            <div class="value" style="color: var(--fw-warning);">32</div>
+            <div class="label">Trough (Q4 2023, post-layoffs)</div>
+        </div>
+        <div class="stat-card">
+            <div class="value teal">88</div>
+            <div class="label">Current (21% of peak)</div>
+        </div>
+    </div>
+
+    <div class="insight-card" style="margin-top: 24px;">
+        <p><strong>Carta hit $500M revenue in Dec 2025</strong> and has stabilized around ~2,000 employees. Current hiring (88 roles) is concentrated in sales and global fund admin, not the broad-based expansion of 2021. Four layoff rounds in 2020–2023. Every candidate knows.</p>
+    </div>
+</section>
+
+<!-- ═══ COMPANY CARDS ═══ -->
+<section class="section">
+    <div class="section-label">Company Overview</div>
+    <div class="section-title">Head to Head</div>
+
+    <div class="company-grid">
+        <div class="company-card carta">
+            <div class="co-name">Carta</div>
+            <div class="co-industry">Equity Management &middot; carta.com</div>
+            <div class="co-stats">
+                <div>
+                    <div class="co-stat-val">88</div>
+                    <div class="co-stat-label">Active Roles</div>
+                </div>
+                <div>
+                    <div class="co-stat-val">$187K</div>
+                    <div class="co-stat-label">Avg Midpoint</div>
+                </div>
+                <div>
+                    <div class="co-stat-val">28.4%</div>
+                    <div class="co-stat-label">AI Mentions</div>
+                </div>
+                <div>
+                    <div class="co-stat-val">49%</div>
+                    <div class="co-stat-label">Salary Disclosed</div>
+                </div>
+            </div>
+            <div style="font-size:13px; color: var(--fw-text-muted); margin-bottom: 8px;">Seniority Mix</div>
+            <div class="bar-chart">
+                <div class="bar-row">
+                    <span class="bar-label">Senior</span>
+                    <div class="bar-track"><div class="bar-fill ember" style="width:33%">29</div></div>
+                </div>
+                <div class="bar-row">
+                    <span class="bar-label">Mid</span>
+                    <div class="bar-track"><div class="bar-fill ember" style="width:32%">28</div></div>
+                </div>
+                <div class="bar-row">
+                    <span class="bar-label">Manager</span>
+                    <div class="bar-track"><div class="bar-fill ember" style="width:19%">17</div></div>
+                </div>
+                <div class="bar-row">
+                    <span class="bar-label">Director+</span>
+                    <div class="bar-track"><div class="bar-fill ember" style="width:8%">7</div></div>
+                </div>
+            </div>
+            <span class="remote-badge none">0% Remote &middot; 10 Countries</span>
+        </div>
+
+        <div class="company-card pulley">
+            <div class="co-name">Pulley</div>
+            <div class="co-industry">Equity Management &middot; pulley.com</div>
+            <div class="co-stats">
+                <div>
+                    <div class="co-stat-val">6</div>
+                    <div class="co-stat-label">Active Roles</div>
+                </div>
+                <div>
+                    <div class="co-stat-val">$160K</div>
+                    <div class="co-stat-label">Avg Midpoint</div>
+                </div>
+                <div>
+                    <div class="co-stat-val">100%</div>
+                    <div class="co-stat-label">AI Mentions</div>
+                </div>
+                <div>
+                    <div class="co-stat-val">100%</div>
+                    <div class="co-stat-label">Salary Disclosed</div>
+                </div>
+            </div>
+            <div style="font-size:13px; color: var(--fw-text-muted); margin-bottom: 8px;">Seniority Mix</div>
+            <div class="bar-chart">
+                <div class="bar-row">
+                    <span class="bar-label">Senior</span>
+                    <div class="bar-track"><div class="bar-fill teal" style="width:50%">3</div></div>
+                </div>
+                <div class="bar-row">
+                    <span class="bar-label">Manager</span>
+                    <div class="bar-track"><div class="bar-fill teal" style="width:33%">2</div></div>
+                </div>
+                <div class="bar-row">
+                    <span class="bar-label">Mid</span>
+                    <div class="bar-track"><div class="bar-fill teal" style="width:17%">1</div></div>
+                </div>
+            </div>
+            <span class="remote-badge full">100% Remote</span>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ FUNCTION COMPARISON ═══ -->
+<section class="section">
+    <div class="section-label">Function Breakdown</div>
+    <div class="section-title">Where They're Hiring</div>
+
+    <div class="compare-row">
+        <div class="compare-label">Sales</div>
+        <div class="compare-bars">
+            <div class="compare-bar ember" style="width: calc(26 / 30 * 100%)">Carta 26</div>
+            <div class="compare-bar teal" style="width: calc(1 / 30 * 100%); min-width: 50px;">Pulley 1</div>
+        </div>
+    </div>
+    <div class="compare-row">
+        <div class="compare-label">Engineering</div>
+        <div class="compare-bars">
+            <div class="compare-bar ember" style="width: calc(15 / 20 * 100%)">Carta 15</div>
+            <div class="compare-bar teal" style="width: calc(3 / 20 * 100%)">Pulley 3</div>
+        </div>
+    </div>
+    <div class="compare-row">
+        <div class="compare-label">Operations</div>
+        <div class="compare-bars">
+            <div class="compare-bar ember" style="width: calc(16 / 20 * 100%)">Carta 16</div>
+            <div class="compare-bar teal" style="width: calc(1 / 20 * 100%); min-width: 50px;">Pulley 1</div>
+        </div>
+    </div>
+    <div class="compare-row">
+        <div class="compare-label">Finance</div>
+        <div class="compare-bars">
+            <div class="compare-bar ember" style="width: calc(12 / 15 * 100%)">Carta 12</div>
+            <div class="compare-bar teal" style="width: 0; min-width: 36px; opacity: 0.3;">0</div>
+        </div>
+    </div>
+    <div class="compare-row">
+        <div class="compare-label">Marketing</div>
+        <div class="compare-bars">
+            <div class="compare-bar ember" style="width: calc(8 / 10 * 100%)">Carta 8</div>
+            <div class="compare-bar teal" style="width: calc(1 / 10 * 100%); min-width: 50px;">Pulley 1</div>
+        </div>
+    </div>
+    <div class="compare-row">
+        <div class="compare-label">People</div>
+        <div class="compare-bars">
+            <div class="compare-bar ember" style="width: calc(8 / 10 * 100%)">Carta 8</div>
+            <div class="compare-bar teal" style="width: 0; min-width: 36px; opacity: 0.3;">0</div>
+        </div>
+    </div>
+    <div class="compare-row">
+        <div class="compare-label">Product</div>
+        <div class="compare-bars">
+            <div class="compare-bar ember" style="width: calc(3 / 5 * 100%)">Carta 3</div>
+            <div class="compare-bar teal" style="width: 0; min-width: 36px; opacity: 0.3;">0</div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ COMPENSATION ═══ -->
+<section class="section">
+    <div class="section-label">Compensation</div>
+    <div class="section-title">What They're Paying</div>
+
+    <table class="data-table">
+        <thead>
+            <tr><th>Function</th><th>Carta Avg</th><th>Pulley Avg</th><th>Delta</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Engineering</td><td>$194,273</td><td>$181,667</td><td>+7%</td></tr>
+            <tr><td>Sales</td><td>$235,159</td><td>$166,000</td><td class="highlight">+42%</td></tr>
+            <tr><td>Marketing</td><td>$155,108</td><td>$147,500</td><td>+5%</td></tr>
+            <tr><td>Operations</td><td>$169,200</td><td>$103,000</td><td class="highlight">+64%</td></tr>
+            <tr><td>People</td><td>$180,589</td><td>—</td><td>—</td></tr>
+            <tr><td>Product</td><td>$236,712</td><td>—</td><td>—</td></tr>
+            <tr><td>Finance</td><td>$123,302</td><td>—</td><td>—</td></tr>
+        </tbody>
+    </table>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <div class="insight-card" style="border-left-color: var(--fw-primary);">
+            <p><strong>Carta's sales comp is aggressive.</strong> Average sales midpoint of $235K includes a Director of Sales, PE at $430K OTE. Their top-of-funnel SDR roles start at $79K in SF.</p>
+        </div>
+        <div class="insight-card" style="border-left-color: var(--fw-secondary);">
+            <p><strong>Pulley's engineering comp is competitive.</strong> $182K avg midpoint for remote roles, within 7% of Carta's engineering pay. No relocation required.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ HIRING SIGNALS ═══ -->
+<section class="section">
+    <div class="section-label">Hiring Signals</div>
+    <div class="section-title">What Their Job Posts Reveal</div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+        <div>
+            <h3 style="font-family: var(--fw-font-display); font-size: 18px; color: var(--fw-primary); margin: 0 0 16px;">Carta</h3>
+
+            <div class="signal-group">
+                <div class="signal-group-title">Hiring Intent</div>
+                <div class="signal-tags">
+                    <span class="signal-tag ember"><span class="count">34</span> Growth Hire</span>
+                    <span class="signal-tag gold"><span class="count">6</span> Turnaround</span>
+                    <span class="signal-tag ember"><span class="count">2</span> Immediate</span>
+                </div>
+            </div>
+
+            <div class="signal-group">
+                <div class="signal-group-title">Team Structure</div>
+                <div class="signal-tags">
+                    <span class="signal-tag ember"><span class="count">38</span> Build Team</span>
+                    <span class="signal-tag ember"><span class="count">6</span> First Hire</span>
+                    <span class="signal-tag gold"><span class="count">5</span> Reports to CRO</span>
+                </div>
+            </div>
+
+            <div class="signal-group">
+                <div class="signal-group-title">Target Segment</div>
+                <div class="signal-tags">
+                    <span class="signal-tag ember"><span class="count">15</span> Enterprise</span>
+                    <span class="signal-tag ember"><span class="count">3</span> SMB</span>
+                    <span class="signal-tag ember"><span class="count">2</span> Mid-Market</span>
+                </div>
+            </div>
+
+            <div class="signal-group">
+                <div class="signal-group-title">Sales Motion</div>
+                <div class="signal-tags">
+                    <span class="signal-tag ember"><span class="count">11</span> Channel</span>
+                    <span class="signal-tag ember"><span class="count">2</span> ABM</span>
+                    <span class="signal-tag ember"><span class="count">1</span> PLG</span>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 style="font-family: var(--fw-font-display); font-size: 18px; color: var(--fw-secondary); margin: 0 0 16px;">Pulley</h3>
+
+            <div class="signal-group">
+                <div class="signal-group-title">Hiring Intent</div>
+                <div class="signal-tags">
+                    <span class="signal-tag teal"><span class="count">6</span> Growth Hire</span>
+                </div>
+            </div>
+
+            <div class="signal-group">
+                <div class="signal-group-title">Team Structure</div>
+                <div class="signal-tags">
+                    <span class="signal-tag teal"><span class="count">6</span> Build Team</span>
+                    <span class="signal-tag green"><span class="count">3</span> First Hire</span>
+                </div>
+            </div>
+
+            <div class="signal-group">
+                <div class="signal-group-title">Sales Motion</div>
+                <div class="signal-tags">
+                    <span class="signal-tag teal"><span class="count">1</span> Channel</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 24px;" class="insight-card" style="border-left-color: var(--fw-secondary);">
+                <p><strong>50% of Pulley's roles are first-hires.</strong> Channel Partner Manager, Product Marketing Manager, and Financial Reporting Analyst are all new functions. Go-to-market buildout.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ TECH STACK ═══ -->
+<section class="section">
+    <div class="section-label">Technology</div>
+    <div class="section-title">Tech Stack Comparison</div>
+
+    <div class="tool-grid">
+        <div class="tool-item"><span class="name">Salesforce</span><div class="counts"><span class="c-ember">17</span><span class="c-teal">—</span></div></div>
+        <div class="tool-item"><span class="name">Golang</span><div class="counts"><span class="c-ember">15</span><span class="c-teal">3</span></div></div>
+        <div class="tool-item"><span class="name">Marketo</span><div class="counts"><span class="c-ember">10</span><span class="c-teal">—</span></div></div>
+        <div class="tool-item"><span class="name">JavaScript</span><div class="counts"><span class="c-ember">9</span><span class="c-teal">2</span></div></div>
+        <div class="tool-item"><span class="name">React</span><div class="counts"><span class="c-ember">9</span><span class="c-teal">2</span></div></div>
+        <div class="tool-item"><span class="name">Python</span><div class="counts"><span class="c-ember">8</span><span class="c-teal">—</span></div></div>
+        <div class="tool-item"><span class="name">PostgreSQL</span><div class="counts"><span class="c-ember">8</span><span class="c-teal">1</span></div></div>
+        <div class="tool-item"><span class="name">Django</span><div class="counts"><span class="c-ember">8</span><span class="c-teal">—</span></div></div>
+        <div class="tool-item"><span class="name">Segment</span><div class="counts"><span class="c-ember">8</span><span class="c-teal">1</span></div></div>
+        <div class="tool-item"><span class="name">Stripe API</span><div class="counts"><span class="c-ember">—</span><span class="c-teal">6</span></div></div>
+        <div class="tool-item"><span class="name">Workday</span><div class="counts"><span class="c-ember">5</span><span class="c-teal">—</span></div></div>
+        <div class="tool-item"><span class="name">C# / .NET</span><div class="counts"><span class="c-ember">—</span><span class="c-teal">3</span></div></div>
+        <div class="tool-item"><span class="name">HubSpot</span><div class="counts"><span class="c-ember">—</span><span class="c-teal">1</span></div></div>
+        <div class="tool-item"><span class="name">Gong</span><div class="counts"><span class="c-ember">—</span><span class="c-teal">1</span></div></div>
+        <div class="tool-item"><span class="name">Figma</span><div class="counts"><span class="c-ember">2</span><span class="c-teal">1</span></div></div>
+        <div class="tool-item"><span class="name">Google Analytics</span><div class="counts"><span class="c-ember">3</span><span class="c-teal">1</span></div></div>
+    </div>
+
+    <div style="margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <div class="insight-card" style="border-left-color: var(--fw-primary);">
+            <p><strong>Carta runs Salesforce + Marketo + Workday.</strong> Classic enterprise sales stack. Golang + Django + PostgreSQL on the backend.</p>
+        </div>
+        <div class="insight-card" style="border-left-color: var(--fw-secondary);">
+            <p><strong>Pulley runs HubSpot + Gong + Stripe.</strong> Modern startup sales stack. C# + Golang on the backend. Every role mentions Stripe API integration.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ GEOGRAPHY ═══ -->
+<section class="section">
+    <div class="section-label">Geography</div>
+    <div class="section-title">Where They're Building</div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+        <div>
+            <h3 style="font-family: var(--fw-font-display); font-size: 18px; color: var(--fw-primary); margin: 0 0 16px;">Carta — 10 Locations, 0% Remote</h3>
+            <ul class="location-list">
+                <li><span class="loc-name">San Francisco Bay Area</span><span class="loc-count">19</span></li>
+                <li><span class="loc-name">New York Metro</span><span class="loc-count">13</span></li>
+                <li><span class="loc-name">London, UK</span><span class="loc-count">9</span></li>
+                <li><span class="loc-name">Rio de Janeiro, Brazil</span><span class="loc-count">8</span></li>
+                <li><span class="loc-name">Singapore</span><span class="loc-count">7</span></li>
+                <li><span class="loc-name">Salt Lake City Metro</span><span class="loc-count">7</span></li>
+                <li><span class="loc-name">Waterloo, Canada</span><span class="loc-count">7</span></li>
+                <li><span class="loc-name">Seattle Metro</span><span class="loc-count">6</span></li>
+                <li><span class="loc-name">Hong Kong</span><span class="loc-count">4</span></li>
+                <li><span class="loc-name">Toronto, Canada</span><span class="loc-count">3</span></li>
+                <li><span class="loc-name">Abu Dhabi, UAE</span><span class="loc-count">2</span></li>
+                <li><span class="loc-name">Sydney, Australia</span><span class="loc-count">2</span></li>
+                <li><span class="loc-name">Chicago Metro</span><span class="loc-count">1</span></li>
+            </ul>
+        </div>
+        <div>
+            <h3 style="font-family: var(--fw-font-display); font-size: 18px; color: var(--fw-secondary); margin: 0 0 16px;">Pulley — 100% Remote</h3>
+            <div style="padding: 40px 24px; text-align: center; background: var(--fw-surface); border: 1px solid var(--fw-border); border-radius: 12px;">
+                <div style="font-family: var(--fw-font-display); font-size: 48px; font-weight: 700; color: var(--fw-success); line-height: 1;">100%</div>
+                <div style="font-size: 15px; color: var(--fw-text-muted); margin-top: 8px;">All 6 roles are fully remote</div>
+                <div style="font-size: 13px; color: var(--fw-text-dim); margin-top: 16px;">Pulley's remote-first model gives them access to the same talent pool Carta distributes across 10+ offices worldwide.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ PEOPLE TEAM DEEP DIVE ═══ -->
+<section class="section">
+    <div class="section-label">People & Talent</div>
+    <div class="section-title">Carta's People Team: What They're Building</div>
+    <p style="font-size: 14px; color: var(--fw-text-muted); margin-bottom: 20px; max-width: 700px;">
+        Carta has 8 open roles in their People function, 9% of all hiring. They cover Total Rewards, HRBP, People Ops, and TA: the same functions Pulley covers.
+    </p>
+
+    <div class="people-role">
+        <div>
+            <div class="role-title">Director, HR (GTM + G&A)</div>
+            <div class="role-meta">People &middot; Director</div>
+        </div>
+        <div class="role-salary">$225K–$300K</div>
+        <div class="role-location">San Francisco</div>
+    </div>
+    <div class="people-role">
+        <div>
+            <div class="role-title">Senior HRBP, R&D</div>
+            <div class="role-meta">People &middot; Senior</div>
+        </div>
+        <div class="role-salary">$139K–$164K</div>
+        <div class="role-location">San Francisco</div>
+    </div>
+    <div class="people-role">
+        <div>
+            <div class="role-title">Senior HRBP, GTM</div>
+            <div class="role-meta">People &middot; Senior</div>
+        </div>
+        <div class="role-salary">$139K–$164K</div>
+        <div class="role-location">San Francisco</div>
+    </div>
+    <div class="people-role">
+        <div>
+            <div class="role-title">Senior Manager, People Systems (x2)</div>
+            <div class="role-meta">People &middot; Senior Manager</div>
+        </div>
+        <div class="role-salary">$186K–$245K</div>
+        <div class="role-location">SF / Seattle</div>
+    </div>
+    <div class="people-role">
+        <div>
+            <div class="role-title">Senior Talent Acquisition Partner (x2)</div>
+            <div class="role-meta">People &middot; Senior</div>
+        </div>
+        <div class="role-salary">$106K–$165K</div>
+        <div class="role-location">SF / Waterloo</div>
+    </div>
+    <div class="people-role">
+        <div>
+            <div class="role-title">Senior TA Partner, AMEA</div>
+            <div class="role-meta">People &middot; Senior</div>
+        </div>
+        <div class="role-salary">—</div>
+        <div class="role-location">Singapore</div>
+    </div>
+
+    <!-- People Team Timeline -->
+    <div style="margin-top: 24px; background: var(--fw-surface); border: 1px solid var(--fw-border); border-radius: 12px; padding: 24px;">
+        <div style="font-size: 13px; font-weight: 600; color: var(--fw-text-muted); margin-bottom: 16px;">Carta People Team Hiring Over Time</div>
+        <div style="font-size: 12px; color: var(--fw-text-dim); margin-bottom: 16px;">Open People/HR roles per quarter from Wayback Machine archives</div>
+        <div class="people-timeline">
+            <div class="pt-bar" style="height: 40%; background: var(--fw-primary); opacity: 0.6;"><span class="pt-val">4</span></div>
+            <div class="pt-bar" style="height: 30%; background: var(--fw-primary); opacity: 0.6;"><span class="pt-val">3</span></div>
+            <div class="pt-bar" style="height: 40%; background: var(--fw-primary); opacity: 0.6;"><span class="pt-val">4</span></div>
+            <div class="pt-bar" style="height: 30%; background: var(--fw-primary); opacity: 0.6;"><span class="pt-val">3</span></div>
+            <div class="pt-bar" style="height: 10%; background: var(--fw-primary); opacity: 0.4;"><span class="pt-val">1</span></div>
+            <div class="pt-bar" style="height: 2%; background: var(--fw-text-dim); opacity: 0.3;"><span class="pt-val">0</span></div>
+            <div class="pt-bar" style="height: 2%; background: var(--fw-text-dim); opacity: 0.3;"><span class="pt-val">0</span></div>
+            <div class="pt-bar" style="height: 20%; background: var(--fw-primary); opacity: 0.5;"><span class="pt-val">2</span></div>
+            <div class="pt-bar" style="height: 10%; background: var(--fw-primary); opacity: 0.4;"><span class="pt-val">1</span></div>
+            <div class="pt-bar" style="height: 2%; background: var(--fw-text-dim); opacity: 0.3;"><span class="pt-val">0</span></div>
+            <div class="pt-bar" style="height: 2%; background: var(--fw-text-dim); opacity: 0.3;"><span class="pt-val">0</span></div>
+            <div class="pt-bar" style="height: 100%; background: var(--fw-primary);"><span class="pt-val" style="color: var(--fw-text-strong); font-weight: 700;">8</span></div>
+        </div>
+        <div class="pt-labels">
+            <span>Q1 '21</span><span>Q2</span><span>Q3</span><span>Q1 '22</span><span>Q2</span>
+            <span>Q3</span><span>Q4</span><span>Q1 '23</span><span>Q2</span>
+            <span>Q4</span><span>Q1 '24</span><span style="color: var(--fw-primary); font-weight: 500;">Now</span>
+        </div>
+        <div style="margin-top: 16px; font-size: 13px; color: var(--fw-text-muted); line-height: 1.6;">
+            <strong style="color: var(--fw-text-strong);">Zero People roles open from Q3 2022 through Q1 2024.</strong> Two full years of neglect during the layoff era. The current 8-role cohort is their largest People hire ever. They're rebuilding from scratch what Pulley already has in place.
+        </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px;">
+        <div class="insight-card" style="border-left-color: var(--fw-primary);">
+            <p><strong>Carta is rebuilding People infrastructure.</strong> Director of HR for GTM + G&A at $225K–$300K, two HRBPs, two TA Partners. These are core seats, not expansion hires.</p>
+        </div>
+        <div class="insight-card" style="border-left-color: var(--fw-secondary);">
+            <p><strong>Pulley's People team is already built.</strong> Zero People roles open. Total Rewards, HRBP, Employee Experience, People Ops, and Talent were all stood up from scratch since March 2024. Carta is hiring for the exact sub-functions Pulley already has.</p>
+        </div>
+    </div>
+
+    <div style="margin-top: 20px; background: var(--fw-surface); border: 1px solid var(--fw-border); border-radius: 12px; padding: 24px;">
+        <div style="font-size: 13px; font-weight: 600; color: var(--fw-text-muted); margin-bottom: 12px;">People Function Comp Comparison</div>
+        <table class="data-table" style="margin-bottom: 0;">
+            <thead>
+                <tr><th>Role</th><th>Carta Range</th><th>Location Req</th><th>Notes</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Director, HR</td><td class="highlight">$225K–$300K</td><td>SF only</td><td>GTM + G&A scope</td></tr>
+                <tr><td>Sr. HRBP</td><td>$139K–$164K</td><td>SF only</td><td>R&D and GTM tracks</td></tr>
+                <tr><td>Sr. Mgr, People Systems</td><td>$186K–$245K</td><td>SF / Seattle</td><td>Workday platform</td></tr>
+                <tr><td>Sr. TA Partner</td><td>$106K–$165K</td><td>SF / Waterloo</td><td>US/Canada split comp</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ═══ GLASSDOOR & EMPLOYER BRAND ═══ -->
+<section class="section">
+    <div class="section-label">Employer Brand</div>
+    <div class="section-title">Glassdoor & Employee Sentiment</div>
+
+    <div class="gd-grid">
+        <div class="gd-card">
+            <div class="gd-score" style="color: var(--fw-primary);">3.6</div>
+            <div class="gd-label">Carta &middot; 663 reviews</div>
+            <div class="gd-bar"><div class="gd-bar-fill" style="width: 72%; background: var(--fw-primary);"></div></div>
+            <div class="gd-metrics" style="grid-template-columns: 1fr 1fr 1fr;">
+                <div>
+                    <div class="gd-metric-val" style="color: var(--fw-warning);">58%</div>
+                    <div class="gd-metric-label">Recommend to Friend</div>
+                </div>
+                <div>
+                    <div class="gd-metric-val" style="color: var(--fw-warning);">49%</div>
+                    <div class="gd-metric-label">Positive Outlook</div>
+                </div>
+                <div>
+                    <div class="gd-metric-val" style="color: var(--fw-success);">4.1</div>
+                    <div class="gd-metric-label">Comp & Benefits</div>
+                </div>
+            </div>
+        </div>
+        <div class="gd-card">
+            <div class="gd-score" style="color: var(--fw-secondary);">3.7</div>
+            <div class="gd-label">Pulley &middot; 33 reviews</div>
+            <div class="gd-bar"><div class="gd-bar-fill" style="width: 74%; background: var(--fw-secondary);"></div></div>
+            <div class="gd-metrics" style="grid-template-columns: 1fr 1fr 1fr;">
+                <div>
+                    <div class="gd-metric-val" style="color: var(--fw-secondary);">62%</div>
+                    <div class="gd-metric-label">Recommend to Friend</div>
+                </div>
+                <div>
+                    <div class="gd-metric-val" style="color: var(--fw-secondary);">64%</div>
+                    <div class="gd-metric-label">Positive Outlook</div>
+                </div>
+                <div>
+                    <div class="gd-metric-val" style="color: var(--fw-secondary);">3.8</div>
+                    <div class="gd-metric-label">Comp & Benefits</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="font-size: 13px; font-weight: 600; color: var(--fw-text-muted); margin-bottom: 12px;">What Carta Employees Are Saying</div>
+
+    <div class="gd-quote">
+        "I had 5 managers change in 7 months, lack of focus and constant reorgs."
+        <div class="source">Glassdoor review, 2024</div>
+    </div>
+    <div class="gd-quote">
+        "Endless leadership turnover, terrible PR, damn near worthless equity, lack of direction."
+        <div class="source">Blind (verified employee), 2024</div>
+    </div>
+    <div class="gd-quote">
+        "Almost impossible to get a pay raise. Training is nearly nonexistent — you're expected to figure it out as you go."
+        <div class="source">Glassdoor review, 2023</div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px;">
+        <div class="insight-card" style="border-left-color: var(--fw-warning);">
+            <p><strong>Carta's biggest exposure: business outlook.</strong> Only 49% of employees see a positive future. That's the number candidates Google. The Seattle office is worse: 2.6 overall, 32% CEO approval. Equity worth $7.4B in Aug 2021 traded at ~$3.5B in Jan 2025, a 53% haircut employees feel directly.</p>
+        </div>
+        <div class="insight-card" style="border-left-color: var(--fw-secondary);">
+            <p><strong>Pulley's exposure: comp perception.</strong> Carta scores 4.1 on Comp & Benefits vs Pulley's 3.8. Candidates will hear "Carta pays better" in offer conversations. Pulley's counter: 100% salary disclosure, no relocation costs, remote flexibility. But the comp perception gap is real and worth watching.</p>
+        </div>
+    </div>
+
+    <!-- Scandal Timeline -->
+    <div style="margin-top: 24px; background: var(--fw-surface); border: 1px solid var(--fw-border); border-radius: 12px; padding: 24px;">
+        <div style="font-size: 13px; font-weight: 600; color: var(--fw-text-muted); margin-bottom: 16px;">Carta's Public Challenges (2022–2024)</div>
+        <table class="data-table" style="margin-bottom: 0;">
+            <thead>
+                <tr><th>Date</th><th style="text-align: left !important;">Event</th><th>Impact</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Late 2022</td><td style="text-align: left !important;"><a href="https://techcrunch.com/2023/01/10/carta-previously-sued-for-gender-discrimination-is-now-suing-its-former-cto/" target="_blank" style="color: var(--fw-primary); text-decoration: none; border-bottom: 1px solid rgba(224,120,80,0.3);">CTO lawsuit (recordings, "insecure and narcissistic")</a></td><td>Leadership</td></tr>
+                <tr><td>Jan 2023</td><td style="text-align: left !important;"><a href="https://techcrunch.com/2023/01/11/carta-lays-off-10-as-cto-lawsuit-looms/" target="_blank" style="color: var(--fw-primary); text-decoration: none; border-bottom: 1px solid rgba(224,120,80,0.3);">10% RIF (~200 employees)</a></td><td>Morale</td></tr>
+                <tr><td>May 2023</td><td style="text-align: left !important;"><a href="https://fortune.com/2023/10/04/carta-lawsuit-unicorn-startup-female-employees-henry-ward/" target="_blank" style="color: var(--fw-primary); text-decoration: none; border-bottom: 1px solid rgba(224,120,80,0.3);">Gender discrimination complaint filed</a></td><td>Culture</td></tr>
+                <tr><td>Jul–Nov 2023</td><td style="text-align: left !important;"><a href="https://fortune.com/2023/11/09/exclusive-unicorn-carta-lays-off-another-round-of-employees/" target="_blank" style="color: var(--fw-primary); text-decoration: none; border-bottom: 1px solid rgba(224,120,80,0.3);">Three more layoff rounds</a></td><td>Trust</td></tr>
+                <tr><td>Oct 2023</td><td style="text-align: left !important;"><a href="https://fortune.com/2023/10/18/carta-litigation-henry-ward-turnover/" target="_blank" style="color: var(--fw-primary); text-decoration: none; border-bottom: 1px solid rgba(224,120,80,0.3);">Fortune exposé on toxic culture; CEO email backfires</a></td><td>Brand</td></tr>
+                <tr><td>Jan 2024</td><td style="text-align: left !important;"><a href="https://techcrunch.com/2024/01/07/carta-the-cap-table-management-outfit-is-accused-of-unethical-tactics-by-a-customer-after-it-tries-broker-a-deal-for-a-startups-shares-without-consent/" target="_blank" style="color: var(--fw-primary); text-decoration: none; border-bottom: 1px solid rgba(224,120,80,0.3);">Confidential data misuse scandal; exits secondary trading</a></td><td>Trust</td></tr>
+                <tr><td>Mid 2024</td><td style="text-align: left !important;"><a href="https://techcrunch.com/2024/06/06/cartas-valuation-to-be-cut-by-billions-in-an-upcoming-secondary-sale/" target="_blank" style="color: var(--fw-primary); text-decoration: none; border-bottom: 1px solid rgba(224,120,80,0.3);">Valuation cut from $7.4B to ~$2B in secondary sale</a></td><td>Equity</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ═══ TALENT OVERLAP ═══ -->
+<section class="section">
+    <div class="section-label">Head to Head</div>
+    <div class="section-title">Direct Talent Competition</div>
+    <p style="font-size: 14px; color: var(--fw-text-muted); margin-bottom: 24px; max-width: 700px;">
+        These roles are fishing from the same talent pool. When a candidate applies to one, they're likely considering the other.
+    </p>
+
+    <div class="overlap-row">
+        <div class="overlap-cell">
+            <div class="ol-title" style="color: var(--fw-primary);">Senior SWE, Backend (Go)</div>
+            <div class="ol-comp" style="color: var(--fw-primary);">$166K–$225K</div>
+            <div class="ol-detail">SF or NYC required &middot; 15 Go mentions</div>
+        </div>
+        <div class="overlap-vs">VS</div>
+        <div class="overlap-cell">
+            <div class="ol-title" style="color: var(--fw-secondary);">Senior Backend Engineer, Core Product</div>
+            <div class="ol-comp" style="color: var(--fw-secondary);">$180K–$200K</div>
+            <div class="ol-detail">100% remote &middot; Go + C#</div>
+        </div>
+    </div>
+
+    <div class="overlap-row">
+        <div class="overlap-cell">
+            <div class="ol-title" style="color: var(--fw-primary);">Senior SWE, Frontend (React)</div>
+            <div class="ol-comp" style="color: var(--fw-primary);">$166K–$225K</div>
+            <div class="ol-detail">SF required &middot; React + JS</div>
+        </div>
+        <div class="overlap-vs">VS</div>
+        <div class="overlap-cell">
+            <div class="ol-title" style="color: var(--fw-secondary);">Frontend Engineer II, Core Product</div>
+            <div class="ol-comp" style="color: var(--fw-secondary);">$150K–$180K</div>
+            <div class="ol-detail">100% remote &middot; React + JS</div>
+        </div>
+    </div>
+
+    <div class="overlap-row">
+        <div class="overlap-cell">
+            <div class="ol-title" style="color: var(--fw-primary);">Channel Sales Manager</div>
+            <div class="ol-comp" style="color: var(--fw-primary);">$135K–$210K OTE</div>
+            <div class="ol-detail">SF or NYC &middot; Enterprise + Channel</div>
+        </div>
+        <div class="overlap-vs">VS</div>
+        <div class="overlap-cell">
+            <div class="ol-title" style="color: var(--fw-secondary);">Senior Channel Partner Manager</div>
+            <div class="ol-comp" style="color: var(--fw-secondary);">$157K–$175K</div>
+            <div class="ol-detail">100% remote &middot; First hire in function</div>
+        </div>
+    </div>
+
+    <div class="overlap-row">
+        <div class="overlap-cell">
+            <div class="ol-title" style="color: var(--fw-primary);">Product Marketing Manager</div>
+            <div class="ol-comp" style="color: var(--fw-primary);">$119K–$165K</div>
+            <div class="ol-detail">SF or NYC &middot; Enterprise PMM</div>
+        </div>
+        <div class="overlap-vs">VS</div>
+        <div class="overlap-cell">
+            <div class="ol-title" style="color: var(--fw-secondary);">Product Marketing Manager</div>
+            <div class="ol-comp" style="color: var(--fw-secondary);">$140K–$155K</div>
+            <div class="ol-detail">100% remote &middot; First hire in function</div>
+        </div>
+    </div>
+
+    <div class="insight-card" style="margin-top: 24px;">
+        <p><strong>Pulley wins on flexibility in every head-to-head.</strong> Comp is within range for engineering and marketing. Channel sales is a first-hire at Pulley (own the function) vs one of 11 channel roles at Carta (own a territory). Carta wins on comp ceiling and brand recognition.</p>
+    </div>
+</section>
+
+<!-- ═══ RECRUITER BATTLE CARD ═══ -->
+<section class="section">
+    <div class="section-label">Recruiting Playbook</div>
+    <div class="section-title">When Candidates Have a Carta Offer</div>
+    <p style="font-size: 14px; color: var(--fw-text-muted); margin-bottom: 24px; max-width: 700px;">
+        Talking points backed by data from this report. Use these when a candidate is weighing Pulley against Carta.
+    </p>
+
+    <div class="battle-grid">
+        <div class="battle-card">
+            <div class="scenario">When they say</div>
+            <div class="objection">"Carta offered more money."</div>
+            <div class="response">For engineering, the gap is 7% ($194K vs $182K avg midpoint). Factor in SF/NYC cost of living: Carta requires relocation to the most expensive markets in the country. At Pulley, $182K goes further from anywhere. And Carta's equity has lost 53% of its value since their Series G.</div>
+            <div class="data-point">Carta eng avg: $194K (SF-based) &middot; Pulley eng avg: $182K (remote)</div>
+        </div>
+
+        <div class="battle-card">
+            <div class="scenario">When they ask</div>
+            <div class="objection">"Is Pulley stable? You're much smaller."</div>
+            <div class="response">Carta had four layoff rounds between 2020 and 2023, including people they'd hired two months prior. Glassdoor 3.6, 49% positive business outlook. Pulley has been growing consistently. Every open role is a growth hire. The People function has been staffed and stable since 2024.</div>
+            <div class="data-point">Carta: 4 layoffs in 3 years &middot; 49% positive outlook &middot; 55% CEO approval</div>
+        </div>
+
+        <div class="battle-card">
+            <div class="scenario">When they say</div>
+            <div class="objection">"Carta is a bigger brand, better for my resume."</div>
+            <div class="response">At Carta you're one of 2,000 employees. At Pulley, half the roles are first-in-function. You own the whole thing, not a slice. Three of our six current hires will build their function from scratch. When does that happen at a 2,000-person company?</div>
+            <div class="data-point">Pulley: 50% first-hire roles &middot; Build from scratch, don't inherit</div>
+        </div>
+
+        <div class="battle-card">
+            <div class="scenario">When they ask</div>
+            <div class="objection">"Why should I choose remote over a Carta office?"</div>
+            <div class="response">Carta requires relocation to SF, NYC, London, or SLC for every role. At Pulley, you keep your life where it is and get paid competitively regardless of location. Carta's own Glassdoor reviews call the return-to-office push tone-deaf.</div>
+            <div class="data-point">Carta: 0% remote, 10 office locations &middot; Pulley: 100% remote, same talent pool</div>
+        </div>
+    </div>
+
+    <div class="insight-card" style="margin-top: 24px; border-left-color: var(--fw-secondary);">
+        <p><strong>Watch the batch-post pattern.</strong> Carta posted 63 of their 88 roles on a single day (Feb 1). Likely a fiscal year hiring plan dump or ATS re-post of stale listings. Many of those "88 open roles" may have been sitting unfilled for months under different req numbers. Pulley's 6 roles are all new positions.</p>
+    </div>
+</section>
+
+<!-- ═══ KEY TAKEAWAYS ═══ -->
+<section class="section">
+    <div class="section-label">Analysis</div>
+    <div class="section-title">Key Takeaways</div>
+
+    <div class="insight-card">
+        <p><strong>1. Carta is rebuilding, not expanding.</strong> They peaked at 427 roles in Q3 2021 and cratered to 32 after four layoff rounds. At 21% of peak, this is a measured recovery. 6 turnaround signals and 5 CRO-reporting roles confirm sales leadership restructuring. 63 of those 88 roles were batch-posted Feb 1, likely a fiscal year plan or ATS refresh.</p>
+    </div>
+    <div class="insight-card">
+        <p><strong>2. Carta's People team was neglected for two years.</strong> Zero People roles open from Q3 2022 through Q1 2024, during the worst of the layoffs. Now they're hiring 8 People roles (their largest cohort ever), all senior. Pulley's People function was built from scratch since March 2024 and has zero open roles today.</p>
+    </div>
+    <div class="insight-card">
+        <p><strong>3. Remote-first is a talent moat.</strong> Carta requires relocation to SF, NYC, London, or SLC for every role. Pulley is 100% remote with engineering comp within 7%. Only 58% of Carta employees would recommend working there (vs 62% at Pulley), and fewer than half have a positive business outlook.</p>
+    </div>
+    <div class="insight-card">
+        <p><strong>4. Carta's employer brand is a liability.</strong> Glassdoor 3.6 (down from mid-4s), CEO approval 55%, Fortune expose on toxic culture, data misuse scandal, gender discrimination complaints, equity worth 53% less than peak. Every senior candidate Googles this. Pulley's stability, full salary disclosure, and smaller scale are advantages.</p>
+    </div>
+    <div class="insight-card">
+        <p><strong>5. Pulley's weakness: comp perception.</strong> Carta scores 4.1 on Glassdoor Comp & Benefits vs Pulley's 3.8. In the four head-to-head roles (Go backend, React frontend, channel sales, product marketing), Carta's comp ceiling is higher. Pulley wins on remote flexibility, first-hire ownership, and stability. Know which candidates value which.</p>
+    </div>
+    <div class="insight-card">
+        <p><strong>6. Carta's People comp sets the benchmark.</strong> Director of HR at $225K–$300K (SF-only). Sr. HRBPs at $139K–$164K. Sr. TA Partners at $106K–$165K. These are the numbers Pulley will be compared against. Monitor these bands as you plan 2026 comp reviews.</p>
+    </div>
+</section>
+
+<!-- ═══ OPEN ROLES ═══ -->
+<section class="section">
+    <div class="section-label">Appendix</div>
+    <div class="section-title">Pulley — All Open Roles</div>
+
+    <table class="data-table">
+        <thead>
+            <tr><th>Title</th><th>Function</th><th>Seniority</th><th>Salary Range</th><th>Posted</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Senior Backend Engineer, Core Product</td><td>Engineering</td><td>Senior</td><td>$180K–$200K</td><td>Feb 17</td></tr>
+            <tr><td>Senior Fullstack Engineer, AI</td><td>Engineering</td><td>Senior</td><td>$180K–$200K</td><td>Feb 17</td></tr>
+            <tr><td>Frontend Engineer II, Core Product</td><td>Engineering</td><td>Mid</td><td>$150K–$180K</td><td>Feb 17</td></tr>
+            <tr><td>Senior Channel Partner Manager</td><td>Sales</td><td>Manager</td><td>$157K–$175K</td><td>Jan 27</td></tr>
+            <tr><td>Senior Financial Reporting Analyst</td><td>Operations</td><td>Senior</td><td>$93K–$113K</td><td>Jan 26</td></tr>
+            <tr><td>Product Marketing Manager</td><td>Marketing</td><td>Manager</td><td>$140K–$155K</td><td>Jan 21</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="report-footer">
+    <div class="methodology">
+        <h3>Methodology</h3>
+        <ul>
+            <li>Current data sourced from Greenhouse ATS public API boards for both companies (94 active postings)</li>
+            <li>Historical data sourced from Wayback Machine archives of Carta's Greenhouse board (16 quarterly snapshots, Q1 2021 – Q1 2026)</li>
+            <li>Employer brand data from Glassdoor (663 Carta reviews, 33 Pulley reviews), Comparably, Blind, and RepVue</li>
+            <li>Layoff data from TechCrunch, Fortune, SF Standard, Layoffs.fyi, and Glassdoor employee reviews</li>
+            <li>Headcount estimates from Tracxn, GetLatka, and LeadIQ</li>
+            <li>Signals extracted algorithmically from job titles and full descriptions</li>
+            <li>Salary data reflects explicitly posted compensation ranges only</li>
+            <li>Function and seniority classified via Greenhouse department mapping + title pattern matching</li>
+            <li>Posting age analysis based on Greenhouse API published_at timestamps</li>
+            <li>Data reflects postings as of February 17, 2026 (not confirmed hires)</li>
+        </ul>
+    </div>
+    <div class="branding">
+        <span class="wordmark">fieldwork<span class="dot"></span></span>
+        <span>Competitive Hiring Intelligence &middot; runfieldwork.com</span>
+    </div>
+</footer>
+
+</div>
+
+</body>
+</html>

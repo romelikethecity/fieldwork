@@ -1,0 +1,2215 @@
+{
+  "report_name": "pulley-vs-carta",
+  "generated_at": "2026-02-17T16:25:29.093430",
+  "filters": {},
+  "companies": [
+    "carta",
+    "pulley"
+  ],
+  "analyses": [
+    {
+      "company": "carta",
+      "industry": "Equity Management",
+      "num_employees": null,
+      "revenue": null,
+      "total_active_roles": 88,
+      "by_function": {
+        "sales": 26,
+        "operations": 16,
+        "engineering": 15,
+        "finance": 12,
+        "marketing": 8,
+        "people": 8,
+        "product": 3
+      },
+      "by_seniority": {
+        "senior": 29,
+        "mid": 28,
+        "manager": 17,
+        "associate": 5,
+        "director": 4,
+        "entry": 2,
+        "senior_manager": 2,
+        "head": 1
+      },
+      "by_location_type": {
+        "onsite": 88
+      },
+      "by_metro": {
+        "San Francisco Bay Area": 19,
+        "New York Metro": 13,
+        "London, UK": 9,
+        "Rio de Janeiro, Brazil": 8,
+        "Singapore": 7,
+        "Salt Lake City Metro": 7,
+        "Waterloo, Canada": 7,
+        "Seattle Metro": 6,
+        "Hong Kong": 4,
+        "Toronto, Canada": 3
+      },
+      "salary": {
+        "count_with_salary": 43,
+        "pct_with_salary": 48.9,
+        "overall_min": 58998.0,
+        "overall_max": 460000.0,
+        "avg_midpoint": 187125,
+        "median_midpoint": 170200,
+        "by_function": {
+          "sales": {
+            "avg_midpoint": 235159,
+            "count": 9
+          },
+          "finance": {
+            "avg_midpoint": 123302,
+            "count": 7
+          },
+          "operations": {
+            "avg_midpoint": 169200,
+            "count": 2
+          },
+          "people": {
+            "avg_midpoint": 180589,
+            "count": 7
+          },
+          "marketing": {
+            "avg_midpoint": 155108,
+            "count": 3
+          },
+          "engineering": {
+            "avg_midpoint": 194273,
+            "count": 13
+          },
+          "product": {
+            "avg_midpoint": 236712,
+            "count": 2
+          }
+        },
+        "by_seniority": {
+          "mid": {
+            "avg_midpoint": 135036,
+            "count": 7
+          },
+          "senior": {
+            "avg_midpoint": 200240,
+            "count": 21
+          },
+          "manager": {
+            "avg_midpoint": 150160,
+            "count": 7
+          },
+          "director": {
+            "avg_midpoint": 284031,
+            "count": 4
+          },
+          "associate": {
+            "avg_midpoint": 80845,
+            "count": 1
+          },
+          "head": {
+            "avg_midpoint": 198000,
+            "count": 1
+          },
+          "senior_manager": {
+            "avg_midpoint": 214988,
+            "count": 2
+          }
+        }
+      },
+      "signals": {
+        "hiring_signals": {
+          "Growth Hire": 34,
+          "Turnaround": 6,
+          "Immediate": 2
+        },
+        "comp_signals": {
+          "Equity": 88,
+          "Ote Mentioned": 10
+        },
+        "geo_focus": {
+          "North America": 88,
+          "Latam": 88,
+          "Global": 19,
+          "Apac": 14,
+          "Emea": 5
+        },
+        "segment": {
+          "Enterprise": 15,
+          "Smb": 3,
+          "Mid Market": 2
+        },
+        "motion": {
+          "Channel": 11,
+          "Abm": 2,
+          "Plg": 1
+        },
+        "team_structure": {
+          "Build Team": 38,
+          "First Hire": 6,
+          "Reports Cro": 5,
+          "Reports Vp": 1
+        }
+      },
+      "tools": {
+        "Salesforce": 17,
+        "Golang": 15,
+        "Marketo": 10,
+        "Javascript": 9,
+        "React": 9,
+        "Segment": 8,
+        "Python": 8,
+        "Postgresql": 8,
+        "Django": 8,
+        "Workday": 5,
+        "Java": 4,
+        "Google Analytics": 3,
+        "Slack": 3,
+        "Quickbooks": 2,
+        "Looker": 2,
+        "Figma": 2,
+        "Snowflake": 2,
+        "Airflow": 2,
+        "Dbt": 2,
+        "Jira": 2
+      },
+      "tool_categories": {
+        "Languages": 38,
+        "Marketing_Tools": 21,
+        "Frameworks": 19,
+        "CRM": 17,
+        "Databases": 10,
+        "Finance_Tools": 9,
+        "Collaboration": 7,
+        "Data_Tools": 6,
+        "Cloud_Infrastructure": 2
+      },
+      "date_range": {
+        "earliest": "2026-02-01 17:48:22",
+        "latest": "2026-02-17 16:00:54"
+      },
+      "listings": [
+        {
+          "id": 102255,
+          "title": "Solutions Engineer",
+          "location": "London, England",
+          "location_metro": "London, UK",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-17 16:00:54",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7543368003"
+        },
+        {
+          "id": 102182,
+          "title": "Brand Strategy Manager / Senior Brand Strategy Manager",
+          "location": "London, England ",
+          "location_metro": "London, UK",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "manager",
+          "function": "marketing",
+          "date_posted": "2026-02-17 13:12:21",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7634400003"
+        },
+        {
+          "id": 102177,
+          "title": "Account Executive, SPV",
+          "location": "New York City, New York",
+          "location_metro": "New York Metro",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-13 17:46:35",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7632093003"
+        },
+        {
+          "id": 102222,
+          "title": "Sales Development Representative, Asia",
+          "location": "Singapore",
+          "location_metro": "Singapore",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-13 16:23:08",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7546701003"
+        },
+        {
+          "id": 102256,
+          "title": "Solutions Engineer",
+          "location": "Abu Dhabi, UAE",
+          "location_metro": "Abu Dhabi, UAE",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-13 16:15:00",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7506068003"
+        },
+        {
+          "id": 102220,
+          "title": "Sales Development Representative",
+          "location": "San Francisco, CA",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$58,998 - $98,330",
+          "annual_salary_min": 58998.0,
+          "annual_salary_max": 98330.0,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-13 14:58:38",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/6339002003"
+        },
+        {
+          "id": 102218,
+          "title": "Sales Compensation Lead",
+          "location": "San Francisco, CA",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$157,250 - $185,000",
+          "annual_salary_min": 157250.0,
+          "annual_salary_max": 185000.0,
+          "seniority": "senior",
+          "function": "finance",
+          "date_posted": "2026-02-12 00:19:39",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7592140003"
+        },
+        {
+          "id": 102212,
+          "title": "LP Portfolio Analytics Client Partner",
+          "location": "New York, NY; Hamilton, NJ; San Francisco, CA; Santa Clara, CA; Seattle, WA; Sandy, UT",
+          "location_metro": "New York Metro",
+          "location_type": "onsite",
+          "salary": "$152,000 - $190,000",
+          "annual_salary_min": 152000.0,
+          "annual_salary_max": 190000.0,
+          "seniority": "mid",
+          "function": "operations",
+          "date_posted": "2026-02-11 16:22:02",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7477218003"
+        },
+        {
+          "id": 102232,
+          "title": "Senior HRBP, R&D ",
+          "location": "San Francisco, CA",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$139,400 - $164,000",
+          "annual_salary_min": 139400.0,
+          "annual_salary_max": 164000.0,
+          "seniority": "senior",
+          "function": "people",
+          "date_posted": "2026-02-10 02:46:08",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7551318003"
+        },
+        {
+          "id": 102226,
+          "title": "Senior Account Executive, Limited Partners",
+          "location": "Singapore",
+          "location_metro": "Singapore",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "senior",
+          "function": "sales",
+          "date_posted": "2026-02-09 19:48:54",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7503884003"
+        },
+        {
+          "id": 102210,
+          "title": "Lifecycle Marketing Specialist",
+          "location": "San Francisco, CA",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$98,600 - $116,000",
+          "annual_salary_min": 98600.0,
+          "annual_salary_max": 116000.0,
+          "seniority": "mid",
+          "function": "marketing",
+          "date_posted": "2026-02-09 18:24:13",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7590431003"
+        },
+        {
+          "id": 102211,
+          "title": "Loan Operations Associate",
+          "location": "Sandy, UT",
+          "location_metro": "Salt Lake City Metro",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "associate",
+          "function": "operations",
+          "date_posted": "2026-02-09 14:00:56",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7614152003"
+        },
+        {
+          "id": 102239,
+          "title": "Senior Program Manager, Account Management Strategy & Operations",
+          "location": "New York, NY",
+          "location_metro": "New York Metro",
+          "location_type": "onsite",
+          "salary": "$129,200 - $152,000",
+          "annual_salary_min": 129200.0,
+          "annual_salary_max": 152000.0,
+          "seniority": "manager",
+          "function": "engineering",
+          "date_posted": "2026-02-05 21:08:57",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7614162003"
+        },
+        {
+          "id": 102233,
+          "title": "Senior Human Resources Business Partner, GTM",
+          "location": "San Francisco, CA",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$139,400 - $164,000",
+          "annual_salary_min": 139400.0,
+          "annual_salary_max": 164000.0,
+          "seniority": "senior",
+          "function": "people",
+          "date_posted": "2026-02-05 17:35:53",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7621029003"
+        },
+        {
+          "id": 102192,
+          "title": "Director of Sales, Private Equity, Fund Admin",
+          "location": "New York City, New York",
+          "location_metro": "New York Metro",
+          "location_type": "onsite",
+          "salary": "$400,000 - $460,000",
+          "annual_salary_min": 400000.0,
+          "annual_salary_max": 460000.0,
+          "seniority": "director",
+          "function": "sales",
+          "date_posted": "2026-02-05 17:16:36",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7491517003"
+        },
+        {
+          "id": 102205,
+          "title": "Integrated Marketing Manager",
+          "location": "London, England",
+          "location_metro": "London, UK",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "manager",
+          "function": "marketing",
+          "date_posted": "2026-02-05 11:33:13",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7617959003"
+        },
+        {
+          "id": 102178,
+          "title": "Account Executive, Venture Capital",
+          "location": "London, England",
+          "location_metro": "London, UK",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-04 16:45:56",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7590555003"
+        },
+        {
+          "id": 102209,
+          "title": "Lead Product Manager",
+          "location": "San Francisco, CA; Seattle, WA, New York, NY",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "manager",
+          "function": "product",
+          "date_posted": "2026-02-04 12:48:46",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7548543003"
+        },
+        {
+          "id": 102252,
+          "title": "Senior Talent Acquisition Partner",
+          "location": "Waterloo, Ontario, Canada",
+          "location_metro": "Waterloo, Canada",
+          "location_type": "onsite",
+          "salary": "$106,250 - $125,000",
+          "annual_salary_min": 106250.0,
+          "annual_salary_max": 125000.0,
+          "seniority": "senior",
+          "function": "people",
+          "date_posted": "2026-02-03 17:15:54",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7617812003"
+        },
+        {
+          "id": 102253,
+          "title": "Senior Talent Acquisition Partner",
+          "location": "San Francisco, CA",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$140,250 - $165,000",
+          "annual_salary_min": 140250.0,
+          "annual_salary_max": 165000.0,
+          "seniority": "senior",
+          "function": "people",
+          "date_posted": "2026-02-03 17:13:16",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7617872003"
+        },
+        {
+          "id": 102247,
+          "title": "Senior Software Engineer II, Design Systems",
+          "location": "Waterloo, Ontario, Canada",
+          "location_metro": "Waterloo, Canada",
+          "location_type": "onsite",
+          "salary": "$181,050 - $213,000",
+          "annual_salary_min": 181050.0,
+          "annual_salary_max": 213000.0,
+          "seniority": "senior",
+          "function": "engineering",
+          "date_posted": "2026-02-03 17:00:47",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7544237003"
+        },
+        {
+          "id": 102221,
+          "title": "Sales Development Representative",
+          "location": "Hong Kong, China",
+          "location_metro": "Hong Kong",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-02 20:16:18",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7614406003"
+        },
+        {
+          "id": 102200,
+          "title": "GTM Strategy and Ops Associate",
+          "location": "Singapore",
+          "location_metro": "Singapore",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "associate",
+          "function": "sales",
+          "date_posted": "2026-02-02 20:07:39",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7614416003"
+        },
+        {
+          "id": 102230,
+          "title": "Senior Demand Generation Specialist",
+          "location": "Singapore",
+          "location_metro": "Singapore",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "senior",
+          "function": "marketing",
+          "date_posted": "2026-02-02 19:53:33",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7613366003"
+        },
+        {
+          "id": 102223,
+          "title": "Sales Development Representative Intern",
+          "location": "San Francisco, CA",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "entry",
+          "function": "sales",
+          "date_posted": "2026-02-02 14:53:43",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7609938003"
+        },
+        {
+          "id": 102175,
+          "title": "Account Executive, Companies",
+          "location": "Hong Kong, China",
+          "location_metro": "Hong Kong",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7591998003"
+        },
+        {
+          "id": 102176,
+          "title": "Account Executive, Private Equity Companies",
+          "location": "New York, NY",
+          "location_metro": "New York Metro",
+          "location_type": "onsite",
+          "salary": "$235,000 - $325,000",
+          "annual_salary_min": 235000.0,
+          "annual_salary_max": 325000.0,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7520629003"
+        },
+        {
+          "id": 102179,
+          "title": "Associate Fund Controller",
+          "location": "Hamilton, NJ",
+          "location_metro": "New York Metro",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "associate",
+          "function": "operations",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/4914327003"
+        },
+        {
+          "id": 102180,
+          "title": "Associate, Tax Delivery",
+          "location": "Seattle, WA",
+          "location_metro": "Seattle Metro",
+          "location_type": "onsite",
+          "salary": "$74,290 - $87,400",
+          "annual_salary_min": 74290.0,
+          "annual_salary_max": 87400.0,
+          "seniority": "associate",
+          "function": "finance",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/6247992003"
+        },
+        {
+          "id": 102181,
+          "title": "Associate, Tax Delivery",
+          "location": "Sandy, UT",
+          "location_metro": "Salt Lake City Metro",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "associate",
+          "function": "finance",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/6652048003"
+        },
+        {
+          "id": 102183,
+          "title": "Business Development Manager, Private Equity",
+          "location": "London, England",
+          "location_metro": "London, UK",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "manager",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7593329003"
+        },
+        {
+          "id": 102184,
+          "title": "Business Development Manager, Private Equity Partners",
+          "location": "New York City, New York",
+          "location_metro": "New York Metro",
+          "location_type": "onsite",
+          "salary": "$108,000 - $180,000",
+          "annual_salary_min": 108000.0,
+          "annual_salary_max": 180000.0,
+          "seniority": "manager",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7489895003"
+        },
+        {
+          "id": 102185,
+          "title": "Business Development Manager, Venture Capital",
+          "location": "London, England",
+          "location_metro": "London, UK",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "manager",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7593327003"
+        },
+        {
+          "id": 102186,
+          "title": "Business Development Representative",
+          "location": "Hong Kong, China",
+          "location_metro": "Hong Kong",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7591996003"
+        },
+        {
+          "id": 102187,
+          "title": "Business Development Representative, Investors",
+          "location": "Sydney, Australia",
+          "location_metro": "Sydney, Australia",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7591994003"
+        },
+        {
+          "id": 102188,
+          "title": "Data Operations Analyst",
+          "location": "Rio de Janeiro, Brazil",
+          "location_metro": "Rio de Janeiro, Brazil",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "operations",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7592159003"
+        },
+        {
+          "id": 102189,
+          "title": "Director, HR (GTM + G&A) ",
+          "location": "San Francisco, CA",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$225,000 - $300,000",
+          "annual_salary_min": 225000.0,
+          "annual_salary_max": 300000.0,
+          "seniority": "director",
+          "function": "people",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7534074003"
+        },
+        {
+          "id": 102190,
+          "title": "Director of Information Technology",
+          "location": "Waterloo, Ontario, Canada",
+          "location_metro": "Waterloo, Canada",
+          "location_type": "onsite",
+          "salary": "$174,000 - $232,000",
+          "annual_salary_min": 174000.0,
+          "annual_salary_max": 232000.0,
+          "seniority": "director",
+          "function": "engineering",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7543959003"
+        },
+        {
+          "id": 102191,
+          "title": "Director of Information Technology",
+          "location": "San Francisco, CA; Santa Clara, CA; Sandy, UT; Seattle, WA; New York, NY",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$206,250 - $275,000",
+          "annual_salary_min": 206250.0,
+          "annual_salary_max": 275000.0,
+          "seniority": "director",
+          "function": "engineering",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7539397003"
+        },
+        {
+          "id": 102193,
+          "title": "Field Marketing Manager",
+          "location": "Abu Dhabi, UAE",
+          "location_metro": "Abu Dhabi, UAE",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "manager",
+          "function": "marketing",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7590547003"
+        },
+        {
+          "id": 102194,
+          "title": "Finance and Equity Analyst - Rotational Program",
+          "location": "Seattle, WA",
+          "location_metro": "Seattle Metro",
+          "location_type": "onsite",
+          "salary": "$71,250 - $76,000",
+          "annual_salary_min": 71250.0,
+          "annual_salary_max": 76000.0,
+          "seniority": "mid",
+          "function": "finance",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7143172003"
+        },
+        {
+          "id": 102195,
+          "title": "Finance and Equity Analyst - Rotational Program",
+          "location": "Sandy, UT",
+          "location_metro": "Salt Lake City Metro",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "finance",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/5640725003"
+        },
+        {
+          "id": 102196,
+          "title": "Fund Accountant, Implementations",
+          "location": "Rio de Janeiro, Brazil",
+          "location_metro": "Rio de Janeiro, Brazil",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "operations",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7566853003"
+        },
+        {
+          "id": 102197,
+          "title": "Fund Controller",
+          "location": "Hong Kong, China",
+          "location_metro": "Hong Kong",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "operations",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7604629003"
+        },
+        {
+          "id": 102198,
+          "title": "General Interest - PcD",
+          "location": "Rio de Janeiro",
+          "location_metro": "Rio de Janeiro, Brazil",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "operations",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/5505562003"
+        },
+        {
+          "id": 102199,
+          "title": "General Interest - PcD",
+          "location": "Rio de Janeiro",
+          "location_metro": "Rio de Janeiro, Brazil",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "operations",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/5505536003"
+        },
+        {
+          "id": 102201,
+          "title": "Head of GTM Content",
+          "location": "San Francisco, CA",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$176,000 - $220,000",
+          "annual_salary_min": 176000.0,
+          "annual_salary_max": 220000.0,
+          "seniority": "head",
+          "function": "marketing",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7552210003"
+        },
+        {
+          "id": 102202,
+          "title": "Implementations Accounting Analyst",
+          "location": "Singapore",
+          "location_metro": "Singapore",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "operations",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7571187003"
+        },
+        {
+          "id": 102203,
+          "title": "Implementations Project Manager, Fund Admin",
+          "location": "Rio de Janeiro, Brazil",
+          "location_metro": "Rio de Janeiro, Brazil",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "manager",
+          "function": "operations",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/4936521003"
+        },
+        {
+          "id": 102204,
+          "title": "Implementations Specialist",
+          "location": "Rio de Janeiro, Brazil",
+          "location_metro": "Rio de Janeiro, Brazil",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "operations",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/4936543003"
+        },
+        {
+          "id": 102206,
+          "title": "International Tax Manager",
+          "location": "Seattle, WA",
+          "location_metro": "Seattle Metro",
+          "location_type": "onsite",
+          "salary": "$123,548 - $145,350",
+          "annual_salary_min": 123548.0,
+          "annual_salary_max": 145350.0,
+          "seniority": "manager",
+          "function": "finance",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7478847003"
+        },
+        {
+          "id": 102207,
+          "title": "International Tax Manager",
+          "location": "Sandy, UT",
+          "location_metro": "Salt Lake City Metro",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "manager",
+          "function": "finance",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7478849003"
+        },
+        {
+          "id": 102208,
+          "title": "International Tax Manager",
+          "location": "New York, NY",
+          "location_metro": "New York Metro",
+          "location_type": "onsite",
+          "salary": "$156,400 - $184,000",
+          "annual_salary_min": 156400.0,
+          "annual_salary_max": 184000.0,
+          "seniority": "manager",
+          "function": "finance",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7589183003"
+        },
+        {
+          "id": 102213,
+          "title": "Manager, Fund Controller",
+          "location": "New York, NY; Hamilton, NJ",
+          "location_metro": "New York Metro",
+          "location_type": "onsite",
+          "salary": "$148,800 - $186,000",
+          "annual_salary_min": 148800.0,
+          "annual_salary_max": 186000.0,
+          "seniority": "manager",
+          "function": "operations",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7595038003"
+        },
+        {
+          "id": 102214,
+          "title": "Manager, Tax Delivery",
+          "location": "Seattle, WA",
+          "location_metro": "Seattle Metro",
+          "location_type": "onsite",
+          "salary": "$123,548 - $145,350",
+          "annual_salary_min": 123548.0,
+          "annual_salary_max": 145350.0,
+          "seniority": "manager",
+          "function": "finance",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/6294044003"
+        },
+        {
+          "id": 102215,
+          "title": "Manager, Tax Delivery",
+          "location": "Sandy, UT",
+          "location_metro": "Salt Lake City Metro",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "manager",
+          "function": "finance",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/6294047003"
+        },
+        {
+          "id": 102216,
+          "title": "Mid Market Account Executive, LLC",
+          "location": "New York, NY",
+          "location_metro": "New York Metro",
+          "location_type": "onsite",
+          "salary": "$117,000 - $195,000",
+          "annual_salary_min": 117000.0,
+          "annual_salary_max": 195000.0,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7506961003"
+        },
+        {
+          "id": 102217,
+          "title": "Product Design Lead",
+          "location": "San Francisco, CA; Santa Clara, CA; Seattle, WA; New York, NY",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$191,750 - $225,000",
+          "annual_salary_min": 191750.0,
+          "annual_salary_max": 225000.0,
+          "seniority": "senior",
+          "function": "product",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7514076003"
+        },
+        {
+          "id": 102219,
+          "title": "Sales Development Representative",
+          "location": "Sydney, Australia",
+          "location_metro": "Sydney, Australia",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/6770401003"
+        },
+        {
+          "id": 102224,
+          "title": " Sales Development Representative - Private Equity",
+          "location": "San Francisco, CA",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$58,998 - $98,330",
+          "annual_salary_min": 58998.0,
+          "annual_salary_max": 98330.0,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7599038003"
+        },
+        {
+          "id": 102225,
+          "title": "Senior Account Executive, Limited Partners",
+          "location": "Chicago, IL",
+          "location_metro": "Chicago Metro",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "senior",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7505746003"
+        },
+        {
+          "id": 102227,
+          "title": "Senior Account Executive, Venture Capital, Established",
+          "location": "San Francisco, CA",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$199,200 - $332,000",
+          "annual_salary_min": 199200.0,
+          "annual_salary_max": 332000.0,
+          "seniority": "senior",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/6287262003"
+        },
+        {
+          "id": 102228,
+          "title": "Senior Associate, Tax Delivery",
+          "location": "Seattle, WA",
+          "location_metro": "Seattle Metro",
+          "location_type": "onsite",
+          "salary": "$90,440 - $106,400",
+          "annual_salary_min": 90440.0,
+          "annual_salary_max": 106400.0,
+          "seniority": "senior",
+          "function": "finance",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/6014075003"
+        },
+        {
+          "id": 102229,
+          "title": "Senior Associate, Tax Delivery",
+          "location": "Sandy, UT",
+          "location_metro": "Salt Lake City Metro",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "senior",
+          "function": "finance",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/6652041003"
+        },
+        {
+          "id": 102231,
+          "title": "Senior Fund Accountant",
+          "location": "Hamilton, New Jersey",
+          "location_metro": "New York Metro",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "senior",
+          "function": "operations",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/5705559003"
+        },
+        {
+          "id": 102234,
+          "title": "Senior Manager, People Systems",
+          "location": "San Francisco, CA;  New York, NY",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$196,000 - $245,000",
+          "annual_salary_min": 196000.0,
+          "annual_salary_max": 245000.0,
+          "seniority": "senior_manager",
+          "function": "people",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7497384003"
+        },
+        {
+          "id": 102235,
+          "title": "Senior Manager, People Systems",
+          "location": "Seattle, WA",
+          "location_metro": "Seattle Metro",
+          "location_type": "onsite",
+          "salary": "$186,200 - $232,750",
+          "annual_salary_min": 186200.0,
+          "annual_salary_max": 232750.0,
+          "seniority": "senior_manager",
+          "function": "people",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7610688003"
+        },
+        {
+          "id": 102236,
+          "title": "Senior Principal Product Designer",
+          "location": "San Francisco, CA; Santa Clara, CA; Seattle, WA; New York, NY",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$235,600 - $294,500",
+          "annual_salary_min": 235600.0,
+          "annual_salary_max": 294500.0,
+          "seniority": "senior",
+          "function": "product",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7537972003"
+        },
+        {
+          "id": 102237,
+          "title": "Senior Product Marketing Manager",
+          "location": "London, England",
+          "location_metro": "London, UK",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "manager",
+          "function": "marketing",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/6650288003"
+        },
+        {
+          "id": 102238,
+          "title": "Senior Product Marketing Manager, Venture Capital",
+          "location": "San Francisco, CA; Seattle, WA; New York, NY",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$147,050 - $173,000",
+          "annual_salary_min": 147050.0,
+          "annual_salary_max": 173000.0,
+          "seniority": "manager",
+          "function": "marketing",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7528290003"
+        },
+        {
+          "id": 102240,
+          "title": "Senior Software Engineer, Data Ecosystem",
+          "location": "Toronto, Ontario, Canada",
+          "location_metro": "Toronto, Canada",
+          "location_type": "onsite",
+          "salary": "$142,800 - $168,000",
+          "annual_salary_min": 142800.0,
+          "annual_salary_max": 168000.0,
+          "seniority": "senior",
+          "function": "engineering",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7581642003"
+        },
+        {
+          "id": 102241,
+          "title": "Senior Software Engineer, Data Ecosystem",
+          "location": "Waterloo, Ontario, Canada",
+          "location_metro": "Waterloo, Canada",
+          "location_type": "onsite",
+          "salary": "$142,800 - $168,000",
+          "annual_salary_min": 142800.0,
+          "annual_salary_max": 168000.0,
+          "seniority": "senior",
+          "function": "engineering",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7560247003"
+        },
+        {
+          "id": 102242,
+          "title": "Senior Software Engineer, Fund Operations",
+          "location": "Waterloo, Ontario, Canada",
+          "location_metro": "Waterloo, Canada",
+          "location_type": "onsite",
+          "salary": "$142,800 - $213,000",
+          "annual_salary_min": 142800.0,
+          "annual_salary_max": 213000.0,
+          "seniority": "senior",
+          "function": "engineering",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7419086003"
+        },
+        {
+          "id": 102243,
+          "title": "Senior Software Engineer, Fund Operations",
+          "location": "San Francisco, CA; Santa Clara, CA, Seattle, WA; New York, NY",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$170,000 - $237,000",
+          "annual_salary_min": 170000.0,
+          "annual_salary_max": 237000.0,
+          "seniority": "senior",
+          "function": "engineering",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7417799003"
+        },
+        {
+          "id": 102244,
+          "title": "Senior Software Engineer, Fund Operations",
+          "location": "Toronto, Ontario, Canada",
+          "location_metro": "Toronto, Canada",
+          "location_type": "onsite",
+          "salary": "$142,800 - $213,000",
+          "annual_salary_min": 142800.0,
+          "annual_salary_max": 213000.0,
+          "seniority": "senior",
+          "function": "engineering",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7444709003"
+        },
+        {
+          "id": 102245,
+          "title": "Senior Software Engineer I, Fund Admin, Financial Reporting",
+          "location": "Toronto, Ontario, Canada",
+          "location_metro": "Toronto, Canada",
+          "location_type": "onsite",
+          "salary": "$142,800 - $168,000",
+          "annual_salary_min": 142800.0,
+          "annual_salary_max": 168000.0,
+          "seniority": "senior",
+          "function": "engineering",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7491202003"
+        },
+        {
+          "id": 102246,
+          "title": "Senior Software Engineer I, Fund Admin, Financial Reporting",
+          "location": "Waterloo, Ontario, Canada",
+          "location_metro": "Waterloo, Canada",
+          "location_type": "onsite",
+          "salary": "$142,800 - $168,000",
+          "annual_salary_min": 142800.0,
+          "annual_salary_max": 168000.0,
+          "seniority": "senior",
+          "function": "engineering",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7499347003"
+        },
+        {
+          "id": 102248,
+          "title": "Senior Software Engineer I, Integrations ",
+          "location": "Rio de Janeiro, Brazil",
+          "location_metro": "Rio de Janeiro, Brazil",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "senior",
+          "function": "engineering",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/6266691003"
+        },
+        {
+          "id": 102249,
+          "title": "Senior Software Engineer, Limited Partner Portfolio Analytics",
+          "location": "London, England",
+          "location_metro": "London, UK",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "senior",
+          "function": "engineering",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7528273003"
+        },
+        {
+          "id": 102250,
+          "title": "Senior / Strategic Account Executive, Fund Admin",
+          "location": "San Francisco, CA",
+          "location_metro": "San Francisco Bay Area",
+          "location_type": "onsite",
+          "salary": "$332,000 - $355,000",
+          "annual_salary_min": 332000.0,
+          "annual_salary_max": 355000.0,
+          "seniority": "senior",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/6359140003"
+        },
+        {
+          "id": 102251,
+          "title": "Senior / Strategic Account Executive, Fund Admin",
+          "location": "New York, NY",
+          "location_metro": "New York Metro",
+          "location_type": "onsite",
+          "salary": "$325,000 - $355,000",
+          "annual_salary_min": 325000.0,
+          "annual_salary_max": 355000.0,
+          "seniority": "senior",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/6359143003"
+        },
+        {
+          "id": 102254,
+          "title": "Senior Talent Acquisition Partner, AMEA",
+          "location": "Singapore, Singapore",
+          "location_metro": "Singapore",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "senior",
+          "function": "people",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7535696003"
+        },
+        {
+          "id": 102257,
+          "title": "Staff Engineer, Enterprise Systems Architect",
+          "location": "New York, NY; Seattle, WA; Santa Clara, CA; Salt Lake City, UT",
+          "location_metro": "New York Metro",
+          "location_type": "onsite",
+          "salary": "$259,200 - $324,000",
+          "annual_salary_min": 259200.0,
+          "annual_salary_max": 324000.0,
+          "seniority": "senior",
+          "function": "engineering",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7383216003"
+        },
+        {
+          "id": 102258,
+          "title": "Staff Engineer, Enterprise Systems Architect",
+          "location": "Waterloo, Ontario, Canada",
+          "location_metro": "Waterloo, Canada",
+          "location_type": "onsite",
+          "salary": "$241,600 - $302,000",
+          "annual_salary_min": 241600.0,
+          "annual_salary_max": 302000.0,
+          "seniority": "senior",
+          "function": "engineering",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7501294003"
+        },
+        {
+          "id": 102259,
+          "title": "Strategic Account Executive, Private Equity",
+          "location": "London, England",
+          "location_metro": "London, UK",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "sales",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7492870003"
+        },
+        {
+          "id": 102260,
+          "title": "Strategy & BizOps Intern",
+          "location": "Singapore",
+          "location_metro": "Singapore",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "entry",
+          "function": "operations",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/7497885003"
+        },
+        {
+          "id": 102261,
+          "title": "Support Analyst, Corporations",
+          "location": "Sandy, UT",
+          "location_metro": "Salt Lake City Metro",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "operations",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/5054068003"
+        },
+        {
+          "id": 102262,
+          "title": "Support Analyst, Corporations",
+          "location": "Rio de Janeiro, Brazil",
+          "location_metro": "Rio de Janeiro, Brazil",
+          "location_type": "onsite",
+          "salary": "",
+          "annual_salary_min": null,
+          "annual_salary_max": null,
+          "seniority": "mid",
+          "function": "operations",
+          "date_posted": "2026-02-01 17:48:22",
+          "source_url": "https://job-boards.greenhouse.io/carta/jobs/4936573003"
+        }
+      ]
+    },
+    {
+      "company": "pulley",
+      "industry": "Equity Management",
+      "num_employees": null,
+      "revenue": null,
+      "total_active_roles": 6,
+      "by_function": {
+        "engineering": 3,
+        "sales": 1,
+        "operations": 1,
+        "marketing": 1
+      },
+      "by_seniority": {
+        "senior": 3,
+        "manager": 2,
+        "mid": 1
+      },
+      "by_location_type": {
+        "remote": 6
+      },
+      "by_metro": {
+        "unknown": 6
+      },
+      "salary": {
+        "count_with_salary": 6,
+        "pct_with_salary": 100.0,
+        "overall_min": 93000.0,
+        "overall_max": 200000.0,
+        "avg_midpoint": 160250,
+        "median_midpoint": 165500,
+        "by_function": {
+          "engineering": {
+            "avg_midpoint": 181667,
+            "count": 3
+          },
+          "sales": {
+            "avg_midpoint": 166000,
+            "count": 1
+          },
+          "operations": {
+            "avg_midpoint": 103000,
+            "count": 1
+          },
+          "marketing": {
+            "avg_midpoint": 147500,
+            "count": 1
+          }
+        },
+        "by_seniority": {
+          "senior": {
+            "avg_midpoint": 161000,
+            "count": 3
+          },
+          "mid": {
+            "avg_midpoint": 165000,
+            "count": 1
+          },
+          "manager": {
+            "avg_midpoint": 156750,
+            "count": 2
+          }
+        }
+      },
+      "signals": {
+        "hiring_signals": {
+          "Growth Hire": 6
+        },
+        "team_structure": {
+          "Build Team": 6,
+          "First Hire": 3
+        },
+        "comp_signals": {
+          "Equity": 6,
+          "Ote Mentioned": 1
+        },
+        "motion": {
+          "Channel": 1
+        }
+      },
+      "tools": {
+        "Stripe Api": 6,
+        "Csharp": 3,
+        "Golang": 3,
+        "Javascript": 2,
+        "React": 2,
+        "Hubspot": 1,
+        "Gong": 1,
+        "Google Analytics": 1,
+        "Segment": 1,
+        "Figma": 1,
+        "Slack": 1,
+        "Notion": 1,
+        "Postgresql": 1,
+        "Redis": 1
+      },
+      "tool_categories": {
+        "Languages": 8,
+        "Finance_Tools": 6,
+        "Collaboration": 3,
+        "Frameworks": 2,
+        "Marketing_Tools": 2,
+        "Databases": 2,
+        "CRM": 1,
+        "Sales_Engagement": 1
+      },
+      "date_range": {
+        "earliest": "2026-01-21 11:43:32",
+        "latest": "2026-02-17 16:49:53"
+      },
+      "listings": [
+        {
+          "id": 102265,
+          "title": "Senior Backend Engineer, Core Product",
+          "location": "Remote",
+          "location_metro": "Unknown",
+          "location_type": "remote",
+          "salary": "$180,000 - $200,000",
+          "annual_salary_min": 180000.0,
+          "annual_salary_max": 200000.0,
+          "seniority": "senior",
+          "function": "engineering",
+          "date_posted": "2026-02-17 16:49:53",
+          "source_url": "https://job-boards.greenhouse.io/pulley/jobs/5123508008"
+        },
+        {
+          "id": 102268,
+          "title": "Senior Fullstack Engineer, AI",
+          "location": "Remote",
+          "location_metro": "Unknown",
+          "location_type": "remote",
+          "salary": "$180,000 - $200,000",
+          "annual_salary_min": 180000.0,
+          "annual_salary_max": 200000.0,
+          "seniority": "senior",
+          "function": "engineering",
+          "date_posted": "2026-02-17 11:52:12",
+          "source_url": "https://job-boards.greenhouse.io/pulley/jobs/5122727008"
+        },
+        {
+          "id": 102263,
+          "title": "Frontend Engineer II, Core Product",
+          "location": "Remote",
+          "location_metro": "Unknown",
+          "location_type": "remote",
+          "salary": "$150,000 - $180,000",
+          "annual_salary_min": 150000.0,
+          "annual_salary_max": 180000.0,
+          "seniority": "mid",
+          "function": "engineering",
+          "date_posted": "2026-02-17 11:51:40",
+          "source_url": "https://job-boards.greenhouse.io/pulley/jobs/5122750008"
+        },
+        {
+          "id": 102266,
+          "title": "Senior Channel Partner Manager",
+          "location": "Remote",
+          "location_metro": "Unknown",
+          "location_type": "remote",
+          "salary": "$157,000 - $175,000",
+          "annual_salary_min": 157000.0,
+          "annual_salary_max": 175000.0,
+          "seniority": "manager",
+          "function": "sales",
+          "date_posted": "2026-01-27 20:18:23",
+          "source_url": "https://job-boards.greenhouse.io/pulley/jobs/5098932008"
+        },
+        {
+          "id": 102267,
+          "title": "Senior Financial Reporting Analyst",
+          "location": "Remote",
+          "location_metro": "Unknown",
+          "location_type": "remote",
+          "salary": "$93,000 - $113,000",
+          "annual_salary_min": 93000.0,
+          "annual_salary_max": 113000.0,
+          "seniority": "senior",
+          "function": "operations",
+          "date_posted": "2026-01-26 18:15:51",
+          "source_url": "https://job-boards.greenhouse.io/pulley/jobs/5052414008"
+        },
+        {
+          "id": 102264,
+          "title": "Product Marketing Manager",
+          "location": "Remote",
+          "location_metro": "Unknown",
+          "location_type": "remote",
+          "salary": "$140,000 - $155,000",
+          "annual_salary_min": 140000.0,
+          "annual_salary_max": 155000.0,
+          "seniority": "manager",
+          "function": "marketing",
+          "date_posted": "2026-01-21 11:43:32",
+          "source_url": "https://job-boards.greenhouse.io/pulley/jobs/5049980008"
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "hiring_volume": [
+      {
+        "company": "carta",
+        "total": 88
+      },
+      {
+        "company": "pulley",
+        "total": 6
+      }
+    ],
+    "hiring_aggressiveness": [
+      {
+        "company": "carta",
+        "total_roles": 88,
+        "growth_hires": 34,
+        "immediate_hires": 2,
+        "aggression_score": 143.0
+      },
+      {
+        "company": "pulley",
+        "total_roles": 6,
+        "growth_hires": 6,
+        "immediate_hires": 0,
+        "aggression_score": 15.0
+      }
+    ],
+    "compensation": [
+      {
+        "company": "carta",
+        "avg_midpoint": 187125,
+        "median_midpoint": 170200,
+        "roles_with_salary": 43,
+        "pct_with_salary": 48.9
+      },
+      {
+        "company": "pulley",
+        "avg_midpoint": 160250,
+        "median_midpoint": 165500,
+        "roles_with_salary": 6,
+        "pct_with_salary": 100.0
+      }
+    ],
+    "comp_vs_market": [
+      {
+        "company": "carta",
+        "function": "operations",
+        "seniority": "director",
+        "company_avg": 284031,
+        "market_avg": 147878,
+        "diff_pct": 92.1
+      },
+      {
+        "company": "carta",
+        "function": "people",
+        "seniority": "director",
+        "company_avg": 284031,
+        "market_avg": 148190,
+        "diff_pct": 91.7
+      },
+      {
+        "company": "carta",
+        "function": "sales",
+        "seniority": "director",
+        "company_avg": 284031,
+        "market_avg": 154160,
+        "diff_pct": 84.2
+      },
+      {
+        "company": "carta",
+        "function": "marketing",
+        "seniority": "director",
+        "company_avg": 284031,
+        "market_avg": 160112,
+        "diff_pct": 77.4
+      },
+      {
+        "company": "pulley",
+        "function": "marketing",
+        "seniority": "mid",
+        "company_avg": 165000,
+        "market_avg": 98463,
+        "diff_pct": 67.6
+      },
+      {
+        "company": "carta",
+        "function": "finance",
+        "seniority": "director",
+        "company_avg": 284031,
+        "market_avg": 171083,
+        "diff_pct": 66.0
+      },
+      {
+        "company": "pulley",
+        "function": "sales",
+        "seniority": "mid",
+        "company_avg": 165000,
+        "market_avg": 106400,
+        "diff_pct": 55.1
+      },
+      {
+        "company": "carta",
+        "function": "marketing",
+        "seniority": "mid",
+        "company_avg": 135036,
+        "market_avg": 98463,
+        "diff_pct": 37.1
+      },
+      {
+        "company": "carta",
+        "function": "people",
+        "seniority": "senior",
+        "company_avg": 200240,
+        "market_avg": 147258,
+        "diff_pct": 36.0
+      },
+      {
+        "company": "carta",
+        "function": "operations",
+        "seniority": "senior",
+        "company_avg": 200240,
+        "market_avg": 148169,
+        "diff_pct": 35.1
+      },
+      {
+        "company": "carta",
+        "function": "finance",
+        "seniority": "senior",
+        "company_avg": 200240,
+        "market_avg": 149817,
+        "diff_pct": 33.7
+      },
+      {
+        "company": "carta",
+        "function": "product",
+        "seniority": "director",
+        "company_avg": 284031,
+        "market_avg": 215536,
+        "diff_pct": 31.8
+      },
+      {
+        "company": "carta",
+        "function": "engineering",
+        "seniority": "director",
+        "company_avg": 284031,
+        "market_avg": 218754,
+        "diff_pct": 29.8
+      },
+      {
+        "company": "carta",
+        "function": "sales",
+        "seniority": "mid",
+        "company_avg": 135036,
+        "market_avg": 106400,
+        "diff_pct": 26.9
+      },
+      {
+        "company": "carta",
+        "function": "sales",
+        "seniority": "senior",
+        "company_avg": 200240,
+        "market_avg": 162424,
+        "diff_pct": 23.3
+      },
+      {
+        "company": "carta",
+        "function": "people",
+        "seniority": "mid",
+        "company_avg": 135036,
+        "market_avg": 111526,
+        "diff_pct": 21.1
+      },
+      {
+        "company": "pulley",
+        "function": "operations",
+        "seniority": "mid",
+        "company_avg": 165000,
+        "market_avg": 139001,
+        "diff_pct": 18.7
+      },
+      {
+        "company": "carta",
+        "function": "marketing",
+        "seniority": "senior",
+        "company_avg": 200240,
+        "market_avg": 169106,
+        "diff_pct": 18.4
+      },
+      {
+        "company": "carta",
+        "function": "operations",
+        "seniority": "senior_manager",
+        "company_avg": 214988,
+        "market_avg": 189108,
+        "diff_pct": 13.7
+      },
+      {
+        "company": "pulley",
+        "function": "engineering",
+        "seniority": "manager",
+        "company_avg": 156750,
+        "market_avg": 140600,
+        "diff_pct": 11.5
+      },
+      {
+        "company": "pulley",
+        "function": "operations",
+        "seniority": "senior",
+        "company_avg": 161000,
+        "market_avg": 148169,
+        "diff_pct": 8.7
+      },
+      {
+        "company": "carta",
+        "function": "finance",
+        "seniority": "mid",
+        "company_avg": 135036,
+        "market_avg": 125721,
+        "diff_pct": 7.4
+      },
+      {
+        "company": "carta",
+        "function": "engineering",
+        "seniority": "manager",
+        "company_avg": 150160,
+        "market_avg": 140600,
+        "diff_pct": 6.8
+      },
+      {
+        "company": "carta",
+        "function": "engineering",
+        "seniority": "senior",
+        "company_avg": 200240,
+        "market_avg": 193517,
+        "diff_pct": 3.5
+      },
+      {
+        "company": "carta",
+        "function": "finance",
+        "seniority": "manager",
+        "company_avg": 150160,
+        "market_avg": 146366,
+        "diff_pct": 2.6
+      },
+      {
+        "company": "carta",
+        "function": "product",
+        "seniority": "senior",
+        "company_avg": 200240,
+        "market_avg": 195256,
+        "diff_pct": 2.6
+      },
+      {
+        "company": "pulley",
+        "function": "marketing",
+        "seniority": "manager",
+        "company_avg": 156750,
+        "market_avg": 153762,
+        "diff_pct": 1.9
+      },
+      {
+        "company": "pulley",
+        "function": "sales",
+        "seniority": "manager",
+        "company_avg": 156750,
+        "market_avg": 155000,
+        "diff_pct": 1.1
+      },
+      {
+        "company": "carta",
+        "function": "finance",
+        "seniority": "associate",
+        "company_avg": 80845,
+        "market_avg": 80845,
+        "diff_pct": 0.0
+      },
+      {
+        "company": "carta",
+        "function": "people",
+        "seniority": "senior_manager",
+        "company_avg": 214988,
+        "market_avg": 214988,
+        "diff_pct": 0.0
+      },
+      {
+        "company": "carta",
+        "function": "marketing",
+        "seniority": "head",
+        "company_avg": 198000,
+        "market_avg": 198000,
+        "diff_pct": 0.0
+      },
+      {
+        "company": "pulley",
+        "function": "sales",
+        "seniority": "senior",
+        "company_avg": 161000,
+        "market_avg": 162424,
+        "diff_pct": -0.9
+      },
+      {
+        "company": "pulley",
+        "function": "operations",
+        "seniority": "manager",
+        "company_avg": 156750,
+        "market_avg": 158392,
+        "diff_pct": -1.0
+      },
+      {
+        "company": "carta",
+        "function": "marketing",
+        "seniority": "manager",
+        "company_avg": 150160,
+        "market_avg": 153762,
+        "diff_pct": -2.3
+      },
+      {
+        "company": "carta",
+        "function": "operations",
+        "seniority": "mid",
+        "company_avg": 135036,
+        "market_avg": 139001,
+        "diff_pct": -2.9
+      },
+      {
+        "company": "carta",
+        "function": "sales",
+        "seniority": "manager",
+        "company_avg": 150160,
+        "market_avg": 155000,
+        "diff_pct": -3.1
+      },
+      {
+        "company": "pulley",
+        "function": "marketing",
+        "seniority": "senior",
+        "company_avg": 161000,
+        "market_avg": 169106,
+        "diff_pct": -4.8
+      },
+      {
+        "company": "carta",
+        "function": "operations",
+        "seniority": "manager",
+        "company_avg": 150160,
+        "market_avg": 158392,
+        "diff_pct": -5.2
+      },
+      {
+        "company": "carta",
+        "function": "product",
+        "seniority": "mid",
+        "company_avg": 135036,
+        "market_avg": 143750,
+        "diff_pct": -6.1
+      },
+      {
+        "company": "carta",
+        "function": "operations",
+        "seniority": "associate",
+        "company_avg": 80845,
+        "market_avg": 90108,
+        "diff_pct": -10.3
+      },
+      {
+        "company": "carta",
+        "function": "operations",
+        "seniority": "head",
+        "company_avg": 198000,
+        "market_avg": 227639,
+        "diff_pct": -13.0
+      },
+      {
+        "company": "pulley",
+        "function": "engineering",
+        "seniority": "mid",
+        "company_avg": 165000,
+        "market_avg": 191470,
+        "diff_pct": -13.8
+      },
+      {
+        "company": "pulley",
+        "function": "engineering",
+        "seniority": "senior",
+        "company_avg": 161000,
+        "market_avg": 193517,
+        "diff_pct": -16.8
+      },
+      {
+        "company": "carta",
+        "function": "engineering",
+        "seniority": "mid",
+        "company_avg": 135036,
+        "market_avg": 191470,
+        "diff_pct": -29.5
+      }
+    ],
+    "team_building": [
+      {
+        "company": "pulley",
+        "build_team": 6,
+        "first_hire": 3,
+        "player_coach": 0,
+        "reports_cro": 0,
+        "reports_ceo": 0,
+        "reports_vp": 0,
+        "build_pct": 100.0,
+        "total_team_signals": 9
+      },
+      {
+        "company": "carta",
+        "build_team": 38,
+        "first_hire": 6,
+        "player_coach": 0,
+        "reports_cro": 5,
+        "reports_ceo": 0,
+        "reports_vp": 1,
+        "build_pct": 88.0,
+        "total_team_signals": 50
+      }
+    ],
+    "tech_stack": {
+      "Golang": {
+        "carta": 15,
+        "pulley": 3
+      },
+      "Salesforce": {
+        "carta": 17,
+        "pulley": 0
+      },
+      "Javascript": {
+        "carta": 9,
+        "pulley": 2
+      },
+      "React": {
+        "carta": 9,
+        "pulley": 2
+      },
+      "Marketo": {
+        "carta": 10,
+        "pulley": 0
+      },
+      "Postgresql": {
+        "carta": 8,
+        "pulley": 1
+      },
+      "Segment": {
+        "carta": 8,
+        "pulley": 1
+      },
+      "Django": {
+        "carta": 8,
+        "pulley": 0
+      },
+      "Python": {
+        "carta": 8,
+        "pulley": 0
+      },
+      "Stripe Api": {
+        "carta": 0,
+        "pulley": 6
+      },
+      "Workday": {
+        "carta": 5,
+        "pulley": 0
+      },
+      "Google Analytics": {
+        "carta": 3,
+        "pulley": 1
+      },
+      "Java": {
+        "carta": 4,
+        "pulley": 0
+      },
+      "Slack": {
+        "carta": 3,
+        "pulley": 1
+      },
+      "Csharp": {
+        "carta": 0,
+        "pulley": 3
+      },
+      "Figma": {
+        "carta": 2,
+        "pulley": 1
+      },
+      "Airflow": {
+        "carta": 2,
+        "pulley": 0
+      },
+      "Dbt": {
+        "carta": 2,
+        "pulley": 0
+      },
+      "Jira": {
+        "carta": 2,
+        "pulley": 0
+      },
+      "Looker": {
+        "carta": 2,
+        "pulley": 0
+      },
+      "Quickbooks": {
+        "carta": 2,
+        "pulley": 0
+      },
+      "Snowflake": {
+        "carta": 2,
+        "pulley": 0
+      },
+      "Gong": {
+        "carta": 0,
+        "pulley": 1
+      },
+      "Hubspot": {
+        "carta": 0,
+        "pulley": 1
+      },
+      "Notion": {
+        "carta": 0,
+        "pulley": 1
+      },
+      "Redis": {
+        "carta": 0,
+        "pulley": 1
+      }
+    },
+    "geographic": {
+      "San Francisco Bay Area": {
+        "carta": 19,
+        "pulley": 0
+      },
+      "New York Metro": {
+        "carta": 13,
+        "pulley": 0
+      },
+      "London, UK": {
+        "carta": 9,
+        "pulley": 0
+      },
+      "Rio de Janeiro, Brazil": {
+        "carta": 8,
+        "pulley": 0
+      },
+      "Singapore": {
+        "carta": 7,
+        "pulley": 0
+      }
+    },
+    "remote_vs_onsite": [
+      {
+        "company": "pulley",
+        "remote": 6,
+        "onsite": 0,
+        "remote_pct": 100.0
+      },
+      {
+        "company": "carta",
+        "remote": 0,
+        "onsite": 88,
+        "remote_pct": 0.0
+      }
+    ],
+    "function_mix": {
+      "sales": {
+        "carta": 26,
+        "pulley": 1
+      },
+      "engineering": {
+        "carta": 15,
+        "pulley": 3
+      },
+      "operations": {
+        "carta": 16,
+        "pulley": 1
+      },
+      "finance": {
+        "carta": 12,
+        "pulley": 0
+      },
+      "marketing": {
+        "carta": 8,
+        "pulley": 1
+      },
+      "people": {
+        "carta": 8,
+        "pulley": 0
+      },
+      "product": {
+        "carta": 3,
+        "pulley": 0
+      }
+    }
+  }
+}
