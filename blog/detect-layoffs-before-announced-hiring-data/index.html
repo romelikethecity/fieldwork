@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detect Layoffs Early with Hiring Data | Fieldwork</title>
+    <meta name="description" content="Hiring data reveals layoffs and restructuring 30-90 days before public announcements. Learn the patterns that signal workforce reductions are coming.">
+    <link rel="canonical" href="https://runfieldwork.com/blog/detect-layoffs-before-announced-hiring-data/">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="icon" href="/assets/favicons/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicons/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#14171C" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#F0EDE8" media="(prefers-color-scheme: light)">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://runfieldwork.com/blog/detect-layoffs-before-announced-hiring-data/">
+    <meta property="og:title" content="Detect Layoffs Early with Hiring Data | Fieldwork">
+    <meta property="og:description" content="Hiring data reveals layoffs and restructuring 30-90 days before public announcements. Learn the patterns that signal workforce reductions are coming.">
+    <meta property="og:site_name" content="Fieldwork">
+    <meta property="og:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Detect Layoffs Early with Hiring Data | Fieldwork">
+    <meta name="twitter:description" content="Hiring data reveals layoffs and restructuring 30-90 days before public announcements. Learn the patterns that signal workforce reductions are coming.">
+    <meta name="twitter:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+
+    <!-- Fonts (non-blocking) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"></noscript>
+
+    <!-- Brand CSS -->
+    <link rel="stylesheet" href="/css/fieldwork.css?v=1">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://runfieldwork.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://runfieldwork.com/blog/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "How to Detect Layoffs Before They're Announced Using Hiring Data",
+                    "item": "https://runfieldwork.com/blog/detect-layoffs-before-announced-hiring-data/"
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "headline": "How to Detect Layoffs Before They're Announced Using Hiring Data",
+            "description": "Hiring data reveals layoffs and restructuring 30-90 days before public announcements. Learn the patterns that signal workforce reductions are coming.",
+            "url": "https://runfieldwork.com/blog/detect-layoffs-before-announced-hiring-data/",
+            "datePublished": "2026-03-29",
+            "dateModified": "2026-03-29",
+            "author": {
+                "@type": "Organization",
+                "name": "Fieldwork Team",
+                "url": "https://runfieldwork.com"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Fieldwork",
+                "url": "https://runfieldwork.com"
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://runfieldwork.com/blog/detect-layoffs-before-announced-hiring-data/"
+            }
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Can job posting data predict layoffs?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. A sudden drop in open roles (30%+ in a month), combined with the removal of recently posted positions, is a strong layoff leading indicator. This pattern typically appears 30-90 days before public announcements."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What hiring patterns signal a company is about to lay off employees?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Key patterns: hiring freeze (all new postings stop), role pullbacks (recently posted roles removed), function-specific cuts (one department's postings disappear while others continue), and restructuring signals (old roles removed, new differently-titled roles appear)."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How reliable is hiring data for predicting layoffs?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Highly reliable as a directional signal. A 50%+ drop in open roles combined with removed postings has historically preceded layoffs by 30-90 days. The timing is approximate, but the directional signal is strong."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why do hiring patterns change before layoffs are announced?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Companies implement hiring freezes before layoffs to stop adding headcount they plan to cut. Budget reviews and headcount planning happen weeks before the actual layoff event. The freeze shows up in job posting data as reduced or eliminated new postings."
+                    }
+                }
+            ]
+        }
+    ]
+}
+    </script>
+<style>
+        /* ─── LAYOUT ─── */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        a { color: var(--fw-primary); text-decoration: none; transition: color var(--fw-transition-fast); }
+        a:hover { color: var(--fw-primary-hover); }
+        .fw-btn.fw-btn--primary, .fw-btn.fw-btn--primary:hover { color: #fff; }
+        html { scroll-behavior: smooth; }
+
+        /* ─── HEADER ─── */
+        .site-header {
+            background: rgba(20, 23, 28, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--fw-border);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-link { text-decoration: none; color: var(--fw-text); }
+        .nav-links { display: flex; gap: 28px; align-items: center; list-style: none; margin: 0; padding: 0; }
+        .nav-links a {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            font-weight: 500;
+            transition: color var(--fw-transition-fast);
+        }
+        .nav-links a:hover { color: var(--fw-text); }
+        .mobile-toggle { display: none; background: none; border: none; color: var(--fw-text); font-size: 1.5rem; cursor: pointer; padding: 4px; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--fw-bg); border-bottom: 1px solid var(--fw-border); padding: 16px 24px; gap: 16px; }
+            .nav-links.open { display: flex; }
+            .mobile-toggle { display: block; }
+        }
+
+        /* ─── FOOTER ─── */
+        .site-footer { border-top: 1px solid var(--fw-border); padding: 32px 0; }
+        .footer-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: var(--fw-text-sm); color: var(--fw-text-muted);
+        }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a { color: var(--fw-text-muted); font-size: var(--fw-text-sm); }
+        .footer-links a:hover { color: var(--fw-text); }
+        @media (max-width: 768px) { .footer-inner { flex-direction: column; gap: 16px; } }
+
+        /* ─── BREADCRUMBS ─── */
+        .breadcrumbs {
+            padding: 16px 0;
+            font-size: var(--fw-text-sm);
+            color: var(--fw-text-muted);
+        }
+        .breadcrumbs a { color: var(--fw-text-muted); }
+        .breadcrumbs a:hover { color: var(--fw-primary); }
+        .breadcrumbs .sep { margin: 0 8px; opacity: 0.4; }
+
+        /* ─── ARTICLE ─── */
+        .article-header {
+            padding: 48px 0 32px;
+            border-bottom: 1px solid var(--fw-border);
+            margin-bottom: 40px;
+        }
+        .article-meta {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding-bottom: 64px;
+        }
+        .article-content h2 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-2xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            letter-spacing: -0.5px;
+            margin: 48px 0 16px;
+            line-height: var(--fw-leading-snug);
+        }
+        .article-content h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 36px 0 12px;
+            line-height: var(--fw-leading-snug);
+        }
+        .article-content p {
+            margin: 0 0 20px;
+            line-height: var(--fw-leading-loose);
+            color: var(--fw-text);
+        }
+        .article-content ul, .article-content ol {
+            margin: 0 0 20px;
+            padding-left: 24px;
+            color: var(--fw-text);
+        }
+        .article-content li {
+            margin-bottom: 8px;
+            line-height: var(--fw-leading-normal);
+        }
+        .article-content blockquote {
+            border-left: 3px solid var(--fw-primary);
+            margin: 24px 0;
+            padding: 16px 24px;
+            background: var(--fw-primary-alpha-06);
+            border-radius: 0 var(--fw-radius-md) var(--fw-radius-md) 0;
+            color: var(--fw-text);
+        }
+        .article-content blockquote p { margin: 0; }
+        .article-content strong { color: var(--fw-text-strong); }
+        .article-content a { color: var(--fw-primary); text-decoration: underline; text-underline-offset: 2px; }
+        .article-content a:hover { color: var(--fw-primary-hover); }
+
+        /* ─── FAQ ─── */
+        .faq-section {
+            margin: 48px 0 32px;
+            padding-top: 32px;
+            border-top: 1px solid var(--fw-border);
+        }
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        .faq-item h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-lg);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 8px;
+        }
+        .faq-item p {
+            margin: 0;
+            color: var(--fw-text);
+            line-height: var(--fw-leading-normal);
+        }
+
+        /* ─── CTA BANNER ─── */
+        .cta-banner {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border-accent);
+            border-radius: var(--fw-radius-xl);
+            padding: 40px;
+            text-align: center;
+            margin: 48px 0;
+        }
+        .cta-banner h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-2xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 12px;
+        }
+        .cta-banner p {
+            color: var(--fw-text-muted);
+            margin: 0 0 20px;
+        }
+
+        /* ─── BLOG INDEX ─── */
+        .blog-hero {
+            padding: 64px 0 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--fw-border);
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+            padding: 48px 0;
+        }
+        .blog-card {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border);
+            border-radius: var(--fw-radius-xl);
+            padding: 28px;
+            transition: border-color var(--fw-transition-normal), box-shadow var(--fw-transition-normal);
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            border-color: var(--fw-border-accent);
+            box-shadow: var(--fw-shadow-glow);
+        }
+        .blog-card a { text-decoration: none; }
+        .blog-card .card-category {
+            font-family: var(--fw-font-mono);
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--fw-primary);
+            margin-bottom: 12px;
+        }
+        .blog-card h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 10px;
+            line-height: var(--fw-leading-snug);
+        }
+        .blog-card h3 a { color: var(--fw-text-strong); }
+        .blog-card h3 a:hover { color: var(--fw-primary); }
+        .blog-card .card-excerpt {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            line-height: var(--fw-leading-normal);
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+        .blog-card .card-meta {
+            font-family: var(--fw-font-mono);
+            font-size: 11px;
+            color: var(--fw-text-dim);
+        }
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo-link">
+            <span class="fw-wordmark fw-wordmark--sm">fieldwork<span class="fw-dot"></span></span>
+        </a>
+        <nav class="nav-links" id="main-nav">
+            <a href="/#demo">Demo</a>
+            <a href="/#reports">Reports</a>
+            <a href="/#pricing">Pricing</a>
+            <a href="/blog/">Blog</a>
+            <a href="/#sample-report" class="fw-btn fw-btn--primary fw-btn--sm">Get Free Sample</a>
+        </nav>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+</header>
+
+<div class="breadcrumbs"><div class="container"><a href="https://runfieldwork.com/">Home</a><span class="sep">/</span><a href="https://runfieldwork.com/blog/">Blog</a><span class="sep">/</span><span>How to Detect Layoffs Before They're Announced Using Hiring Data</span></div></div>
+
+<article>
+    <header class="article-header">
+        <div class="container" style="max-width: 720px; margin: 0 auto;">
+            <div class="article-meta">
+                <span class="fw-badge fw-badge--ember">How-To Guide</span>
+                <span class="fw-mono" style="color: var(--fw-text-muted); font-size: 12px;">2026-03-29</span>
+            </div>
+            <h1 class="fw-h2">How to Detect Layoffs Before They're Announced Using Hiring Data</h1>
+            <p class="fw-body-lg" style="color: var(--fw-text-muted); margin-top: 12px;">The absence of hiring data is a signal too. Here is how to spot layoffs before the headlines break.</p>
+        </div>
+    </header>
+
+    <div class="article-content container">
+
+<h2>The Signal No One Talks About</h2>
+
+<p>Most competitive intelligence focuses on what companies are doing. Hiring intelligence can also reveal what companies have stopped doing. And that absence of activity is often the most consequential signal of all.</p>
+
+<p>Layoffs are disruptive events. They change competitive dynamics, create talent pools, destabilize customer relationships, and signal strategic shifts. Knowing about a layoff 30-90 days before the public announcement gives you time to act: recruit affected talent, protect shared customers, or adjust your competitive positioning.</p>
+
+<p>The signals are hiding in job posting data. Here is how to read them.</p>
+
+<h2>Pattern 1: The Sudden Freeze</h2>
+
+<p>A company that has been posting 5-10 new roles per week suddenly drops to zero. Not a gradual decline. Zero. For two consecutive weeks.</p>
+
+<p>This is the most common pre-layoff signal and the easiest to detect. A hiring freeze is almost always the first step in a cost reduction process. Leadership decides to stop adding headcount before deciding which existing headcount to cut. The freeze gives finance time to model scenarios.</p>
+
+<p>What to watch for:</p>
+<ul>
+<li><strong>New postings drop to zero</strong> after a sustained period of activity</li>
+<li><strong>Existing postings remain up</strong> but no new ones appear (the hiring team has been told to stop but has not yet pulled existing posts)</li>
+<li><strong>The company website still says "we're hiring"</strong> but the actual job list has not changed in 2+ weeks</li>
+</ul>
+
+<p>Timeline: hiring freeze typically precedes layoffs by 30-60 days. The freeze starts when the decision is made to cut costs. The layoff happens after legal review, severance planning, and notification preparation.</p>
+
+<h2>Pattern 2: The Role Pullback</h2>
+
+<p>Roles that were recently posted (within the last 30-60 days) are removed without being filled. This is different from a role being filled (which also causes removal). The distinction matters.</p>
+
+<p>How to tell the difference: if a company removes a Senior Software Engineer posting and simultaneously posts a "Welcome to our new Senior Software Engineer" on LinkedIn, the role was filled. If it simply disappears with no corresponding hire announcement, it was pulled.</p>
+
+<p>A pulled role means budget was approved, a search was launched, and then someone decided the position was no longer a priority. In isolation, this happens for innocent reasons (reorg, strategy change, hiring manager departure). In clusters, it means budget cuts are in progress.</p>
+
+<p>Track the ratio of removed-to-filled roles. In normal conditions, 70-80% of removed postings result in a hire. When that ratio drops below 50%, something is wrong.</p>
+
+<h2>Pattern 3: The Function-Specific Cut</h2>
+
+<p>Sometimes layoffs target specific functions rather than the entire company. This is visible when one department's job postings disappear while others continue or increase.</p>
+
+<p>Examples:</p>
+<ul>
+<li><strong>Marketing postings vanish while engineering continues:</strong> Marketing budget cut. Expect reduced brand spend, fewer events, and a shift to product-led or sales-led growth.</li>
+<li><strong>Engineering postings vanish while sales continues:</strong> Product investment pause. The current product is "good enough" and the focus shifts to monetizing what exists.</li>
+<li><strong>Customer success postings vanish while sales continues:</strong> Concerning pattern. The company is prioritizing new logos over retention. Churn will likely increase in 2-3 quarters.</li>
+<li><strong>All non-engineering postings vanish:</strong> The company is retreating to a product-building posture, likely because revenue fell short of plans.</li>
+</ul>
+
+<p>Function-specific patterns are harder to detect because total posting counts may not drop dramatically. You need to track by function, not just total volume. <a href="/blog/hiring-signals-predict-competitor-next-move/">Understanding hiring signals by function</a> provides the framework for this analysis.</p>
+
+<h2>Pattern 4: The Restructuring Signal</h2>
+
+<p>Restructuring looks different from a straight layoff. Instead of roles disappearing entirely, old roles are removed and new, differently-structured roles appear. The total headcount may stay flat or even increase, but the composition changes dramatically.</p>
+
+<p>Signals:</p>
+<ul>
+<li><strong>Multiple roles removed and replaced with differently-titled roles:</strong> "Regional Sales Managers" disappear, "Enterprise Account Executives" appear. The team is being restructured around a different go-to-market motion.</li>
+<li><strong>Seniority shifts:</strong> Several mid-level roles removed, fewer but more senior roles posted. The company is trading quantity for quality, which often means the mid-level people will be let go.</li>
+<li><strong>New leadership roles appear while individual contributor roles are pulled:</strong> A new leader is coming in to reshape the team. Existing team members may not survive the transition.</li>
+</ul>
+
+<p>Restructuring is often more consequential than layoffs because it signals a strategic direction change. The company is not just cutting costs. It is rearchitecting how it operates.</p>
+
+<h2>Pattern 5: The Compensation Squeeze</h2>
+
+<p>Before layoffs, some companies try a less visible cost reduction: lowering compensation on new postings. If a company posted a Senior Engineer role at $180K-$220K three months ago and now posts the same role at $150K-$190K, they are tightening budgets.</p>
+
+<p>This is a weaker signal than the others because compensation adjustments can reflect market changes. But when combined with other patterns (reduced volume, pulled roles), it adds confidence to the layoff prediction.</p>
+
+<p>In pay-transparent states, this signal is easy to track. In other states, watch for the removal of salary ranges from postings that previously included them. That removal often indicates the ranges are changing in a direction the company does not want to advertise.</p>
+
+<h2>What to Do When You Detect a Pre-Layoff Signal</h2>
+
+<p>Once you have identified a likely layoff scenario, different teams should take different actions:</p>
+
+<h3>Talent Acquisition</h3>
+
+<p>A company about to lay off employees is about to release talent into the market. If you are hiring for similar roles, prepare sourcing campaigns targeting that company's employees. Build lists now. When the layoff is announced, be among the first to reach out.</p>
+
+<p>Important: do not contact employees before the layoff is public. That is both ethically questionable and legally risky. Prepare your outreach. Execute it after the announcement.</p>
+
+<h3>Sales</h3>
+
+<p>Layoffs destabilize customer relationships. Customers of the affected company may lose their account manager, their support contact, or confidence in the company's long-term viability. If you compete with the affected company, prepare outreach to their customers.</p>
+
+<p>After the announcement, those customers will be evaluating alternatives. If you are already in their inbox with a relevant message, you have an advantage over competitors who are still reading the news.</p>
+
+<h3>Product and Strategy</h3>
+
+<p>A competitor layoff changes the competitive landscape. A company cutting 20% of engineering will ship fewer features for the next 6-12 months. Factor that into your product roadmap. You may have a window to differentiate on product velocity while they recover.</p>
+
+<h3>Executive Team</h3>
+
+<p>Brief the executive team on the signal and its implications. A competitor layoff is a strategic event that may warrant adjustments to your own hiring plan, market positioning, or customer retention strategy.</p>
+
+<h2>Building Pre-Layoff Detection Into Your Monitoring System</h2>
+
+<p>Add these triggers to your <a href="/blog/set-up-competitive-hiring-alert-system/">competitive hiring alert system</a>:</p>
+
+<ul>
+<li><strong>Weekly posting count drops 30%+ from the 4-week average:</strong> Yellow alert. Investigate.</li>
+<li><strong>Zero new postings for 2 consecutive weeks</strong> (for companies that normally post weekly): Red alert.</li>
+<li><strong>5+ roles removed in a single week</strong> without corresponding hire announcements: Red alert.</li>
+<li><strong>Function-specific posting count drops to zero:</strong> Yellow alert for the affected function.</li>
+</ul>
+
+<p>Fieldwork's <a href="/#reports">monthly competitive reports</a> include hiring velocity analysis that flags these patterns automatically. When a competitor's posting volume deviates significantly from their baseline, it appears as a highlighted signal in your report. <a href="/#demo">See how early detection works</a> in practice.</p>
+
+<p>The companies that benefit most from layoffs (recruiting talent, capturing customers, gaining market position) are the ones that see them coming first. Hiring data gives you that lead time.</p>
+
+
+<div class="faq-section">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+<h3>Can job posting data predict layoffs?</h3>
+<p>Yes. A sudden drop in open roles (30%+ in a month), combined with the removal of recently posted positions, is a strong layoff leading indicator. This pattern typically appears 30-90 days before public announcements.</p>
+</div>
+<div class="faq-item">
+<h3>What hiring patterns signal a company is about to lay off employees?</h3>
+<p>Key patterns: hiring freeze (all new postings stop), role pullbacks (recently posted roles removed), function-specific cuts (one department's postings disappear while others continue), and restructuring signals (old roles removed, new differently-titled roles appear).</p>
+</div>
+<div class="faq-item">
+<h3>How reliable is hiring data for predicting layoffs?</h3>
+<p>Highly reliable as a directional signal. A 50%+ drop in open roles combined with removed postings has historically preceded layoffs by 30-90 days. The timing is approximate, but the directional signal is strong.</p>
+</div>
+<div class="faq-item">
+<h3>Why do hiring patterns change before layoffs are announced?</h3>
+<p>Companies implement hiring freezes before layoffs to stop adding headcount they plan to cut. Budget reviews and headcount planning happen weeks before the actual layoff event. The freeze shows up in job posting data as reduced or eliminated new postings.</p>
+</div>
+</div>
+
+        <div class="cta-banner">
+            <h3>Get Competitive Hiring Intelligence</h3>
+            <p>Track what your competitors are hiring, paying, and signaling. Delivered monthly.</p>
+            <a href="/#sample-report" class="fw-btn fw-btn--primary fw-btn--lg">Get a Free Sample Report</a>
+        </div>
+    </div>
+</article>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>&copy; 2026 Fieldwork. A product of Pariter Media Inc.</span>
+        <div class="footer-links">
+            <a href="mailto:hello@runfieldwork.com">Contact</a>
+            <a href="/blog/">Blog</a>
+            <a href="https://thecroreport.com" target="_blank" rel="noopener">The CRO Report</a>
+            <a href="https://theaimarketpulse.com" target="_blank" rel="noopener">AI Market Pulse</a>
+        </div>
+    </div>
+</footer>
+<script>
+    document.getElementById('mobile-toggle').addEventListener('click', function() {
+        document.getElementById('main-nav').classList.toggle('open');
+    });
+    </script>
+</body>
+</html>
