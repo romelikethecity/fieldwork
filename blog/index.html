@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitive Hiring Intelligence Blog | Fieldwork</title>
+    <meta name="description" content="Insights on competitive hiring intelligence, compensation benchmarking, talent acquisition analytics, and hiring signal analysis from Fieldwork.">
+    <link rel="canonical" href="https://runfieldwork.com/blog/">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="icon" href="/assets/favicons/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicons/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#14171C" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#F0EDE8" media="(prefers-color-scheme: light)">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://runfieldwork.com/blog/">
+    <meta property="og:title" content="Competitive Hiring Intelligence Blog | Fieldwork">
+    <meta property="og:description" content="Insights on competitive hiring intelligence, compensation benchmarking, talent acquisition analytics, and hiring signal analysis from Fieldwork.">
+    <meta property="og:site_name" content="Fieldwork">
+    <meta property="og:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Competitive Hiring Intelligence Blog | Fieldwork">
+    <meta name="twitter:description" content="Insights on competitive hiring intelligence, compensation benchmarking, talent acquisition analytics, and hiring signal analysis from Fieldwork.">
+    <meta name="twitter:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+
+    <!-- Fonts (non-blocking) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"></noscript>
+
+    <!-- Brand CSS -->
+    <link rel="stylesheet" href="/css/fieldwork.css?v=1">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://runfieldwork.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://runfieldwork.com/blog/"
+                }
+            ]
+        }
+    ]
+}
+    </script>
+<style>
+        /* ─── LAYOUT ─── */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        a { color: var(--fw-primary); text-decoration: none; transition: color var(--fw-transition-fast); }
+        a:hover { color: var(--fw-primary-hover); }
+        .fw-btn.fw-btn--primary, .fw-btn.fw-btn--primary:hover { color: #fff; }
+        html { scroll-behavior: smooth; }
+
+        /* ─── HEADER ─── */
+        .site-header {
+            background: rgba(20, 23, 28, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--fw-border);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-link { text-decoration: none; color: var(--fw-text); }
+        .nav-links { display: flex; gap: 28px; align-items: center; list-style: none; margin: 0; padding: 0; }
+        .nav-links a {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            font-weight: 500;
+            transition: color var(--fw-transition-fast);
+        }
+        .nav-links a:hover { color: var(--fw-text); }
+        .mobile-toggle { display: none; background: none; border: none; color: var(--fw-text); font-size: 1.5rem; cursor: pointer; padding: 4px; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--fw-bg); border-bottom: 1px solid var(--fw-border); padding: 16px 24px; gap: 16px; }
+            .nav-links.open { display: flex; }
+            .mobile-toggle { display: block; }
+        }
+
+        /* ─── FOOTER ─── */
+        .site-footer { border-top: 1px solid var(--fw-border); padding: 32px 0; }
+        .footer-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: var(--fw-text-sm); color: var(--fw-text-muted);
+        }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a { color: var(--fw-text-muted); font-size: var(--fw-text-sm); }
+        .footer-links a:hover { color: var(--fw-text); }
+        @media (max-width: 768px) { .footer-inner { flex-direction: column; gap: 16px; } }
+
+        /* ─── BREADCRUMBS ─── */
+        .breadcrumbs {
+            padding: 16px 0;
+            font-size: var(--fw-text-sm);
+            color: var(--fw-text-muted);
+        }
+        .breadcrumbs a { color: var(--fw-text-muted); }
+        .breadcrumbs a:hover { color: var(--fw-primary); }
+        .breadcrumbs .sep { margin: 0 8px; opacity: 0.4; }
+
+        /* ─── ARTICLE ─── */
+        .article-header {
+            padding: 48px 0 32px;
+            border-bottom: 1px solid var(--fw-border);
+            margin-bottom: 40px;
+        }
+        .article-meta {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding-bottom: 64px;
+        }
+        .article-content h2 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-2xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            letter-spacing: -0.5px;
+            margin: 48px 0 16px;
+            line-height: var(--fw-leading-snug);
+        }
+        .article-content h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 36px 0 12px;
+            line-height: var(--fw-leading-snug);
+        }
+        .article-content p {
+            margin: 0 0 20px;
+            line-height: var(--fw-leading-loose);
+            color: var(--fw-text);
+        }
+        .article-content ul, .article-content ol {
+            margin: 0 0 20px;
+            padding-left: 24px;
+            color: var(--fw-text);
+        }
+        .article-content li {
+            margin-bottom: 8px;
+            line-height: var(--fw-leading-normal);
+        }
+        .article-content blockquote {
+            border-left: 3px solid var(--fw-primary);
+            margin: 24px 0;
+            padding: 16px 24px;
+            background: var(--fw-primary-alpha-06);
+            border-radius: 0 var(--fw-radius-md) var(--fw-radius-md) 0;
+            color: var(--fw-text);
+        }
+        .article-content blockquote p { margin: 0; }
+        .article-content strong { color: var(--fw-text-strong); }
+        .article-content a { color: var(--fw-primary); text-decoration: underline; text-underline-offset: 2px; }
+        .article-content a:hover { color: var(--fw-primary-hover); }
+
+        /* ─── FAQ ─── */
+        .faq-section {
+            margin: 48px 0 32px;
+            padding-top: 32px;
+            border-top: 1px solid var(--fw-border);
+        }
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        .faq-item h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-lg);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 8px;
+        }
+        .faq-item p {
+            margin: 0;
+            color: var(--fw-text);
+            line-height: var(--fw-leading-normal);
+        }
+
+        /* ─── CTA BANNER ─── */
+        .cta-banner {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border-accent);
+            border-radius: var(--fw-radius-xl);
+            padding: 40px;
+            text-align: center;
+            margin: 48px 0;
+        }
+        .cta-banner h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-2xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 12px;
+        }
+        .cta-banner p {
+            color: var(--fw-text-muted);
+            margin: 0 0 20px;
+        }
+
+        /* ─── BLOG INDEX ─── */
+        .blog-hero {
+            padding: 64px 0 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--fw-border);
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+            padding: 48px 0;
+        }
+        .blog-card {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border);
+            border-radius: var(--fw-radius-xl);
+            padding: 28px;
+            transition: border-color var(--fw-transition-normal), box-shadow var(--fw-transition-normal);
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            border-color: var(--fw-border-accent);
+            box-shadow: var(--fw-shadow-glow);
+        }
+        .blog-card a { text-decoration: none; }
+        .blog-card .card-category {
+            font-family: var(--fw-font-mono);
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--fw-primary);
+            margin-bottom: 12px;
+        }
+        .blog-card h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 10px;
+            line-height: var(--fw-leading-snug);
+        }
+        .blog-card h3 a { color: var(--fw-text-strong); }
+        .blog-card h3 a:hover { color: var(--fw-primary); }
+        .blog-card .card-excerpt {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            line-height: var(--fw-leading-normal);
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+        .blog-card .card-meta {
+            font-family: var(--fw-font-mono);
+            font-size: 11px;
+            color: var(--fw-text-dim);
+        }
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo-link">
+            <span class="fw-wordmark fw-wordmark--sm">fieldwork<span class="fw-dot"></span></span>
+        </a>
+        <nav class="nav-links" id="main-nav">
+            <a href="/#demo">Demo</a>
+            <a href="/#reports">Reports</a>
+            <a href="/#pricing">Pricing</a>
+            <a href="/blog/">Blog</a>
+            <a href="/#sample-report" class="fw-btn fw-btn--primary fw-btn--sm">Get Free Sample</a>
+        </nav>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+</header>
+
+<div class="breadcrumbs"><div class="container"><a href="https://runfieldwork.com/">Home</a><span class="sep">/</span><span>Blog</span></div></div>
+
+<section class="blog-hero">
+    <div class="container">
+        <span class="fw-label" style="margin-bottom: 16px; display: inline-block;">Fieldwork Blog</span>
+        <h1 class="fw-h2">Competitive Hiring Intelligence</h1>
+        <p class="fw-body-lg" style="color: var(--fw-text-muted); max-width: 600px; margin: 16px auto 0;">Insights on hiring signals, compensation benchmarking, and talent strategy from the Fieldwork team.</p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="blog-grid">
+        <div class="blog-card">
+            <div class="card-category">Competitive Intelligence</div>
+            <h3><a href="/blog/read-competitor-job-postings-strategic-intelligence/">How to Read Competitor Job Postings for Strategic Intelligence</a></h3>
+            <p class="card-excerpt">Job postings are public filings of intent. Here's how to decode what your competitors are telling you without meaning to.</p>
+            <div class="card-meta">2026-03-29</div>
+        </div>
+        <div class="blog-card">
+            <div class="card-category">Compensation Intelligence</div>
+            <h3><a href="/blog/compensation-benchmarking-without-expensive-tools/">Compensation Benchmarking Without Expensive Tools</a></h3>
+            <p class="card-excerpt">You don't need a $100K Radford subscription to know what competitors pay. But you do need a system.</p>
+            <div class="card-meta">2026-03-29</div>
+        </div>
+        <div class="blog-card">
+            <div class="card-category">Hiring Signals</div>
+            <h3><a href="/blog/hiring-signals-predict-competitor-next-move/">5 Hiring Signals That Predict a Competitor's Next Move</a></h3>
+            <p class="card-excerpt">Companies lie in press releases. They don't lie in headcount budgets. Here are the five patterns that predict what's coming next.</p>
+            <div class="card-meta">2026-03-29</div>
+        </div>
+        <div class="blog-card">
+            <div class="card-category">Talent Acquisition</div>
+            <h3><a href="/blog/build-competitive-hiring-dashboard/">How to Build a Competitive Hiring Dashboard</a></h3>
+            <p class="card-excerpt">A practical guide to building the dashboard your TA and CI teams wish they had. Data sources, metrics, and the build-vs-buy decision.</p>
+            <div class="card-meta">2026-03-29</div>
+        </div>
+        <div class="blog-card">
+            <div class="card-category">Competitive Intelligence</div>
+            <h3><a href="/blog/job-posting-data-vs-linkedin-competitor-intelligence/">Job Posting Data vs LinkedIn for Competitor Intel</a></h3>
+            <p class="card-excerpt">LinkedIn tells you who works somewhere. Job postings tell you what they're building next. The difference matters more than most CI teams realize.</p>
+            <div class="card-meta">2026-03-29</div>
+        </div>
+        <div class="blog-card">
+            <div class="card-category">Market Trends</div>
+            <h3><a href="/blog/ai-hiring-trends-job-postings-enterprise-adoption/">AI Hiring Trends: What Job Postings Reveal About Enterprise AI</a></h3>
+            <p class="card-excerpt">Everyone says they're doing AI. Job postings tell you who's actually spending money on it. The gap between talk and talent investment is revealing.</p>
+            <div class="card-meta">2026-03-29</div>
+        </div>
+        <div class="blog-card">
+            <div class="card-category">Sales Intelligence</div>
+            <h3><a href="/blog/sales-leaders-use-hiring-data-win-deals/">How Sales Leaders Use Hiring Data to Win Deals</a></h3>
+            <p class="card-excerpt">Your competitor just posted 12 AE roles in your best territory. What do you do? Sales leaders who track hiring data already know the answer.</p>
+            <div class="card-meta">2026-03-29</div>
+        </div>
+        <div class="blog-card">
+            <div class="card-category">Talent Acquisition</div>
+            <h3><a href="/blog/talent-acquisition-analytics-metrics-that-matter/">Talent Acquisition Analytics: Metrics That Matter</a></h3>
+            <p class="card-excerpt">Time-to-fill is a vanity metric. Here are the talent acquisition analytics that predict hiring outcomes.</p>
+            <div class="card-meta">2026-03-29</div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>&copy; 2026 Fieldwork. A product of Pariter Media Inc.</span>
+        <div class="footer-links">
+            <a href="mailto:hello@runfieldwork.com">Contact</a>
+            <a href="/blog/">Blog</a>
+            <a href="https://thecroreport.com" target="_blank" rel="noopener">The CRO Report</a>
+            <a href="https://theaimarketpulse.com" target="_blank" rel="noopener">AI Market Pulse</a>
+        </div>
+    </div>
+</footer>
+<script>
+    document.getElementById('mobile-toggle').addEventListener('click', function() {
+        document.getElementById('main-nav').classList.toggle('open');
+    });
+    </script>
+</body>
+</html>

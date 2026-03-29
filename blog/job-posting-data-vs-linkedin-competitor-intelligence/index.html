@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Posting Data vs LinkedIn for CI | Fieldwork</title>
+    <meta name="description" content="Job posting data and LinkedIn each reveal different things about competitors. Here's when to use which, and why most teams get the mix wrong.">
+    <link rel="canonical" href="https://runfieldwork.com/blog/job-posting-data-vs-linkedin-competitor-intelligence/">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="icon" href="/assets/favicons/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicons/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#14171C" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#F0EDE8" media="(prefers-color-scheme: light)">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://runfieldwork.com/blog/job-posting-data-vs-linkedin-competitor-intelligence/">
+    <meta property="og:title" content="Job Posting Data vs LinkedIn for CI | Fieldwork">
+    <meta property="og:description" content="Job posting data and LinkedIn each reveal different things about competitors. Here's when to use which, and why most teams get the mix wrong.">
+    <meta property="og:site_name" content="Fieldwork">
+    <meta property="og:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Job Posting Data vs LinkedIn for CI | Fieldwork">
+    <meta name="twitter:description" content="Job posting data and LinkedIn each reveal different things about competitors. Here's when to use which, and why most teams get the mix wrong.">
+    <meta name="twitter:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+
+    <!-- Fonts (non-blocking) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"></noscript>
+
+    <!-- Brand CSS -->
+    <link rel="stylesheet" href="/css/fieldwork.css?v=1">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://runfieldwork.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://runfieldwork.com/blog/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Job Posting Data vs LinkedIn for Competitor Intel",
+                    "item": "https://runfieldwork.com/blog/job-posting-data-vs-linkedin-competitor-intelligence/"
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "headline": "Job Posting Data vs LinkedIn for Competitor Intel",
+            "description": "Job posting data and LinkedIn each reveal different things about competitors. Here's when to use which, and why most teams get the mix wrong.",
+            "url": "https://runfieldwork.com/blog/job-posting-data-vs-linkedin-competitor-intelligence/",
+            "datePublished": "2026-03-29",
+            "dateModified": "2026-03-29",
+            "author": {
+                "@type": "Organization",
+                "name": "Fieldwork Team",
+                "url": "https://runfieldwork.com"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Fieldwork",
+                "url": "https://runfieldwork.com"
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://runfieldwork.com/blog/job-posting-data-vs-linkedin-competitor-intelligence/"
+            }
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Is LinkedIn or job posting data better for competitive intelligence?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "They answer different questions. LinkedIn shows current headcount, employee backgrounds, and turnover patterns. Job posting data shows future plans: what roles they're filling, what they're paying, and what technology they're adopting. The best CI programs use both."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I track competitor hiring through LinkedIn alone?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Partially. LinkedIn shows some job postings and employee counts, but its data is incomplete. Not all jobs are posted on LinkedIn, headcount numbers lag by weeks, and salary data is limited. Direct career page monitoring catches what LinkedIn misses."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What does LinkedIn tell you that job postings don't?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "LinkedIn reveals employee tenure, departure patterns (who's leaving and where they're going), team composition, and individual employee backgrounds. This is backward-looking intelligence that job postings can't provide."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I combine LinkedIn and job posting data effectively?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Use job posting data for forward-looking signals (what they're building, where they're expanding, what they'll pay). Use LinkedIn for backward-looking signals (who left, team size changes, skill composition). Review both monthly and look for patterns that confirm or contradict each other."
+                    }
+                }
+            ]
+        }
+    ]
+}
+    </script>
+<style>
+        /* ─── LAYOUT ─── */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        a { color: var(--fw-primary); text-decoration: none; transition: color var(--fw-transition-fast); }
+        a:hover { color: var(--fw-primary-hover); }
+        .fw-btn.fw-btn--primary, .fw-btn.fw-btn--primary:hover { color: #fff; }
+        html { scroll-behavior: smooth; }
+
+        /* ─── HEADER ─── */
+        .site-header {
+            background: rgba(20, 23, 28, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--fw-border);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-link { text-decoration: none; color: var(--fw-text); }
+        .nav-links { display: flex; gap: 28px; align-items: center; list-style: none; margin: 0; padding: 0; }
+        .nav-links a {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            font-weight: 500;
+            transition: color var(--fw-transition-fast);
+        }
+        .nav-links a:hover { color: var(--fw-text); }
+        .mobile-toggle { display: none; background: none; border: none; color: var(--fw-text); font-size: 1.5rem; cursor: pointer; padding: 4px; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--fw-bg); border-bottom: 1px solid var(--fw-border); padding: 16px 24px; gap: 16px; }
+            .nav-links.open { display: flex; }
+            .mobile-toggle { display: block; }
+        }
+
+        /* ─── FOOTER ─── */
+        .site-footer { border-top: 1px solid var(--fw-border); padding: 32px 0; }
+        .footer-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: var(--fw-text-sm); color: var(--fw-text-muted);
+        }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a { color: var(--fw-text-muted); font-size: var(--fw-text-sm); }
+        .footer-links a:hover { color: var(--fw-text); }
+        @media (max-width: 768px) { .footer-inner { flex-direction: column; gap: 16px; } }
+
+        /* ─── BREADCRUMBS ─── */
+        .breadcrumbs {
+            padding: 16px 0;
+            font-size: var(--fw-text-sm);
+            color: var(--fw-text-muted);
+        }
+        .breadcrumbs a { color: var(--fw-text-muted); }
+        .breadcrumbs a:hover { color: var(--fw-primary); }
+        .breadcrumbs .sep { margin: 0 8px; opacity: 0.4; }
+
+        /* ─── ARTICLE ─── */
+        .article-header {
+            padding: 48px 0 32px;
+            border-bottom: 1px solid var(--fw-border);
+            margin-bottom: 40px;
+        }
+        .article-meta {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding-bottom: 64px;
+        }
+        .article-content h2 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-2xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            letter-spacing: -0.5px;
+            margin: 48px 0 16px;
+            line-height: var(--fw-leading-snug);
+        }
+        .article-content h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 36px 0 12px;
+            line-height: var(--fw-leading-snug);
+        }
+        .article-content p {
+            margin: 0 0 20px;
+            line-height: var(--fw-leading-loose);
+            color: var(--fw-text);
+        }
+        .article-content ul, .article-content ol {
+            margin: 0 0 20px;
+            padding-left: 24px;
+            color: var(--fw-text);
+        }
+        .article-content li {
+            margin-bottom: 8px;
+            line-height: var(--fw-leading-normal);
+        }
+        .article-content blockquote {
+            border-left: 3px solid var(--fw-primary);
+            margin: 24px 0;
+            padding: 16px 24px;
+            background: var(--fw-primary-alpha-06);
+            border-radius: 0 var(--fw-radius-md) var(--fw-radius-md) 0;
+            color: var(--fw-text);
+        }
+        .article-content blockquote p { margin: 0; }
+        .article-content strong { color: var(--fw-text-strong); }
+        .article-content a { color: var(--fw-primary); text-decoration: underline; text-underline-offset: 2px; }
+        .article-content a:hover { color: var(--fw-primary-hover); }
+
+        /* ─── FAQ ─── */
+        .faq-section {
+            margin: 48px 0 32px;
+            padding-top: 32px;
+            border-top: 1px solid var(--fw-border);
+        }
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        .faq-item h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-lg);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 8px;
+        }
+        .faq-item p {
+            margin: 0;
+            color: var(--fw-text);
+            line-height: var(--fw-leading-normal);
+        }
+
+        /* ─── CTA BANNER ─── */
+        .cta-banner {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border-accent);
+            border-radius: var(--fw-radius-xl);
+            padding: 40px;
+            text-align: center;
+            margin: 48px 0;
+        }
+        .cta-banner h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-2xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 12px;
+        }
+        .cta-banner p {
+            color: var(--fw-text-muted);
+            margin: 0 0 20px;
+        }
+
+        /* ─── BLOG INDEX ─── */
+        .blog-hero {
+            padding: 64px 0 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--fw-border);
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+            padding: 48px 0;
+        }
+        .blog-card {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border);
+            border-radius: var(--fw-radius-xl);
+            padding: 28px;
+            transition: border-color var(--fw-transition-normal), box-shadow var(--fw-transition-normal);
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            border-color: var(--fw-border-accent);
+            box-shadow: var(--fw-shadow-glow);
+        }
+        .blog-card a { text-decoration: none; }
+        .blog-card .card-category {
+            font-family: var(--fw-font-mono);
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--fw-primary);
+            margin-bottom: 12px;
+        }
+        .blog-card h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 10px;
+            line-height: var(--fw-leading-snug);
+        }
+        .blog-card h3 a { color: var(--fw-text-strong); }
+        .blog-card h3 a:hover { color: var(--fw-primary); }
+        .blog-card .card-excerpt {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            line-height: var(--fw-leading-normal);
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+        .blog-card .card-meta {
+            font-family: var(--fw-font-mono);
+            font-size: 11px;
+            color: var(--fw-text-dim);
+        }
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo-link">
+            <span class="fw-wordmark fw-wordmark--sm">fieldwork<span class="fw-dot"></span></span>
+        </a>
+        <nav class="nav-links" id="main-nav">
+            <a href="/#demo">Demo</a>
+            <a href="/#reports">Reports</a>
+            <a href="/#pricing">Pricing</a>
+            <a href="/blog/">Blog</a>
+            <a href="/#sample-report" class="fw-btn fw-btn--primary fw-btn--sm">Get Free Sample</a>
+        </nav>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+</header>
+
+<div class="breadcrumbs"><div class="container"><a href="https://runfieldwork.com/">Home</a><span class="sep">/</span><a href="https://runfieldwork.com/blog/">Blog</a><span class="sep">/</span><span>Job Posting Data vs LinkedIn for Competitor Intel</span></div></div>
+
+<article>
+    <header class="article-header">
+        <div class="container" style="max-width: 720px; margin: 0 auto;">
+            <div class="article-meta">
+                <span class="fw-badge fw-badge--ember">Competitive Intelligence</span>
+                <span class="fw-mono" style="color: var(--fw-text-muted); font-size: 12px;">2026-03-29</span>
+            </div>
+            <h1 class="fw-h2">Job Posting Data vs LinkedIn for Competitor Intel</h1>
+            <p class="fw-body-lg" style="color: var(--fw-text-muted); margin-top: 12px;">LinkedIn tells you who works somewhere. Job postings tell you what they're building next. The difference matters more than most CI teams realize.</p>
+        </div>
+    </header>
+
+    <div class="article-content container">
+
+<h2>Two Data Sources, Two Different Questions</h2>
+
+<p>Most competitive intelligence teams default to LinkedIn when they want to understand a competitor's talent strategy. It makes sense. LinkedIn is the largest professional network, it's searchable, and it shows you who works where.</p>
+
+<p>But LinkedIn answers a fundamentally different question than job posting data. LinkedIn tells you what already happened. Job postings tell you what's about to happen. And in competitive intelligence, the future is worth a lot more than the past.</p>
+
+<p>Here's a detailed breakdown of what each source gives you, where they overlap, and when to use which.</p>
+
+<h2>What LinkedIn Tells You</h2>
+
+<h3>Current Headcount and Team Structure</h3>
+
+<p>LinkedIn's company pages show employee counts, broken down by function and location. This gives you a snapshot of how a competitor's team is structured right now. You can see that Company X has 200 engineers and 80 salespeople, weighted toward San Francisco and New York.</p>
+
+<p>Limitation: these numbers are self-reported and lag reality by weeks or months. People don't always update their profiles when they change jobs. The counts are directionally useful but not precise.</p>
+
+<h3>Employee Backgrounds and Skill Composition</h3>
+
+<p>LinkedIn profiles include work history, education, and skills. You can analyze what backgrounds a competitor hires from. If their last 10 engineering hires all came from fintech companies, that tells you something about their product direction.</p>
+
+<h3>Departure Patterns</h3>
+
+<p>This is LinkedIn's killer feature for CI. When employees leave a competitor, their profile updates (eventually). You can track: who's leaving, what level, which function, and where they're going. A wave of senior engineering departures to the same company suggests something specific pulled them. A broad exodus across levels suggests internal problems.</p>
+
+<h3>Network Analysis</h3>
+
+<p>LinkedIn lets you see connections between employees at different companies. This is useful for tracking advisor relationships, board connections, and potential partnerships or acquisitions. If a competitor's CEO and a PE firm partner suddenly connect, that might signal something.</p>
+
+<h2>What Job Posting Data Tells You</h2>
+
+<h3>Future Hiring Plans</h3>
+
+<p>Job postings are forward-looking by definition. They represent roles that don't yet exist at the company. This is the single biggest advantage over LinkedIn: you see what the company will look like in 3-6 months, not what it looks like today.</p>
+
+<h3>Compensation Strategy</h3>
+
+<p>With pay transparency laws expanding, job postings increasingly include salary ranges. LinkedIn has some salary data, but it's self-reported and unverified. Job posting salary data from states with mandatory disclosure is as close to official comp data as you can get without access to the company's HRIS.</p>
+
+<h3>Technology Direction</h3>
+
+<p>Engineering job postings list required and preferred technologies. This is a direct readout of the company's technical architecture and future direction. LinkedIn skills endorsements are noisy and outdated. Job requirements represent what the company needs right now.</p>
+
+<h3>Urgency and Priority</h3>
+
+<p>The specificity and seniority of job postings reveal urgency. A posting that's been up for 90 days is either a nice-to-have or impossible to fill. A posting with aggressive comp and a "start immediately" note is a priority hire. LinkedIn can't show you this urgency signal.</p>
+
+<h2>Head-to-Head Comparison</h2>
+
+<p>Let's compare specific use cases:</p>
+
+<p><strong>Understanding competitor team size:</strong> LinkedIn wins. It shows actual employees, not just open roles.</p>
+
+<p><strong>Predicting competitor product moves:</strong> Job postings win. New role types, tech stack changes, and hiring surges appear in postings months before they manifest in LinkedIn headcount.</p>
+
+<p><strong>Benchmarking compensation:</strong> Job postings win. Verified salary ranges in postings vs. self-reported data on LinkedIn.</p>
+
+<p><strong>Tracking employee turnover:</strong> LinkedIn wins. You can see departures and destinations. Job postings only show incoming hires.</p>
+
+<p><strong>Identifying geographic expansion:</strong> Tie. LinkedIn shows where employees are located. Job postings show where new hires will be. Both are useful. Job postings are earlier (leading indicator), LinkedIn is confirming (lagging indicator).</p>
+
+<p><strong>Understanding organizational culture:</strong> LinkedIn wins (Glassdoor wins more, but that's a different article). Employee reviews, post engagement, and departure patterns paint a picture. Job descriptions sometimes reveal culture through language, but it's less reliable.</p>
+
+<h2>The Combination Play</h2>
+
+<p>The real intelligence advantage comes from using both sources together. Here's how:</p>
+
+<ol>
+<li><strong>Spot the signal in job postings:</strong> Competitor X just posted 8 ML engineering roles. First time they've had any ML postings.</li>
+<li><strong>Validate on LinkedIn:</strong> Check if they've recently hired any ML leaders. If a VP of ML appeared on their team 2 months ago, those 8 roles are their team buildout. High confidence.</li>
+<li><strong>Track the outcome:</strong> Over the next 3-6 months, watch LinkedIn for those ML engineers to appear as employees. Confirm the hiring was successful.</li>
+<li><strong>Anticipate the impact:</strong> 6-12 months after the ML team assembles, expect AI-powered product features.</li>
+</ol>
+
+<p>This loop, signal (postings) to validation (LinkedIn) to tracking (LinkedIn) to prediction (analysis), is the core of a sophisticated competitive hiring intelligence program.</p>
+
+<p>Fieldwork's <a href="/#reports">monthly reports</a> provide the job posting layer. Pair them with your own LinkedIn monitoring and you have full coverage. The <a href="https://www.crayon.co/blog/competitive-intelligence-best-practices" target="_blank" rel="noopener">Crayon competitive intelligence framework</a> recommends this multi-source approach.</p>
+
+<h2>Where Both Sources Fall Short</h2>
+
+<p>Neither job postings nor LinkedIn capture:</p>
+
+<ul>
+<li><strong>Internal transfers:</strong> A company reassigning 20 engineers from one product to another. No external signal for this.</li>
+<li><strong>Contractor and agency hires:</strong> Often invisible in both datasets.</li>
+<li><strong>Confidential searches:</strong> Executive placements through search firms bypass both channels.</li>
+<li><strong>Layoffs that are backfilled:</strong> A team that lost 5 people and hired 5 replacements looks stable from the outside but is actually in turmoil.</li>
+</ul>
+
+<p>No data source is complete. The best CI programs acknowledge these blind spots and use multiple inputs to triangulate. Job postings and LinkedIn are two of the most accessible and highest-signal sources available. Using only one is leaving intelligence on the table.</p>
+
+<p>Which source is your team relying on more heavily? And what are you missing because of that choice? <a href="/#demo">Fieldwork can fill the job posting gap</a>. LinkedIn, you've already got covered.</p>
+
+
+<div class="faq-section">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+<h3>Is LinkedIn or job posting data better for competitive intelligence?</h3>
+<p>They answer different questions. LinkedIn shows current headcount, employee backgrounds, and turnover patterns. Job posting data shows future plans: what roles they're filling, what they're paying, and what technology they're adopting. The best CI programs use both.</p>
+</div>
+<div class="faq-item">
+<h3>Can I track competitor hiring through LinkedIn alone?</h3>
+<p>Partially. LinkedIn shows some job postings and employee counts, but its data is incomplete. Not all jobs are posted on LinkedIn, headcount numbers lag by weeks, and salary data is limited. Direct career page monitoring catches what LinkedIn misses.</p>
+</div>
+<div class="faq-item">
+<h3>What does LinkedIn tell you that job postings don't?</h3>
+<p>LinkedIn reveals employee tenure, departure patterns (who's leaving and where they're going), team composition, and individual employee backgrounds. This is backward-looking intelligence that job postings can't provide.</p>
+</div>
+<div class="faq-item">
+<h3>How do I combine LinkedIn and job posting data effectively?</h3>
+<p>Use job posting data for forward-looking signals (what they're building, where they're expanding, what they'll pay). Use LinkedIn for backward-looking signals (who left, team size changes, skill composition). Review both monthly and look for patterns that confirm or contradict each other.</p>
+</div>
+</div>
+
+        <div class="cta-banner">
+            <h3>Get Competitive Hiring Intelligence</h3>
+            <p>Track what your competitors are hiring, paying, and signaling. Delivered monthly.</p>
+            <a href="/#sample-report" class="fw-btn fw-btn--primary fw-btn--lg">Get a Free Sample Report</a>
+        </div>
+    </div>
+</article>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>&copy; 2026 Fieldwork. A product of Pariter Media Inc.</span>
+        <div class="footer-links">
+            <a href="mailto:hello@runfieldwork.com">Contact</a>
+            <a href="/blog/">Blog</a>
+            <a href="https://thecroreport.com" target="_blank" rel="noopener">The CRO Report</a>
+            <a href="https://theaimarketpulse.com" target="_blank" rel="noopener">AI Market Pulse</a>
+        </div>
+    </div>
+</footer>
+<script>
+    document.getElementById('mobile-toggle').addEventListener('click', function() {
+        document.getElementById('main-nav').classList.toggle('open');
+    });
+    </script>
+</body>
+</html>

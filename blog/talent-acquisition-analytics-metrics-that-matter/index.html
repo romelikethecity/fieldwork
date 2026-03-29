@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TA Analytics: Metrics That Actually Matter | Fieldwork</title>
+    <meta name="description" content="Most TA teams track the wrong metrics. Here are the talent acquisition analytics that drive hiring outcomes, with benchmarks from real job posting data.">
+    <link rel="canonical" href="https://runfieldwork.com/blog/talent-acquisition-analytics-metrics-that-matter/">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="icon" href="/assets/favicons/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicons/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#14171C" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#F0EDE8" media="(prefers-color-scheme: light)">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://runfieldwork.com/blog/talent-acquisition-analytics-metrics-that-matter/">
+    <meta property="og:title" content="TA Analytics: Metrics That Actually Matter | Fieldwork">
+    <meta property="og:description" content="Most TA teams track the wrong metrics. Here are the talent acquisition analytics that drive hiring outcomes, with benchmarks from real job posting data.">
+    <meta property="og:site_name" content="Fieldwork">
+    <meta property="og:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TA Analytics: Metrics That Actually Matter | Fieldwork">
+    <meta name="twitter:description" content="Most TA teams track the wrong metrics. Here are the talent acquisition analytics that drive hiring outcomes, with benchmarks from real job posting data.">
+    <meta name="twitter:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+
+    <!-- Fonts (non-blocking) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"></noscript>
+
+    <!-- Brand CSS -->
+    <link rel="stylesheet" href="/css/fieldwork.css?v=1">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://runfieldwork.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://runfieldwork.com/blog/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Talent Acquisition Analytics: Metrics That Matter",
+                    "item": "https://runfieldwork.com/blog/talent-acquisition-analytics-metrics-that-matter/"
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "headline": "Talent Acquisition Analytics: Metrics That Matter",
+            "description": "Most TA teams track the wrong metrics. Here are the talent acquisition analytics that drive hiring outcomes, with benchmarks from real job posting data.",
+            "url": "https://runfieldwork.com/blog/talent-acquisition-analytics-metrics-that-matter/",
+            "datePublished": "2026-03-29",
+            "dateModified": "2026-03-29",
+            "author": {
+                "@type": "Organization",
+                "name": "Fieldwork Team",
+                "url": "https://runfieldwork.com"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Fieldwork",
+                "url": "https://runfieldwork.com"
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://runfieldwork.com/blog/talent-acquisition-analytics-metrics-that-matter/"
+            }
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What are the most important talent acquisition metrics?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Quality of hire (measured by performance and retention), competitive win rate (offers accepted vs. lost to competitors), source effectiveness (which channels produce the best hires), and comp competitiveness (how your offers compare to market). Time-to-fill and cost-per-hire matter less than most teams think."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I benchmark my hiring against competitors?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Track competitor job posting volume and duration. If competitors fill similar roles faster (shorter posting duration), they may have a more efficient process or more competitive offers. Fieldwork provides competitor hiring velocity data to support this benchmarking."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What does time-to-fill actually measure?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Time-to-fill measures your process speed, not your hiring effectiveness. A fast fill with a wrong hire costs more than a slow fill with the right one. Use time-to-fill as a process efficiency metric, not a success metric."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How can I tell if my compensation is competitive?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Compare your offer ranges against active job postings for equivalent roles at your talent competitors. If candidates are declining offers, pull comp data for the companies they're choosing instead. Fieldwork provides this data across your competitor set."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What metrics should a TA team present to the C-suite?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Focus on business impact metrics: revenue per employee, time to productivity for new hires, competitive offer win rate, and hiring pipeline velocity for revenue-critical roles. Executives care about business outcomes, not recruiting funnel metrics."
+                    }
+                }
+            ]
+        }
+    ]
+}
+    </script>
+<style>
+        /* ─── LAYOUT ─── */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        a { color: var(--fw-primary); text-decoration: none; transition: color var(--fw-transition-fast); }
+        a:hover { color: var(--fw-primary-hover); }
+        .fw-btn.fw-btn--primary, .fw-btn.fw-btn--primary:hover { color: #fff; }
+        html { scroll-behavior: smooth; }
+
+        /* ─── HEADER ─── */
+        .site-header {
+            background: rgba(20, 23, 28, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--fw-border);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-link { text-decoration: none; color: var(--fw-text); }
+        .nav-links { display: flex; gap: 28px; align-items: center; list-style: none; margin: 0; padding: 0; }
+        .nav-links a {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            font-weight: 500;
+            transition: color var(--fw-transition-fast);
+        }
+        .nav-links a:hover { color: var(--fw-text); }
+        .mobile-toggle { display: none; background: none; border: none; color: var(--fw-text); font-size: 1.5rem; cursor: pointer; padding: 4px; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--fw-bg); border-bottom: 1px solid var(--fw-border); padding: 16px 24px; gap: 16px; }
+            .nav-links.open { display: flex; }
+            .mobile-toggle { display: block; }
+        }
+
+        /* ─── FOOTER ─── */
+        .site-footer { border-top: 1px solid var(--fw-border); padding: 32px 0; }
+        .footer-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: var(--fw-text-sm); color: var(--fw-text-muted);
+        }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a { color: var(--fw-text-muted); font-size: var(--fw-text-sm); }
+        .footer-links a:hover { color: var(--fw-text); }
+        @media (max-width: 768px) { .footer-inner { flex-direction: column; gap: 16px; } }
+
+        /* ─── BREADCRUMBS ─── */
+        .breadcrumbs {
+            padding: 16px 0;
+            font-size: var(--fw-text-sm);
+            color: var(--fw-text-muted);
+        }
+        .breadcrumbs a { color: var(--fw-text-muted); }
+        .breadcrumbs a:hover { color: var(--fw-primary); }
+        .breadcrumbs .sep { margin: 0 8px; opacity: 0.4; }
+
+        /* ─── ARTICLE ─── */
+        .article-header {
+            padding: 48px 0 32px;
+            border-bottom: 1px solid var(--fw-border);
+            margin-bottom: 40px;
+        }
+        .article-meta {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding-bottom: 64px;
+        }
+        .article-content h2 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-2xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            letter-spacing: -0.5px;
+            margin: 48px 0 16px;
+            line-height: var(--fw-leading-snug);
+        }
+        .article-content h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 36px 0 12px;
+            line-height: var(--fw-leading-snug);
+        }
+        .article-content p {
+            margin: 0 0 20px;
+            line-height: var(--fw-leading-loose);
+            color: var(--fw-text);
+        }
+        .article-content ul, .article-content ol {
+            margin: 0 0 20px;
+            padding-left: 24px;
+            color: var(--fw-text);
+        }
+        .article-content li {
+            margin-bottom: 8px;
+            line-height: var(--fw-leading-normal);
+        }
+        .article-content blockquote {
+            border-left: 3px solid var(--fw-primary);
+            margin: 24px 0;
+            padding: 16px 24px;
+            background: var(--fw-primary-alpha-06);
+            border-radius: 0 var(--fw-radius-md) var(--fw-radius-md) 0;
+            color: var(--fw-text);
+        }
+        .article-content blockquote p { margin: 0; }
+        .article-content strong { color: var(--fw-text-strong); }
+        .article-content a { color: var(--fw-primary); text-decoration: underline; text-underline-offset: 2px; }
+        .article-content a:hover { color: var(--fw-primary-hover); }
+
+        /* ─── FAQ ─── */
+        .faq-section {
+            margin: 48px 0 32px;
+            padding-top: 32px;
+            border-top: 1px solid var(--fw-border);
+        }
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        .faq-item h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-lg);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 8px;
+        }
+        .faq-item p {
+            margin: 0;
+            color: var(--fw-text);
+            line-height: var(--fw-leading-normal);
+        }
+
+        /* ─── CTA BANNER ─── */
+        .cta-banner {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border-accent);
+            border-radius: var(--fw-radius-xl);
+            padding: 40px;
+            text-align: center;
+            margin: 48px 0;
+        }
+        .cta-banner h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-2xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 12px;
+        }
+        .cta-banner p {
+            color: var(--fw-text-muted);
+            margin: 0 0 20px;
+        }
+
+        /* ─── BLOG INDEX ─── */
+        .blog-hero {
+            padding: 64px 0 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--fw-border);
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+            padding: 48px 0;
+        }
+        .blog-card {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border);
+            border-radius: var(--fw-radius-xl);
+            padding: 28px;
+            transition: border-color var(--fw-transition-normal), box-shadow var(--fw-transition-normal);
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            border-color: var(--fw-border-accent);
+            box-shadow: var(--fw-shadow-glow);
+        }
+        .blog-card a { text-decoration: none; }
+        .blog-card .card-category {
+            font-family: var(--fw-font-mono);
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--fw-primary);
+            margin-bottom: 12px;
+        }
+        .blog-card h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 10px;
+            line-height: var(--fw-leading-snug);
+        }
+        .blog-card h3 a { color: var(--fw-text-strong); }
+        .blog-card h3 a:hover { color: var(--fw-primary); }
+        .blog-card .card-excerpt {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            line-height: var(--fw-leading-normal);
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+        .blog-card .card-meta {
+            font-family: var(--fw-font-mono);
+            font-size: 11px;
+            color: var(--fw-text-dim);
+        }
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo-link">
+            <span class="fw-wordmark fw-wordmark--sm">fieldwork<span class="fw-dot"></span></span>
+        </a>
+        <nav class="nav-links" id="main-nav">
+            <a href="/#demo">Demo</a>
+            <a href="/#reports">Reports</a>
+            <a href="/#pricing">Pricing</a>
+            <a href="/blog/">Blog</a>
+            <a href="/#sample-report" class="fw-btn fw-btn--primary fw-btn--sm">Get Free Sample</a>
+        </nav>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+</header>
+
+<div class="breadcrumbs"><div class="container"><a href="https://runfieldwork.com/">Home</a><span class="sep">/</span><a href="https://runfieldwork.com/blog/">Blog</a><span class="sep">/</span><span>Talent Acquisition Analytics: Metrics That Matter</span></div></div>
+
+<article>
+    <header class="article-header">
+        <div class="container" style="max-width: 720px; margin: 0 auto;">
+            <div class="article-meta">
+                <span class="fw-badge fw-badge--ember">Talent Acquisition</span>
+                <span class="fw-mono" style="color: var(--fw-text-muted); font-size: 12px;">2026-03-29</span>
+            </div>
+            <h1 class="fw-h2">Talent Acquisition Analytics: Metrics That Matter</h1>
+            <p class="fw-body-lg" style="color: var(--fw-text-muted); margin-top: 12px;">Time-to-fill is a vanity metric. Here are the talent acquisition analytics that predict hiring outcomes.</p>
+        </div>
+    </header>
+
+    <div class="article-content container">
+
+<h2>The Metrics Most TA Teams Track (And Shouldn't)</h2>
+
+<p>Open any talent acquisition dashboard and you'll find the same metrics: time-to-fill, cost-per-hire, applicants per opening, and offer acceptance rate. These are easy to measure. They look good in quarterly presentations. And most of them are a distraction from what actually matters.</p>
+
+<p>Time-to-fill rewards speed over quality. Cost-per-hire penalizes investment in good sourcing. Applicants per opening measures your job board spend, not your hiring effectiveness. These metrics optimize for the process of hiring, not the outcome.</p>
+
+<p>Here's what to measure instead.</p>
+
+<h2>Tier 1: Outcome Metrics (What Leadership Cares About)</h2>
+
+<h3>Quality of Hire</h3>
+
+<p>This is the only metric that matters at a fundamental level, and it's the hardest to measure. Quality of hire tracks whether the people you hired perform well and stay.</p>
+
+<p>Measurement approach: combine 90-day manager satisfaction scores, 6-month performance ratings, and 12-month retention. Weight them 20/40/40. A hire who gets great reviews but leaves in 9 months isn't a quality hire. A hire who takes 6 months to ramp but becomes a top performer at month 12 is.</p>
+
+<p>Benchmark this by source (which channels produce the highest-quality hires?), by recruiter (who's consistently hiring top performers?), and by hiring manager (whose interviews predict performance best?).</p>
+
+<h3>Competitive Win Rate</h3>
+
+<p>Of the candidates who received your offer, how many accepted vs. chose a competitor? And which competitors are you losing to?</p>
+
+<p>This metric is gold because it directly connects your hiring performance to the competitive landscape. If you're losing 40% of final-stage candidates to the same competitor, you have a specific, addressable problem. It might be comp. It might be brand. It might be interview experience. But you know exactly who you're losing to and can diagnose why.</p>
+
+<p>Track by role, by competitor, and by region. You might win 80% of competitive offers for marketing roles but only 50% for engineering. That tells you where to invest.</p>
+
+<h3>Revenue Impact per Hire</h3>
+
+<p>For revenue-generating roles (sales, customer success), measure the revenue impact of each hire. What's the average ramp time to full productivity? What's the revenue per AE at month 6 vs. month 12? How does this compare to industry benchmarks?</p>
+
+<p>For non-revenue roles, use a proxy: time to first meaningful contribution (first shipped feature, first closed project, first process improvement). This is subjective but useful when calibrated across hiring managers.</p>
+
+<h2>Tier 2: Process Metrics (What TA Managers Need)</h2>
+
+<h3>Pipeline Velocity by Stage</h3>
+
+<p>Don't measure time-to-fill as a single number. Break it into stages: sourcing to screen, screen to interview, interview to offer, offer to accept, accept to start. Measure the conversion rate and cycle time at each stage.</p>
+
+<p>This reveals where your bottlenecks are. If 80% of your time-to-fill is between "hiring manager interview" and "offer approval," the problem isn't recruiting. It's your internal approvals process. Fix the right thing.</p>
+
+<h3>Source Effectiveness</h3>
+
+<p>Not all channels are equal. Track by channel: employee referrals, inbound applications, recruiter sourced (LinkedIn/direct), job boards, agencies. For each, measure: volume, conversion rate through the funnel, quality of hire score, and cost.</p>
+
+<p>The channel that produces the most applicants is almost never the channel that produces the best hires. Employee referrals consistently outperform every other source in quality and retention metrics. <a href="https://www.ere.net/articles" target="_blank" rel="noopener">ERE's recruiting research</a> has documented this pattern across industries.</p>
+
+<h3>Comp Competitiveness Index</h3>
+
+<p>Where do your offers sit relative to the market? Not based on last year's comp survey. Based on current job postings from your talent competitors.</p>
+
+<p>Build a comp competitiveness index: for each benchmark role, calculate your midpoint vs. the market midpoint (derived from active job posting salary data). Express as a percentage: 100% = at market, 110% = 10% above, 90% = 10% below.</p>
+
+<p>Track this monthly. When your index drops below 95% for a role, expect to see declining offer acceptance rates within 30-60 days. <a href="/#pricing">Fieldwork</a> provides the market comp data you need to calculate this index across your competitor set.</p>
+
+<h2>Tier 3: Competitive Benchmarking Metrics</h2>
+
+<h3>Competitor Hiring Velocity</h3>
+
+<p>How fast are your talent competitors growing? If they're adding headcount at 2x your rate, you'll face increasing competition for candidates and potentially lose candidates to their momentum narrative.</p>
+
+<p>Track monthly open roles for each talent competitor. Plot the trend. When a competitor accelerates, adjust your sourcing aggressiveness accordingly.</p>
+
+<h3>Market Share of Talent</h3>
+
+<p>In your key roles, what percentage of the available talent pool is flowing to you vs. competitors? This is hard to measure precisely but directionally useful. Track offer acceptance rates and candidate pipeline trends as proxies.</p>
+
+<p>If you're seeing fewer qualified applicants per opening while competitors post more roles at higher comp, you're losing market share of talent. That's an early warning that needs executive attention.</p>
+
+<h3>Posting Duration by Competitor</h3>
+
+<p>How long do competitors keep postings active? A posting that disappears in 30 days was probably filled. One that stays up for 120 days is either a permanent pipeline role or an impossible-to-fill position. Track these patterns. If competitors consistently fill similar roles 20 days faster than you, they have a process or comp advantage worth investigating.</p>
+
+<h2>Building Your TA Analytics Dashboard</h2>
+
+<p>Start simple. Three metrics on a dashboard that you review weekly:</p>
+
+<ol>
+<li><strong>Pipeline velocity by stage:</strong> Where are things stuck right now?</li>
+<li><strong>Offer acceptance rate (30-day rolling):</strong> Are we winning or losing candidates?</li>
+<li><strong>Comp competitiveness index for top 5 roles:</strong> Are we paying enough?</li>
+</ol>
+
+<p>Add monthly reviews of:</p>
+<ol>
+<li><strong>Quality of hire scores for recent hires:</strong> Are we hiring well?</li>
+<li><strong>Competitive win rate by competitor:</strong> Who's beating us and why?</li>
+<li><strong>Competitor hiring velocity:</strong> What's changing in the market?</li>
+</ol>
+
+<p>Present to leadership quarterly with a focus on business impact: revenue per hire, competitive positioning, and talent market share trends. Skip the vanity metrics. Executives don't care about your applicant volume. They care about whether you're winning the talent war.</p>
+
+<h2>The Metrics You're Missing Without Competitive Data</h2>
+
+<p>Internal TA analytics tell you how well you're running your process. They don't tell you how you compare to the market. Without competitive data, you can't answer:</p>
+
+<ul>
+<li>Are we paying enough for this role?</li>
+<li>Why did that candidate choose [Competitor X] over us?</li>
+<li>Is our competitor about to flood this market with AEs?</li>
+<li>How fast does the market typically fill this role?</li>
+</ul>
+
+<p>These are the questions that separate reactive TA teams from strategic ones. Internal metrics are necessary but insufficient. You need the market context to make the numbers meaningful.</p>
+
+<p>Fieldwork's <a href="/#reports">monthly competitive reports</a> provide the external benchmarking data that most TA dashboards are missing. Pair internal analytics with competitive intelligence and you have a complete picture. <a href="/#demo">See how it works.</a></p>
+
+<p>What's the one metric your TA team doesn't track today that would change how you operate if you did?</p>
+
+
+<div class="faq-section">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+<h3>What are the most important talent acquisition metrics?</h3>
+<p>Quality of hire (measured by performance and retention), competitive win rate (offers accepted vs. lost to competitors), source effectiveness (which channels produce the best hires), and comp competitiveness (how your offers compare to market). Time-to-fill and cost-per-hire matter less than most teams think.</p>
+</div>
+<div class="faq-item">
+<h3>How do I benchmark my hiring against competitors?</h3>
+<p>Track competitor job posting volume and duration. If competitors fill similar roles faster (shorter posting duration), they may have a more efficient process or more competitive offers. Fieldwork provides competitor hiring velocity data to support this benchmarking.</p>
+</div>
+<div class="faq-item">
+<h3>What does time-to-fill actually measure?</h3>
+<p>Time-to-fill measures your process speed, not your hiring effectiveness. A fast fill with a wrong hire costs more than a slow fill with the right one. Use time-to-fill as a process efficiency metric, not a success metric.</p>
+</div>
+<div class="faq-item">
+<h3>How can I tell if my compensation is competitive?</h3>
+<p>Compare your offer ranges against active job postings for equivalent roles at your talent competitors. If candidates are declining offers, pull comp data for the companies they're choosing instead. Fieldwork provides this data across your competitor set.</p>
+</div>
+<div class="faq-item">
+<h3>What metrics should a TA team present to the C-suite?</h3>
+<p>Focus on business impact metrics: revenue per employee, time to productivity for new hires, competitive offer win rate, and hiring pipeline velocity for revenue-critical roles. Executives care about business outcomes, not recruiting funnel metrics.</p>
+</div>
+</div>
+
+        <div class="cta-banner">
+            <h3>Get Competitive Hiring Intelligence</h3>
+            <p>Track what your competitors are hiring, paying, and signaling. Delivered monthly.</p>
+            <a href="/#sample-report" class="fw-btn fw-btn--primary fw-btn--lg">Get a Free Sample Report</a>
+        </div>
+    </div>
+</article>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>&copy; 2026 Fieldwork. A product of Pariter Media Inc.</span>
+        <div class="footer-links">
+            <a href="mailto:hello@runfieldwork.com">Contact</a>
+            <a href="/blog/">Blog</a>
+            <a href="https://thecroreport.com" target="_blank" rel="noopener">The CRO Report</a>
+            <a href="https://theaimarketpulse.com" target="_blank" rel="noopener">AI Market Pulse</a>
+        </div>
+    </div>
+</footer>
+<script>
+    document.getElementById('mobile-toggle').addEventListener('click', function() {
+        document.getElementById('main-nav').classList.toggle('open');
+    });
+    </script>
+</body>
+</html>
