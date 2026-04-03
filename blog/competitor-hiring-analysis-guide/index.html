@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitor Hiring Analysis: Headcount Signals | Fieldwork</title>
+    <meta name="description" content="Learn how to analyze competitor headcount changes to predict strategy shifts, budget cycles, and market moves. Practical guide with examples.">
+    <link rel="canonical" href="https://runfieldwork.com/blog/competitor-hiring-analysis-guide/">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="icon" href="/assets/favicons/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicons/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#14171C" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#F0EDE8" media="(prefers-color-scheme: light)">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://runfieldwork.com/blog/competitor-hiring-analysis-guide/">
+    <meta property="og:title" content="Competitor Hiring Analysis: Headcount Signals | Fieldwork">
+    <meta property="og:description" content="Learn how to analyze competitor headcount changes to predict strategy shifts, budget cycles, and market moves. Practical guide with examples.">
+    <meta property="og:site_name" content="Fieldwork">
+    <meta property="og:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Competitor Hiring Analysis: Headcount Signals | Fieldwork">
+    <meta name="twitter:description" content="Learn how to analyze competitor headcount changes to predict strategy shifts, budget cycles, and market moves. Practical guide with examples.">
+    <meta name="twitter:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+
+    <!-- Fonts (non-blocking) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"></noscript>
+
+    <!-- Brand CSS -->
+    <link rel="stylesheet" href="/css/fieldwork.css?v=1">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://runfieldwork.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://runfieldwork.com/blog/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Competitor Hiring Analysis: Reading Headcount Signals",
+                    "item": "https://runfieldwork.com/blog/competitor-hiring-analysis-guide/"
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "headline": "Competitor Hiring Analysis: Reading Headcount Signals",
+            "description": "Learn how to analyze competitor headcount changes to predict strategy shifts, budget cycles, and market moves. Practical guide with examples.",
+            "url": "https://runfieldwork.com/blog/competitor-hiring-analysis-guide/",
+            "datePublished": "2026-04-02",
+            "dateModified": "2026-04-02",
+            "author": {
+                "@type": "Organization",
+                "name": "Fieldwork Team",
+                "url": "https://runfieldwork.com"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Fieldwork",
+                "url": "https://runfieldwork.com"
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://runfieldwork.com/blog/competitor-hiring-analysis-guide/"
+            }
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is competitor hiring analysis?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Competitor hiring analysis is the systematic study of how competitors grow, shrink, and redistribute their workforce. By tracking headcount changes across departments and geographies, you can predict strategic moves 3-6 months before public announcements."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I estimate competitor headcount?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Combine LinkedIn company page employee counts, job posting volume, and public filings (for public companies). LinkedIn gives you a total. Job postings reveal where growth is happening. Quarterly filings (10-Q) provide exact headcount for public companies."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What does a hiring freeze signal?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A hiring freeze typically signals one of three things: budget pressure from missed revenue targets, a strategic reassessment where leadership is rethinking priorities, or preparation for a restructuring. Context from the company's recent financial performance helps distinguish which."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How far ahead can hiring data predict company moves?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Typically 3-6 months. A company must hire before it can execute a new strategy. If they start hiring enterprise sales reps today, they will not have a functioning enterprise sales motion for at least 3-6 months after those reps are onboarded."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Should I track all competitors or just the top ones?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Deep tracking for your top 3-5 direct competitors. Surface-level tracking (total headcount and major signals) for another 10-15. Going deeper than that usually produces diminishing returns unless you have a dedicated analyst."
+                    }
+                }
+            ]
+        }
+    ]
+}
+    </script>
+<style>
+        /* ─── LAYOUT ─── */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        a { color: var(--fw-primary); text-decoration: none; transition: color var(--fw-transition-fast); }
+        a:hover { color: var(--fw-primary-hover); }
+        .fw-btn.fw-btn--primary, .fw-btn.fw-btn--primary:hover { color: #fff; }
+        html { scroll-behavior: smooth; }
+
+        /* ─── HEADER ─── */
+        .site-header {
+            background: rgba(20, 23, 28, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--fw-border);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-link { text-decoration: none; color: var(--fw-text); }
+        .nav-links { display: flex; gap: 28px; align-items: center; list-style: none; margin: 0; padding: 0; }
+        .nav-links a {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            font-weight: 500;
+            transition: color var(--fw-transition-fast);
+        }
+        .nav-links a:hover { color: var(--fw-text); }
+        .mobile-toggle { display: none; background: none; border: none; color: var(--fw-text); font-size: 1.5rem; cursor: pointer; padding: 4px; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--fw-bg); border-bottom: 1px solid var(--fw-border); padding: 16px 24px; gap: 16px; }
+            .nav-links.open { display: flex; }
+            .mobile-toggle { display: block; }
+        }
+
+        /* ─── FOOTER ─── */
+        .site-footer { border-top: 1px solid var(--fw-border); padding: 32px 0; }
+        .footer-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: var(--fw-text-sm); color: var(--fw-text-muted);
+        }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a { color: var(--fw-text-muted); font-size: var(--fw-text-sm); }
+        .footer-links a:hover { color: var(--fw-text); }
+        @media (max-width: 768px) { .footer-inner { flex-direction: column; gap: 16px; } }
+
+        /* ─── BREADCRUMBS ─── */
+        .breadcrumbs {
+            padding: 16px 0;
+            font-size: var(--fw-text-sm);
+            color: var(--fw-text-muted);
+        }
+        .breadcrumbs a { color: var(--fw-text-muted); }
+        .breadcrumbs a:hover { color: var(--fw-primary); }
+        .breadcrumbs .sep { margin: 0 8px; opacity: 0.4; }
+
+        /* ─── ARTICLE ─── */
+        .article-header {
+            padding: 48px 0 32px;
+            border-bottom: 1px solid var(--fw-border);
+            margin-bottom: 40px;
+        }
+        .article-meta {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding-bottom: 64px;
+        }
+        .article-content h2 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-2xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            letter-spacing: -0.5px;
+            margin: 48px 0 16px;
+            line-height: var(--fw-leading-snug);
+        }
+        .article-content h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 36px 0 12px;
+            line-height: var(--fw-leading-snug);
+        }
+        .article-content p {
+            margin: 0 0 20px;
+            line-height: var(--fw-leading-loose);
+            color: var(--fw-text);
+        }
+        .article-content ul, .article-content ol {
+            margin: 0 0 20px;
+            padding-left: 24px;
+            color: var(--fw-text);
+        }
+        .article-content li {
+            margin-bottom: 8px;
+            line-height: var(--fw-leading-normal);
+        }
+        .article-content blockquote {
+            border-left: 3px solid var(--fw-primary);
+            margin: 24px 0;
+            padding: 16px 24px;
+            background: var(--fw-primary-alpha-06);
+            border-radius: 0 var(--fw-radius-md) var(--fw-radius-md) 0;
+            color: var(--fw-text);
+        }
+        .article-content blockquote p { margin: 0; }
+        .article-content strong { color: var(--fw-text-strong); }
+        .article-content a { color: var(--fw-primary); text-decoration: underline; text-underline-offset: 2px; }
+        .article-content a:hover { color: var(--fw-primary-hover); }
+
+        /* ─── FAQ ─── */
+        .faq-section {
+            margin: 48px 0 32px;
+            padding-top: 32px;
+            border-top: 1px solid var(--fw-border);
+        }
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        .faq-item h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-lg);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 8px;
+        }
+        .faq-item p {
+            margin: 0;
+            color: var(--fw-text);
+            line-height: var(--fw-leading-normal);
+        }
+
+        /* ─── CTA BANNER ─── */
+        .cta-banner {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border-accent);
+            border-radius: var(--fw-radius-xl);
+            padding: 40px;
+            text-align: center;
+            margin: 48px 0;
+        }
+        .cta-banner h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-2xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 12px;
+        }
+        .cta-banner p {
+            color: var(--fw-text-muted);
+            margin: 0 0 20px;
+        }
+
+        /* ─── BLOG INDEX ─── */
+        .blog-hero {
+            padding: 64px 0 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--fw-border);
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+            padding: 48px 0;
+        }
+        .blog-card {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border);
+            border-radius: var(--fw-radius-xl);
+            padding: 28px;
+            transition: border-color var(--fw-transition-normal), box-shadow var(--fw-transition-normal);
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            border-color: var(--fw-border-accent);
+            box-shadow: var(--fw-shadow-glow);
+        }
+        .blog-card a { text-decoration: none; }
+        .blog-card .card-category {
+            font-family: var(--fw-font-mono);
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--fw-primary);
+            margin-bottom: 12px;
+        }
+        .blog-card h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 10px;
+            line-height: var(--fw-leading-snug);
+        }
+        .blog-card h3 a { color: var(--fw-text-strong); }
+        .blog-card h3 a:hover { color: var(--fw-primary); }
+        .blog-card .card-excerpt {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            line-height: var(--fw-leading-normal);
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+        .blog-card .card-meta {
+            font-family: var(--fw-font-mono);
+            font-size: 11px;
+            color: var(--fw-text-dim);
+        }
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo-link">
+            <span class="fw-wordmark fw-wordmark--sm">fieldwork<span class="fw-dot"></span></span>
+        </a>
+        <nav class="nav-links" id="main-nav">
+            <a href="/#demo">Demo</a>
+            <a href="/#reports">Reports</a>
+            <a href="/#pricing">Pricing</a>
+            <a href="/blog/">Blog</a>
+            <a href="/#sample-report" class="fw-btn fw-btn--primary fw-btn--sm">Get Free Sample</a>
+        </nav>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+</header>
+
+<div class="breadcrumbs"><div class="container"><a href="https://runfieldwork.com/">Home</a><span class="sep">/</span><a href="https://runfieldwork.com/blog/">Blog</a><span class="sep">/</span><span>Competitor Hiring Analysis: Reading Headcount Signals</span></div></div>
+
+<article>
+    <header class="article-header">
+        <div class="container" style="max-width: 720px; margin: 0 auto;">
+            <div class="article-meta">
+                <span class="fw-badge fw-badge--ember">Competitive Intelligence</span>
+                <span class="fw-mono" style="color: var(--fw-text-muted); font-size: 12px;">2026-04-02</span>
+            </div>
+            <h1 class="fw-h2">Competitor Hiring Analysis: Reading Headcount Signals</h1>
+            <p class="fw-body-lg" style="color: var(--fw-text-muted); margin-top: 12px;">Headcount is the metric companies cannot fake. Here is how to read it and what it tells you about where competitors are headed.</p>
+        </div>
+    </header>
+
+    <div class="article-content container">
+
+<h2>Headcount Is the Metric That Cannot Be Faked</h2>
+
+<p>Companies can exaggerate revenue in press releases. They can cherry-pick metrics for analyst calls. They can stage product demos that never ship. But headcount is hard to fake because it shows up in too many public places: LinkedIn employee counts, job board listings, regulatory filings, and office lease records.</p>
+
+<p>When a company grows from 200 to 350 employees in 12 months, they spent real money on those 150 hires. When they contract from 500 to 400, someone lost their job. These are material events that reflect genuine strategic decisions.</p>
+
+<p>The goal of competitor hiring analysis is to read these headcount movements and translate them into predictions about what a competitor will do next.</p>
+
+<h2>Three Types of Headcount Signals</h2>
+
+<h3>Signal 1: Absolute Growth Rate</h3>
+
+<p>Start with the simplest metric: how fast is the competitor growing their total headcount?</p>
+
+<p>LinkedIn company pages show approximate employee counts. Check monthly and calculate the growth rate. A company growing at 5% per quarter is in steady-state. A company growing at 20% per quarter is in aggressive expansion. A company shrinking by 10% is in trouble or restructuring.</p>
+
+<p>Compare growth rates across your competitor set. If everyone is growing at 10% and one competitor is growing at 30%, they are investing disproportionately. If everyone is growing at 10% and one is flat, they are falling behind or about to pivot.</p>
+
+<p>Context matters. A 500-person company growing at 20% is adding 100 people. A 50-person startup growing at 20% is adding 10 people. The percentage tells you about ambition. The absolute number tells you about capacity.</p>
+
+<h3>Signal 2: Department Mix Shifts</h3>
+
+<p>Growth rate alone does not tell you where the investment is going. You need to know which departments are growing and which are shrinking relative to each other.</p>
+
+<p>Track job postings by department over 90-day rolling windows. Calculate each department's share of total postings. Then watch for shifts:</p>
+
+<ul>
+<li><strong>Engineering share increasing:</strong> Product investment phase. They are building something new or rebuilding something that exists.</li>
+<li><strong>Sales share increasing:</strong> Go-to-market acceleration. The product is stable enough to sell harder.</li>
+<li><strong>Customer success share increasing:</strong> Retention focus. They may be experiencing churn and investing in keeping existing customers.</li>
+<li><strong>Data/analytics share increasing:</strong> Moving toward data-driven decisions. Often precedes product changes based on user behavior analysis.</li>
+</ul>
+
+<p>A company where engineering's share of postings dropped from 55% to 30% while sales grew from 20% to 40% has fundamentally shifted its strategy from building to selling. That shift has implications for your product roadmap (they are not iterating fast) and your sales team (they are going to get more aggressive in deals).</p>
+
+<h3>Signal 3: Seniority Distribution</h3>
+
+<p>The mix of senior vs. junior hires reveals whether a company is starting new initiatives or scaling existing ones.</p>
+
+<ul>
+<li><strong>Heavy senior hiring (VP, Director, Head of):</strong> New initiatives. You hire leaders before you hire the teams they will build. This is the earliest signal of a new strategic direction.</li>
+<li><strong>Heavy junior/mid-level hiring:</strong> Scaling. The strategy is set, the leaders are in place, and now they need execution capacity.</li>
+<li><strong>Senior hiring after layoffs:</strong> Restructuring. They cut the old guard and are bringing in new leadership with a different vision.</li>
+</ul>
+
+<p>Track the ratio of senior (Director+) to total hires per quarter. A spike in senior hiring is one of the strongest leading indicators of strategic change.</p>
+
+<h2>Data Sources for Headcount Analysis</h2>
+
+<h3>LinkedIn Company Pages</h3>
+
+<p>Every company's LinkedIn page shows an approximate employee count. Check monthly and record the number. The count updates as employees add or remove the company from their profiles, so it lags real changes by 1-2 months. But over quarters, it provides a reliable growth trajectory.</p>
+
+<p>LinkedIn also shows employee distribution by function if enough employees have listed their roles. This gives you a rough department mix without needing to track individual postings.</p>
+
+<h3>Job Postings</h3>
+
+<p>As covered in our <a href="/blog/competitive-intelligence-from-job-postings/">method guide</a>, job postings are the most granular source. Each posting tells you: department, seniority, location, required skills, and (increasingly) compensation. Aggregate these weekly for a detailed view of where growth is happening.</p>
+
+<h3>Public Filings (Public Companies)</h3>
+
+<p>10-K (annual) and 10-Q (quarterly) filings for publicly traded companies include exact headcount. Search for "employees" or "headcount" in the filing. Many also break out headcount by business unit or geography.</p>
+
+<p>The SEC's <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany" target="_blank" rel="noopener">EDGAR database</a> provides free access to all public filings. Set up quarterly checks for public competitors.</p>
+
+<h3>Glassdoor and Layoff Trackers</h3>
+
+<p>Glassdoor reviews from departing employees often mention team sizes and restructuring. Sites like Layoffs.fyi aggregate announced layoffs and hiring freezes. Both are useful supplements to your primary sources.</p>
+
+<h2>Analysis Playbook: Turning Headcount Data Into Predictions</h2>
+
+<h3>Playbook 1: Predicting Market Entry</h3>
+
+<p>When a competitor starts hiring for a function or geography where they have no existing presence, they are entering a new market. The sequence is predictable:</p>
+
+<ol>
+<li><strong>Month 1-2:</strong> A senior hire appears (Regional VP, Head of New Product). This is the pathfinder.</li>
+<li><strong>Month 3-4:</strong> Supporting roles appear (sales reps, solutions engineers, product managers). The team is forming.</li>
+<li><strong>Month 5-8:</strong> Junior and operational roles appear (SDRs, customer success, support). The team is scaling.</li>
+<li><strong>Month 6-12:</strong> Public announcement of market entry.</li>
+</ol>
+
+<p>If you catch it at stage 1, you have 6-10 months of lead time. At stage 2, you have 3-6 months. By stage 3, the announcement is imminent. The hiring data is almost always visible before the PR team gets involved.</p>
+
+<h3>Playbook 2: Predicting Budget Pressure</h3>
+
+<p>Budget pressure shows up in hiring data before it shows up in financial results. Watch for this sequence:</p>
+
+<ol>
+<li><strong>Posting velocity drops.</strong> Fewer new roles per week, even though existing roles remain open.</li>
+<li><strong>Non-essential roles get pulled.</strong> Marketing, HR, office management roles quietly disappear from the careers page.</li>
+<li><strong>Backfill-only hiring.</strong> They only post for roles that became vacant, not net-new positions.</li>
+<li><strong>Hiring freeze.</strong> All posting activity stops.</li>
+<li><strong>Layoffs.</strong> 2-4 months after the freeze, if the financial pressure was not resolved.</li>
+</ol>
+
+<p>You can often identify stage 1 six months before stage 5. That is enough time to recruit their best people, pitch their at-risk customers, and adjust your competitive strategy.</p>
+
+<h3>Playbook 3: Predicting Product Direction</h3>
+
+<p>New product initiatives require new hires in specific areas. Track engineering postings for technology signals:</p>
+
+<ul>
+<li>New programming language requirements suggest a platform rebuild or new microservice.</li>
+<li>New cloud provider requirements suggest infrastructure migration.</li>
+<li>New compliance/security hiring suggests entry into a regulated vertical (healthcare, finance, government).</li>
+<li>New AI/ML hiring at a company that previously had none suggests a product AI integration.</li>
+</ul>
+
+<p>Cross-reference engineering hires with product management hires. When both spike in the same quarter, a new product line is forming. When only engineering spikes, it is more likely a technical debt initiative or platform rebuild.</p>
+
+<h2>Building a Competitor Headcount Dashboard</h2>
+
+<p>If you are tracking 5+ competitors, a spreadsheet becomes unwieldy. Build a simple dashboard with these views:</p>
+
+<ul>
+<li><strong>Headcount trend chart:</strong> Monthly total employees per competitor, plotted as a line chart. Shows relative growth trajectories at a glance.</li>
+<li><strong>Posting velocity chart:</strong> Weekly new postings per competitor. Shows who is accelerating and who is decelerating.</li>
+<li><strong>Department mix table:</strong> Current quarter posting mix by department for each competitor. Highlight changes from prior quarter.</li>
+<li><strong>Signal log:</strong> A running list of notable signals (new geographies, unusual titles, comp changes) with dates and analysis.</li>
+</ul>
+
+<p>Update the dashboard weekly. Review it in monthly strategy meetings. Share relevant signals with sales, product, and executive teams as they appear. <a href="/#how-it-works">Fieldwork builds this dashboard for you</a>, updated continuously with normalized data across your competitor set.</p>
+
+<h2>Timing Your Response to Headcount Signals</h2>
+
+<p>Different signals require different response timelines:</p>
+
+<ul>
+<li><strong>Senior leadership hire in new area:</strong> You have 6+ months before impact. Use the time for strategic planning, not panic.</li>
+<li><strong>Sales team expansion in your territory:</strong> You have 3-4 months before new reps are ramped. Brief your team now on competitive positioning.</li>
+<li><strong>Engineering surge in a competing product area:</strong> You have 6-12 months before a product launch. Consider whether to match the investment or differentiate.</li>
+<li><strong>Competitor hiring freeze:</strong> Act within weeks. Recruit their talent, pitch their customers, and capture market position while they are unable to respond.</li>
+</ul>
+
+<p>The value of headcount intelligence is in the lead time it provides. Use that time wisely. Do not just collect the data and admire it. Route it to the team that needs to act and give them specific recommendations. <a href="/#pricing">See Fieldwork pricing</a> to start tracking competitor headcount signals.</p>
+
+
+<div class="faq-section">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+<h3>What is competitor hiring analysis?</h3>
+<p>Competitor hiring analysis is the systematic study of how competitors grow, shrink, and redistribute their workforce. By tracking headcount changes across departments and geographies, you can predict strategic moves 3-6 months before public announcements.</p>
+</div>
+<div class="faq-item">
+<h3>How do I estimate competitor headcount?</h3>
+<p>Combine LinkedIn company page employee counts, job posting volume, and public filings (for public companies). LinkedIn gives you a total. Job postings reveal where growth is happening. Quarterly filings (10-Q) provide exact headcount for public companies.</p>
+</div>
+<div class="faq-item">
+<h3>What does a hiring freeze signal?</h3>
+<p>A hiring freeze typically signals one of three things: budget pressure from missed revenue targets, a strategic reassessment where leadership is rethinking priorities, or preparation for a restructuring. Context from the company's recent financial performance helps distinguish which.</p>
+</div>
+<div class="faq-item">
+<h3>How far ahead can hiring data predict company moves?</h3>
+<p>Typically 3-6 months. A company must hire before it can execute a new strategy. If they start hiring enterprise sales reps today, they will not have a functioning enterprise sales motion for at least 3-6 months after those reps are onboarded.</p>
+</div>
+<div class="faq-item">
+<h3>Should I track all competitors or just the top ones?</h3>
+<p>Deep tracking for your top 3-5 direct competitors. Surface-level tracking (total headcount and major signals) for another 10-15. Going deeper than that usually produces diminishing returns unless you have a dedicated analyst.</p>
+</div>
+</div>
+
+        <div class="cta-banner">
+            <h3>Get Competitive Hiring Intelligence</h3>
+            <p>Track what your competitors are hiring, paying, and signaling. Delivered monthly.</p>
+            <a href="/#sample-report" class="fw-btn fw-btn--primary fw-btn--lg">Get a Free Sample Report</a>
+        </div>
+    </div>
+</article>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>&copy; 2026 Fieldwork. A product of Pariter Media Inc.</span>
+        <div class="footer-links">
+            <a href="mailto:hello@runfieldwork.com">Contact</a>
+            <a href="/blog/">Blog</a>
+            <a href="https://thecroreport.com" target="_blank" rel="noopener">The CRO Report</a>
+            <a href="https://theaimarketpulse.com" target="_blank" rel="noopener">AI Market Pulse</a>
+        </div>
+    </div>
+</footer>
+<script>
+    document.getElementById('mobile-toggle').addEventListener('click', function() {
+        document.getElementById('main-nav').classList.toggle('open');
+    });
+    </script>
+</body>
+</html>

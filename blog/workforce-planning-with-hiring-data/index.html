@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workforce Planning with Hiring Data | Fieldwork</title>
+    <meta name="description" content="Use external hiring data to improve workforce planning. Benchmark your hiring velocity, time-to-fill, and compensation against competitors and industry norms.">
+    <link rel="canonical" href="https://runfieldwork.com/blog/workforce-planning-with-hiring-data/">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="icon" href="/assets/favicons/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicons/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#14171C" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#F0EDE8" media="(prefers-color-scheme: light)">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://runfieldwork.com/blog/workforce-planning-with-hiring-data/">
+    <meta property="og:title" content="Workforce Planning with Hiring Data | Fieldwork">
+    <meta property="og:description" content="Use external hiring data to improve workforce planning. Benchmark your hiring velocity, time-to-fill, and compensation against competitors and industry norms.">
+    <meta property="og:site_name" content="Fieldwork">
+    <meta property="og:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Workforce Planning with Hiring Data | Fieldwork">
+    <meta name="twitter:description" content="Use external hiring data to improve workforce planning. Benchmark your hiring velocity, time-to-fill, and compensation against competitors and industry norms.">
+    <meta name="twitter:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+
+    <!-- Fonts (non-blocking) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"></noscript>
+
+    <!-- Brand CSS -->
+    <link rel="stylesheet" href="/css/fieldwork.css?v=1">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://runfieldwork.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://runfieldwork.com/blog/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Workforce Planning with Hiring Data",
+                    "item": "https://runfieldwork.com/blog/workforce-planning-with-hiring-data/"
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "headline": "Workforce Planning with Hiring Data",
+            "description": "Use external hiring data to improve workforce planning. Benchmark your hiring velocity, time-to-fill, and compensation against competitors and industry norms.",
+            "url": "https://runfieldwork.com/blog/workforce-planning-with-hiring-data/",
+            "datePublished": "2026-04-02",
+            "dateModified": "2026-04-02",
+            "author": {
+                "@type": "Organization",
+                "name": "Fieldwork Team",
+                "url": "https://runfieldwork.com"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Fieldwork",
+                "url": "https://runfieldwork.com"
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://runfieldwork.com/blog/workforce-planning-with-hiring-data/"
+            }
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is workforce planning with external hiring data?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Traditional workforce planning uses internal data (headcount, attrition, growth targets) to forecast hiring needs. Adding external data (competitor hiring velocity, market talent supply, compensation trends) makes those forecasts more realistic by accounting for the competitive environment."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How does competitor hiring affect my workforce plan?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "If three competitors are hiring the same roles you need, the talent pool shrinks, time-to-fill increases, and you may need to raise compensation. Ignoring competitor hiring activity leads to unrealistic timelines and budgets in your workforce plan."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What external data improves workforce planning accuracy?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Three types: competitor posting velocity for the same roles (talent competition), market salary trends (budget accuracy), and industry hiring volume (talent supply and demand dynamics). Together these tell you whether your hiring plan is achievable at the budgeted speed and cost."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How often should I update workforce plans with external data?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Quarterly at minimum. Monthly is better for fast-moving markets. The talent market shifts faster than annual plans account for. A role that was easy to fill in Q1 can become scarce in Q3 if multiple competitors start hiring for it."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can workforce planning data help with retention?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. If external data shows competitors raising compensation for roles you have filled, your employees in those roles are at elevated attrition risk. Proactive retention actions (raises, role expansion, title upgrades) are cheaper than replacement."
+                    }
+                }
+            ]
+        }
+    ]
+}
+    </script>
+<style>
+        /* ─── LAYOUT ─── */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        a { color: var(--fw-primary); text-decoration: none; transition: color var(--fw-transition-fast); }
+        a:hover { color: var(--fw-primary-hover); }
+        .fw-btn.fw-btn--primary, .fw-btn.fw-btn--primary:hover { color: #fff; }
+        html { scroll-behavior: smooth; }
+
+        /* ─── HEADER ─── */
+        .site-header {
+            background: rgba(20, 23, 28, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--fw-border);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-link { text-decoration: none; color: var(--fw-text); }
+        .nav-links { display: flex; gap: 28px; align-items: center; list-style: none; margin: 0; padding: 0; }
+        .nav-links a {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            font-weight: 500;
+            transition: color var(--fw-transition-fast);
+        }
+        .nav-links a:hover { color: var(--fw-text); }
+        .mobile-toggle { display: none; background: none; border: none; color: var(--fw-text); font-size: 1.5rem; cursor: pointer; padding: 4px; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--fw-bg); border-bottom: 1px solid var(--fw-border); padding: 16px 24px; gap: 16px; }
+            .nav-links.open { display: flex; }
+            .mobile-toggle { display: block; }
+        }
+
+        /* ─── FOOTER ─── */
+        .site-footer { border-top: 1px solid var(--fw-border); padding: 32px 0; }
+        .footer-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: var(--fw-text-sm); color: var(--fw-text-muted);
+        }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a { color: var(--fw-text-muted); font-size: var(--fw-text-sm); }
+        .footer-links a:hover { color: var(--fw-text); }
+        @media (max-width: 768px) { .footer-inner { flex-direction: column; gap: 16px; } }
+
+        /* ─── BREADCRUMBS ─── */
+        .breadcrumbs {
+            padding: 16px 0;
+            font-size: var(--fw-text-sm);
+            color: var(--fw-text-muted);
+        }
+        .breadcrumbs a { color: var(--fw-text-muted); }
+        .breadcrumbs a:hover { color: var(--fw-primary); }
+        .breadcrumbs .sep { margin: 0 8px; opacity: 0.4; }
+
+        /* ─── ARTICLE ─── */
+        .article-header {
+            padding: 48px 0 32px;
+            border-bottom: 1px solid var(--fw-border);
+            margin-bottom: 40px;
+        }
+        .article-meta {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding-bottom: 64px;
+        }
+        .article-content h2 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-2xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            letter-spacing: -0.5px;
+            margin: 48px 0 16px;
+            line-height: var(--fw-leading-snug);
+        }
+        .article-content h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 36px 0 12px;
+            line-height: var(--fw-leading-snug);
+        }
+        .article-content p {
+            margin: 0 0 20px;
+            line-height: var(--fw-leading-loose);
+            color: var(--fw-text);
+        }
+        .article-content ul, .article-content ol {
+            margin: 0 0 20px;
+            padding-left: 24px;
+            color: var(--fw-text);
+        }
+        .article-content li {
+            margin-bottom: 8px;
+            line-height: var(--fw-leading-normal);
+        }
+        .article-content blockquote {
+            border-left: 3px solid var(--fw-primary);
+            margin: 24px 0;
+            padding: 16px 24px;
+            background: var(--fw-primary-alpha-06);
+            border-radius: 0 var(--fw-radius-md) var(--fw-radius-md) 0;
+            color: var(--fw-text);
+        }
+        .article-content blockquote p { margin: 0; }
+        .article-content strong { color: var(--fw-text-strong); }
+        .article-content a { color: var(--fw-primary); text-decoration: underline; text-underline-offset: 2px; }
+        .article-content a:hover { color: var(--fw-primary-hover); }
+
+        /* ─── FAQ ─── */
+        .faq-section {
+            margin: 48px 0 32px;
+            padding-top: 32px;
+            border-top: 1px solid var(--fw-border);
+        }
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        .faq-item h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-lg);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 8px;
+        }
+        .faq-item p {
+            margin: 0;
+            color: var(--fw-text);
+            line-height: var(--fw-leading-normal);
+        }
+
+        /* ─── CTA BANNER ─── */
+        .cta-banner {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border-accent);
+            border-radius: var(--fw-radius-xl);
+            padding: 40px;
+            text-align: center;
+            margin: 48px 0;
+        }
+        .cta-banner h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-2xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 12px;
+        }
+        .cta-banner p {
+            color: var(--fw-text-muted);
+            margin: 0 0 20px;
+        }
+
+        /* ─── BLOG INDEX ─── */
+        .blog-hero {
+            padding: 64px 0 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--fw-border);
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+            padding: 48px 0;
+        }
+        .blog-card {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border);
+            border-radius: var(--fw-radius-xl);
+            padding: 28px;
+            transition: border-color var(--fw-transition-normal), box-shadow var(--fw-transition-normal);
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            border-color: var(--fw-border-accent);
+            box-shadow: var(--fw-shadow-glow);
+        }
+        .blog-card a { text-decoration: none; }
+        .blog-card .card-category {
+            font-family: var(--fw-font-mono);
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--fw-primary);
+            margin-bottom: 12px;
+        }
+        .blog-card h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 10px;
+            line-height: var(--fw-leading-snug);
+        }
+        .blog-card h3 a { color: var(--fw-text-strong); }
+        .blog-card h3 a:hover { color: var(--fw-primary); }
+        .blog-card .card-excerpt {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            line-height: var(--fw-leading-normal);
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+        .blog-card .card-meta {
+            font-family: var(--fw-font-mono);
+            font-size: 11px;
+            color: var(--fw-text-dim);
+        }
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo-link">
+            <span class="fw-wordmark fw-wordmark--sm">fieldwork<span class="fw-dot"></span></span>
+        </a>
+        <nav class="nav-links" id="main-nav">
+            <a href="/#demo">Demo</a>
+            <a href="/#reports">Reports</a>
+            <a href="/#pricing">Pricing</a>
+            <a href="/blog/">Blog</a>
+            <a href="/#sample-report" class="fw-btn fw-btn--primary fw-btn--sm">Get Free Sample</a>
+        </nav>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+</header>
+
+<div class="breadcrumbs"><div class="container"><a href="https://runfieldwork.com/">Home</a><span class="sep">/</span><a href="https://runfieldwork.com/blog/">Blog</a><span class="sep">/</span><span>Workforce Planning with Hiring Data</span></div></div>
+
+<article>
+    <header class="article-header">
+        <div class="container" style="max-width: 720px; margin: 0 auto;">
+            <div class="article-meta">
+                <span class="fw-badge fw-badge--ember">Talent Intelligence</span>
+                <span class="fw-mono" style="color: var(--fw-text-muted); font-size: 12px;">2026-04-02</span>
+            </div>
+            <h1 class="fw-h2">Workforce Planning with Hiring Data</h1>
+            <p class="fw-body-lg" style="color: var(--fw-text-muted); margin-top: 12px;">Internal workforce planning misses half the picture. External hiring data shows you whether your plans are realistic given market conditions.</p>
+        </div>
+    </header>
+
+    <div class="article-content container">
+
+<h2>The Problem with Inward-Looking Workforce Plans</h2>
+
+<p>Most workforce plans are built on internal data. You know your current headcount, projected attrition rate, revenue targets, and growth goals. From these, you calculate how many people to hire, in which roles, by which dates.</p>
+
+<p>This approach misses the external environment entirely. It is like planning a road trip by checking your fuel gauge but not the traffic report. Your internal data tells you what you need. External data tells you whether you can get it.</p>
+
+<p>Consider a scenario: your plan calls for hiring 8 senior data engineers in Q2. Internally, that looks feasible based on your recruiter capacity and hiring funnel. But externally, three competitors just posted 30+ data engineering roles between them. The talent pool for your city or remote zone just got dramatically more competitive. Your time-to-fill will increase. Your offer acceptance rate will drop. Your budget may be insufficient.</p>
+
+<p>External hiring data prevents this blind spot.</p>
+
+<h2>Three External Inputs for Better Workforce Plans</h2>
+
+<h3>Input 1: Competitor Posting Velocity</h3>
+
+<p>For every role in your hiring plan, check how many competitors are posting for the same role in the same geography. This gives you a talent competition index.</p>
+
+<p>Calculate it simply: count the number of competitor postings for a given role in your target geography over the past 30 days. Divide by the number of qualified candidates you estimate are available (you can approximate this from LinkedIn talent search counts).</p>
+
+<ul>
+<li><strong>Low competition (fewer than 5 competitor postings):</strong> Standard hiring timeline and budget should work.</li>
+<li><strong>Moderate competition (5-15 competitor postings):</strong> Add 25-50% to your time-to-fill estimate. Consider offering above-market comp.</li>
+<li><strong>High competition (15+ competitor postings):</strong> Add 50-100% to your time-to-fill estimate. Raise compensation to P75+. Consider alternative talent sources (adjacent roles, upskilling internal candidates, contractor bridges).</li>
+</ul>
+
+<p>Update this assessment quarterly. Competition levels change as competitors start and stop hiring for the same roles.</p>
+
+<h3>Input 2: Market Compensation Trends</h3>
+
+<p>Your workforce plan includes a budget for each hire. That budget is based on your compensation bands, which were set at some point in the past. If the market has moved since you set those bands, your budget may be wrong.</p>
+
+<p>Pull current salary ranges from competitor job postings (see our <a href="/blog/compensation-benchmarking-from-job-data/">comp benchmarking guide</a> for method). Compare to your budgeted salary for each role:</p>
+
+<ul>
+<li><strong>Your budget is at or above market P50:</strong> Compensation is not a blocker. Your plan is realistic on this dimension.</li>
+<li><strong>Your budget is between P25-P50:</strong> You will fill roles but slowly. Expect longer time-to-fill and lower offer acceptance rates.</li>
+<li><strong>Your budget is below P25:</strong> You will struggle to fill these roles at all. Either increase budget or reduce headcount targets.</li>
+</ul>
+
+<p>Market comp shifts quarterly. A budget set in January may be below market by July. Build quarterly comp checks into your planning cadence.</p>
+
+<h3>Input 3: Industry Hiring Volume</h3>
+
+<p>Zoom out from individual competitors to the industry level. Is overall hiring volume in your sector growing, stable, or declining?</p>
+
+<p>Growing industry hiring means more competition for talent across the board, even from companies outside your direct competitor set. A fintech company's hiring plan is affected not just by other fintech firms but by banks, tech companies, and consulting firms all hiring the same skill sets.</p>
+
+<p>The Bureau of Labor Statistics publishes monthly JOLTS data with job openings by industry. For more timely data, track aggregate posting volume across the 30-50 companies that represent your sector.</p>
+
+<h2>Adjusting Your Workforce Plan with External Data</h2>
+
+<h3>Timeline Adjustments</h3>
+
+<p>The most common adjustment is to hiring timelines. Internal plans often assume 45-60 day time-to-fill across all roles. External data reveals that some roles will take 30 days and others will take 120 days depending on market conditions.</p>
+
+<p>Build a role-by-role time-to-fill estimate based on external competition:</p>
+
+<ul>
+<li>Low competition roles: 30-45 days</li>
+<li>Moderate competition roles: 60-90 days</li>
+<li>High competition roles: 90-120+ days</li>
+</ul>
+
+<p>Use these realistic timelines to sequence your hiring plan. Start high-competition roles first because they take longest to fill. Start low-competition roles later because they can be filled quickly.</p>
+
+<h3>Budget Adjustments</h3>
+
+<p>When market comp exceeds your planned budget, you have three options:</p>
+
+<ol>
+<li><strong>Raise the budget.</strong> Match market rates. This is the simplest and most effective approach if the financial capacity exists.</li>
+<li><strong>Reduce headcount.</strong> Hire 6 people at market rate instead of 8 at below market. You get fewer people but can actually attract and retain them.</li>
+<li><strong>Shift role requirements.</strong> If senior engineers are above budget, hire mid-level engineers and invest in development. This changes the timeline but keeps the budget intact.</li>
+</ol>
+
+<h3>Source Strategy Adjustments</h3>
+
+<p>External data can redirect your sourcing strategy:</p>
+
+<ul>
+<li><strong>A competitor just did layoffs:</strong> Redirect sourcing to that company's recently displaced talent. These people are active job seekers with relevant experience.</li>
+<li><strong>A geography has fewer competitors for your roles:</strong> Consider opening that geography to remote hires even if your default is local.</li>
+<li><strong>An adjacent skill set has surplus talent:</strong> Consider hiring from adjacent roles and upskilling. If frontend engineers are abundant but full-stack engineers are scarce, hire frontend and invest in backend training.</li>
+</ul>
+
+<h2>Quarterly Workforce Plan Review Process</h2>
+
+<p>Here is a quarterly review process that incorporates external data:</p>
+
+<h3>Week 1: Data Collection</h3>
+
+<ul>
+<li>Pull competitor posting data for the past quarter (roles, volumes, locations, comp ranges)</li>
+<li>Update your competition index for each role in your plan</li>
+<li>Refresh market comp benchmarks for your top 10-15 roles</li>
+<li>Check industry hiring volume trends from BLS or your own aggregate tracking</li>
+</ul>
+
+<h3>Week 2: Analysis</h3>
+
+<ul>
+<li>Compare planned hiring timeline to realistic time-to-fill based on competition levels</li>
+<li>Compare planned compensation budget to current market rates</li>
+<li>Identify roles where the plan is at risk (high competition, below-market comp, or both)</li>
+<li>Identify opportunities (competitor layoffs, emerging talent pools, loosening markets)</li>
+</ul>
+
+<h3>Week 3: Adjustment</h3>
+
+<ul>
+<li>Update hiring timelines for high-risk roles</li>
+<li>Submit budget adjustment requests for roles where comp is below market</li>
+<li>Adjust sourcing strategies based on talent supply findings</li>
+<li>Brief hiring managers on market conditions for their open roles</li>
+</ul>
+
+<h3>Week 4: Communication</h3>
+
+<ul>
+<li>Share updated workforce plan with leadership</li>
+<li>Highlight risks and mitigation actions</li>
+<li>Provide competitive context for any timeline or budget changes</li>
+<li>Set expectations for the coming quarter</li>
+</ul>
+
+<h2>Case Study: When External Data Saves the Plan</h2>
+
+<p>A 200-person SaaS company planned to hire 25 engineers in Q3 2025. Their internal data looked good: strong recruiter capacity, steady inbound applications, and a funded budget based on the prior year's comp bands.</p>
+
+<p>External data told a different story. Three well-funded competitors had collectively posted 80+ engineering roles in the same month. Market comp for senior engineers had risen 12% since the company set its bands. Two of the three competitors were offering equity packages that the company could not match.</p>
+
+<p>Without external data, the company would have executed the original plan, missed targets by 40%, and blamed recruiting. With external data, they adjusted: raised comp bands by 10% for critical roles, reduced the hiring target to 18 engineers (still achievable at the higher cost), extended timelines for the hardest-to-fill roles, and redirected sourcing to a competitor that had recently done layoffs.</p>
+
+<p>They filled 17 of 18 roles by end of Q3. The original plan would have produced roughly 15 of 25.</p>
+
+<h2>Connecting Workforce Planning to Retention</h2>
+
+<p>External hiring data does not just inform new hires. It informs retention strategy.</p>
+
+<p>If competitors are posting the same roles your employees hold at higher compensation, those employees are at risk. They do not need to be actively looking. Recruiters will find them.</p>
+
+<p>Run a quarterly "external pressure" analysis: for each critical role in your organization, compare your current employee compensation to the market P50 from competitor postings. Flag anyone more than 15% below market P50. These people should receive proactive retention actions before they get an offer elsewhere.</p>
+
+<p>The cost of a proactive 10% raise is almost always less than the cost of replacing someone who leaves for a 25% raise at a competitor.</p>
+
+<p><a href="/#sample-report">Fieldwork's monthly reports</a> include competitor hiring velocity and comp benchmarks that feed directly into this workforce planning process. <a href="/#pricing">See pricing</a> to learn more.</p>
+
+
+<div class="faq-section">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+<h3>What is workforce planning with external hiring data?</h3>
+<p>Traditional workforce planning uses internal data (headcount, attrition, growth targets) to forecast hiring needs. Adding external data (competitor hiring velocity, market talent supply, compensation trends) makes those forecasts more realistic by accounting for the competitive environment.</p>
+</div>
+<div class="faq-item">
+<h3>How does competitor hiring affect my workforce plan?</h3>
+<p>If three competitors are hiring the same roles you need, the talent pool shrinks, time-to-fill increases, and you may need to raise compensation. Ignoring competitor hiring activity leads to unrealistic timelines and budgets in your workforce plan.</p>
+</div>
+<div class="faq-item">
+<h3>What external data improves workforce planning accuracy?</h3>
+<p>Three types: competitor posting velocity for the same roles (talent competition), market salary trends (budget accuracy), and industry hiring volume (talent supply and demand dynamics). Together these tell you whether your hiring plan is achievable at the budgeted speed and cost.</p>
+</div>
+<div class="faq-item">
+<h3>How often should I update workforce plans with external data?</h3>
+<p>Quarterly at minimum. Monthly is better for fast-moving markets. The talent market shifts faster than annual plans account for. A role that was easy to fill in Q1 can become scarce in Q3 if multiple competitors start hiring for it.</p>
+</div>
+<div class="faq-item">
+<h3>Can workforce planning data help with retention?</h3>
+<p>Yes. If external data shows competitors raising compensation for roles you have filled, your employees in those roles are at elevated attrition risk. Proactive retention actions (raises, role expansion, title upgrades) are cheaper than replacement.</p>
+</div>
+</div>
+
+        <div class="cta-banner">
+            <h3>Get Competitive Hiring Intelligence</h3>
+            <p>Track what your competitors are hiring, paying, and signaling. Delivered monthly.</p>
+            <a href="/#sample-report" class="fw-btn fw-btn--primary fw-btn--lg">Get a Free Sample Report</a>
+        </div>
+    </div>
+</article>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>&copy; 2026 Fieldwork. A product of Pariter Media Inc.</span>
+        <div class="footer-links">
+            <a href="mailto:hello@runfieldwork.com">Contact</a>
+            <a href="/blog/">Blog</a>
+            <a href="https://thecroreport.com" target="_blank" rel="noopener">The CRO Report</a>
+            <a href="https://theaimarketpulse.com" target="_blank" rel="noopener">AI Market Pulse</a>
+        </div>
+    </div>
+</footer>
+<script>
+    document.getElementById('mobile-toggle').addEventListener('click', function() {
+        document.getElementById('main-nav').classList.toggle('open');
+    });
+    </script>
+</body>
+</html>

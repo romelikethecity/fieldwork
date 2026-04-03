@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compensation Benchmarking from Job Data | Fieldwork</title>
+    <meta name="description" content="How to benchmark compensation using real salary data from job postings. Covers pay transparency laws, data normalization, and practical analysis methods.">
+    <link rel="canonical" href="https://runfieldwork.com/blog/compensation-benchmarking-from-job-data/">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="icon" href="/assets/favicons/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicons/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#14171C" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#F0EDE8" media="(prefers-color-scheme: light)">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://runfieldwork.com/blog/compensation-benchmarking-from-job-data/">
+    <meta property="og:title" content="Compensation Benchmarking from Job Data | Fieldwork">
+    <meta property="og:description" content="How to benchmark compensation using real salary data from job postings. Covers pay transparency laws, data normalization, and practical analysis methods.">
+    <meta property="og:site_name" content="Fieldwork">
+    <meta property="og:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Compensation Benchmarking from Job Data | Fieldwork">
+    <meta name="twitter:description" content="How to benchmark compensation using real salary data from job postings. Covers pay transparency laws, data normalization, and practical analysis methods.">
+    <meta name="twitter:image" content="https://runfieldwork.com/assets/logos/og-image.png">
+
+    <!-- Fonts (non-blocking) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"></noscript>
+
+    <!-- Brand CSS -->
+    <link rel="stylesheet" href="/css/fieldwork.css?v=1">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://runfieldwork.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://runfieldwork.com/blog/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Compensation Benchmarking from Real Job Data",
+                    "item": "https://runfieldwork.com/blog/compensation-benchmarking-from-job-data/"
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "headline": "Compensation Benchmarking from Real Job Data",
+            "description": "How to benchmark compensation using real salary data from job postings. Covers pay transparency laws, data normalization, and practical analysis methods.",
+            "url": "https://runfieldwork.com/blog/compensation-benchmarking-from-job-data/",
+            "datePublished": "2026-04-02",
+            "dateModified": "2026-04-02",
+            "author": {
+                "@type": "Organization",
+                "name": "Fieldwork Team",
+                "url": "https://runfieldwork.com"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Fieldwork",
+                "url": "https://runfieldwork.com"
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://runfieldwork.com/blog/compensation-benchmarking-from-job-data/"
+            }
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Which states require salary ranges in job postings?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "As of early 2026, Colorado, New York, California, Washington, Connecticut, Rhode Island, and several others require salary or pay range disclosure in job postings. New laws continue to take effect. Check your state labor department for current requirements."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How accurate are salary ranges in job postings?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ranges from states with mandatory disclosure laws are legally binding and generally accurate. Companies face penalties for posting misleading ranges. Voluntarily disclosed ranges in other states tend to be wider and less precise."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I compare salary ranges across different cities?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Apply a cost-of-living adjustment. A $150K salary in Austin is roughly equivalent to $200K in San Francisco based on cost differences. Use the Bureau of Labor Statistics or ERI data for adjustment factors."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is the difference between posted salary ranges and actual offers?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Most offers land in the 40th to 70th percentile of the posted range. Companies post wide ranges to cover multiple experience levels within the same title. Actual offers depend on candidate experience, competing offers, and urgency to fill."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I benchmark executive compensation from job postings?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Partially. VP and Director roles increasingly include salary ranges in states with disclosure laws. C-suite roles are less likely to post ranges. For public companies, proxy statements (DEF 14A) filed with the SEC provide detailed executive comp data."
+                    }
+                }
+            ]
+        }
+    ]
+}
+    </script>
+<style>
+        /* ─── LAYOUT ─── */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        a { color: var(--fw-primary); text-decoration: none; transition: color var(--fw-transition-fast); }
+        a:hover { color: var(--fw-primary-hover); }
+        .fw-btn.fw-btn--primary, .fw-btn.fw-btn--primary:hover { color: #fff; }
+        html { scroll-behavior: smooth; }
+
+        /* ─── HEADER ─── */
+        .site-header {
+            background: rgba(20, 23, 28, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--fw-border);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-link { text-decoration: none; color: var(--fw-text); }
+        .nav-links { display: flex; gap: 28px; align-items: center; list-style: none; margin: 0; padding: 0; }
+        .nav-links a {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            font-weight: 500;
+            transition: color var(--fw-transition-fast);
+        }
+        .nav-links a:hover { color: var(--fw-text); }
+        .mobile-toggle { display: none; background: none; border: none; color: var(--fw-text); font-size: 1.5rem; cursor: pointer; padding: 4px; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--fw-bg); border-bottom: 1px solid var(--fw-border); padding: 16px 24px; gap: 16px; }
+            .nav-links.open { display: flex; }
+            .mobile-toggle { display: block; }
+        }
+
+        /* ─── FOOTER ─── */
+        .site-footer { border-top: 1px solid var(--fw-border); padding: 32px 0; }
+        .footer-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: var(--fw-text-sm); color: var(--fw-text-muted);
+        }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a { color: var(--fw-text-muted); font-size: var(--fw-text-sm); }
+        .footer-links a:hover { color: var(--fw-text); }
+        @media (max-width: 768px) { .footer-inner { flex-direction: column; gap: 16px; } }
+
+        /* ─── BREADCRUMBS ─── */
+        .breadcrumbs {
+            padding: 16px 0;
+            font-size: var(--fw-text-sm);
+            color: var(--fw-text-muted);
+        }
+        .breadcrumbs a { color: var(--fw-text-muted); }
+        .breadcrumbs a:hover { color: var(--fw-primary); }
+        .breadcrumbs .sep { margin: 0 8px; opacity: 0.4; }
+
+        /* ─── ARTICLE ─── */
+        .article-header {
+            padding: 48px 0 32px;
+            border-bottom: 1px solid var(--fw-border);
+            margin-bottom: 40px;
+        }
+        .article-meta {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .article-content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding-bottom: 64px;
+        }
+        .article-content h2 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-2xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            letter-spacing: -0.5px;
+            margin: 48px 0 16px;
+            line-height: var(--fw-leading-snug);
+        }
+        .article-content h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 36px 0 12px;
+            line-height: var(--fw-leading-snug);
+        }
+        .article-content p {
+            margin: 0 0 20px;
+            line-height: var(--fw-leading-loose);
+            color: var(--fw-text);
+        }
+        .article-content ul, .article-content ol {
+            margin: 0 0 20px;
+            padding-left: 24px;
+            color: var(--fw-text);
+        }
+        .article-content li {
+            margin-bottom: 8px;
+            line-height: var(--fw-leading-normal);
+        }
+        .article-content blockquote {
+            border-left: 3px solid var(--fw-primary);
+            margin: 24px 0;
+            padding: 16px 24px;
+            background: var(--fw-primary-alpha-06);
+            border-radius: 0 var(--fw-radius-md) var(--fw-radius-md) 0;
+            color: var(--fw-text);
+        }
+        .article-content blockquote p { margin: 0; }
+        .article-content strong { color: var(--fw-text-strong); }
+        .article-content a { color: var(--fw-primary); text-decoration: underline; text-underline-offset: 2px; }
+        .article-content a:hover { color: var(--fw-primary-hover); }
+
+        /* ─── FAQ ─── */
+        .faq-section {
+            margin: 48px 0 32px;
+            padding-top: 32px;
+            border-top: 1px solid var(--fw-border);
+        }
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        .faq-item h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-lg);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 8px;
+        }
+        .faq-item p {
+            margin: 0;
+            color: var(--fw-text);
+            line-height: var(--fw-leading-normal);
+        }
+
+        /* ─── CTA BANNER ─── */
+        .cta-banner {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border-accent);
+            border-radius: var(--fw-radius-xl);
+            padding: 40px;
+            text-align: center;
+            margin: 48px 0;
+        }
+        .cta-banner h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-2xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 12px;
+        }
+        .cta-banner p {
+            color: var(--fw-text-muted);
+            margin: 0 0 20px;
+        }
+
+        /* ─── BLOG INDEX ─── */
+        .blog-hero {
+            padding: 64px 0 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--fw-border);
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+            padding: 48px 0;
+        }
+        .blog-card {
+            background: var(--fw-surface);
+            border: 1px solid var(--fw-border);
+            border-radius: var(--fw-radius-xl);
+            padding: 28px;
+            transition: border-color var(--fw-transition-normal), box-shadow var(--fw-transition-normal);
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            border-color: var(--fw-border-accent);
+            box-shadow: var(--fw-shadow-glow);
+        }
+        .blog-card a { text-decoration: none; }
+        .blog-card .card-category {
+            font-family: var(--fw-font-mono);
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--fw-primary);
+            margin-bottom: 12px;
+        }
+        .blog-card h3 {
+            font-family: var(--fw-font-display);
+            font-size: var(--fw-text-xl);
+            font-weight: 600;
+            color: var(--fw-text-strong);
+            margin: 0 0 10px;
+            line-height: var(--fw-leading-snug);
+        }
+        .blog-card h3 a { color: var(--fw-text-strong); }
+        .blog-card h3 a:hover { color: var(--fw-primary); }
+        .blog-card .card-excerpt {
+            color: var(--fw-text-muted);
+            font-size: var(--fw-text-sm);
+            line-height: var(--fw-leading-normal);
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+        .blog-card .card-meta {
+            font-family: var(--fw-font-mono);
+            font-size: 11px;
+            color: var(--fw-text-dim);
+        }
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo-link">
+            <span class="fw-wordmark fw-wordmark--sm">fieldwork<span class="fw-dot"></span></span>
+        </a>
+        <nav class="nav-links" id="main-nav">
+            <a href="/#demo">Demo</a>
+            <a href="/#reports">Reports</a>
+            <a href="/#pricing">Pricing</a>
+            <a href="/blog/">Blog</a>
+            <a href="/#sample-report" class="fw-btn fw-btn--primary fw-btn--sm">Get Free Sample</a>
+        </nav>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+</header>
+
+<div class="breadcrumbs"><div class="container"><a href="https://runfieldwork.com/">Home</a><span class="sep">/</span><a href="https://runfieldwork.com/blog/">Blog</a><span class="sep">/</span><span>Compensation Benchmarking from Real Job Data</span></div></div>
+
+<article>
+    <header class="article-header">
+        <div class="container" style="max-width: 720px; margin: 0 auto;">
+            <div class="article-meta">
+                <span class="fw-badge fw-badge--ember">Compensation Intelligence</span>
+                <span class="fw-mono" style="color: var(--fw-text-muted); font-size: 12px;">2026-04-02</span>
+            </div>
+            <h1 class="fw-h2">Compensation Benchmarking from Real Job Data</h1>
+            <p class="fw-body-lg" style="color: var(--fw-text-muted); margin-top: 12px;">Pay transparency laws turned job postings into the largest real-time compensation dataset in history. Here is how to use it.</p>
+        </div>
+    </header>
+
+    <div class="article-content container">
+
+<h2>The Pay Transparency Revolution</h2>
+
+<p>Before 2021, salary data was locked behind expensive survey subscriptions. Radford, Mercer, and Willis Towers Watson charged $50K-$150K per year for comp data that was self-reported, anonymized, and often 6-12 months stale.</p>
+
+<p>Then pay transparency laws changed everything. Colorado started requiring salary ranges in job postings in 2021. New York, California, and Washington followed. As of early 2026, more than a dozen states and cities have similar laws in effect or pending.</p>
+
+<p>The result is the largest real-time compensation dataset in history, and it is completely free. Every job posting from a company hiring in a transparency-required state must include a salary range. That range has legal weight. It is not aspirational. It is a commitment.</p>
+
+<p>The challenge is not finding the data. It is organizing it into something useful. Here is how.</p>
+
+<h2>Understanding What Salary Ranges Actually Mean</h2>
+
+<p>A job posting that lists "$120,000 - $180,000" is not saying every hire will make $150K. The range covers multiple scenarios:</p>
+
+<ul>
+<li><strong>Bottom of range (10th-25th percentile):</strong> Entry-level for the role. Someone who meets the minimum qualifications but lacks specialized experience.</li>
+<li><strong>Mid-range (40th-60th percentile):</strong> Where most offers land. Qualified candidates with relevant experience and no extraordinary competing factors.</li>
+<li><strong>Top of range (75th-90th percentile):</strong> Senior candidates, hard-to-fill specializations, or situations where the company is competing against multiple offers.</li>
+</ul>
+
+<p>When you see a range, the midpoint is a reasonable approximation of what the typical hire will earn. But for benchmarking purposes, the bottom and top of the range are equally informative. The bottom tells you the floor the company will defend. The top tells you the ceiling they are willing to hit for the right candidate.</p>
+
+<h3>Range Width as a Signal</h3>
+
+<p>A narrow range ($130K-$150K) signals confidence. The company knows exactly what this role is worth and who they want. A wide range ($100K-$180K) signals one of three things:</p>
+
+<ol>
+<li>The role covers multiple levels (Junior to Senior) under one posting.</li>
+<li>The company is unsure about the role's scope and is leaving room to negotiate.</li>
+<li>The company is posting the widest defensible range to comply with the law without revealing their actual target.</li>
+</ol>
+
+<p>Context helps distinguish these. A "Software Engineer" posting with a $100K-$180K range is probably multi-level. A "Staff ML Engineer" posting with a $100K-$180K range is probably being evasive.</p>
+
+<h2>Building a Comp Benchmarking Dataset</h2>
+
+<h3>Step 1: Define Your Benchmark Roles</h3>
+
+<p>Do not try to benchmark every role. Start with the 10-15 roles where you compete most directly for talent. Typical benchmark roles include:</p>
+
+<ul>
+<li>Software Engineer (by level: mid, senior, staff)</li>
+<li>Product Manager (by level: mid, senior, director)</li>
+<li>Account Executive (by segment: SMB, mid-market, enterprise)</li>
+<li>Data Scientist / ML Engineer</li>
+<li>Customer Success Manager</li>
+<li>Design (UX/Product Designer)</li>
+</ul>
+
+<p>For each role, define what constitutes a match. "Senior Software Engineer" at one company might be "Software Engineer III" or "Staff Engineer" at another. Map equivalent titles before you start collecting data.</p>
+
+<h3>Step 2: Collect Salary Data from Postings</h3>
+
+<p>For each benchmark role, collect salary ranges from competitor job postings. Record:</p>
+
+<ul>
+<li>Company name</li>
+<li>Job title (as posted)</li>
+<li>Normalized role category (from your mapping)</li>
+<li>Location</li>
+<li>Salary range low</li>
+<li>Salary range high</li>
+<li>Salary range midpoint</li>
+<li>Date posted</li>
+<li>Remote/hybrid/onsite</li>
+</ul>
+
+<p>Focus on postings from states with mandatory disclosure. Voluntary ranges from other states are less reliable and should be flagged as such in your dataset.</p>
+
+<h3>Step 3: Normalize for Geography</h3>
+
+<p>A $150,000 salary means different things in different cities. Apply cost-of-living adjustments to compare across locations. The <a href="https://www.bls.gov/oes/" target="_blank" rel="noopener">Bureau of Labor Statistics Occupational Employment Statistics</a> provides metropolitan-area wage data that can serve as a baseline.</p>
+
+<p>Common adjustment approach: pick a reference city (often San Francisco or New York) and convert all salaries to that city's equivalent. This lets you compare a $130K Austin posting to a $175K NYC posting and determine which one is actually more competitive.</p>
+
+<p>For remote roles without location requirements, use a national average or the company's headquarters location as the baseline.</p>
+
+<h3>Step 4: Calculate Benchmarks</h3>
+
+<p>With 15-20 data points per role (collected over 2-3 months), calculate:</p>
+
+<ul>
+<li><strong>Market P25:</strong> The 25th percentile of midpoints. Below this, you are paying below market.</li>
+<li><strong>Market P50:</strong> The median midpoint. This is "market rate."</li>
+<li><strong>Market P75:</strong> The 75th percentile. Above this, you are paying a premium.</li>
+<li><strong>Your position:</strong> Where does your salary for this role fall in the distribution?</li>
+</ul>
+
+<p>Express your position as a percentile: "We pay Senior Software Engineers at the 62nd percentile of market." That single number tells your compensation team exactly where you stand relative to competitors.</p>
+
+<h2>Using Comp Benchmarks Strategically</h2>
+
+<h3>For Recruiting</h3>
+
+<p>If you are losing candidates at the offer stage, pull comp benchmarks for that role. Are you below P50? You are likely losing on price. Above P75 and still losing? The problem is not comp. It is something else (brand, role scope, remote policy).</p>
+
+<p>Share relevant competitor salary ranges with hiring managers before they open a requisition. This prevents the frustrating cycle of posting a role, interviewing candidates, and then discovering your budget is below market.</p>
+
+<h3>For Retention</h3>
+
+<p>Run an annual comp equity analysis. For each employee, compare their current salary to the market benchmark for their role and level. Identify anyone below P40. Those employees are at highest risk of leaving for a competitor paying market rate.</p>
+
+<p>Proactive adjustments cost far less than replacement. Replacing a software engineer costs $30K-$50K in recruiting fees, onboarding, and lost productivity. A $15K raise to retain them is a clear financial win.</p>
+
+<h3>For Competitive Intelligence</h3>
+
+<p>Comp data reveals competitor financial health and strategic priorities. A company suddenly raising ranges 20% above market for AI engineers is making a talent land-grab in that area. A company reducing ranges or narrowing them is tightening budget.</p>
+
+<p>Track competitor comp changes quarterly. When multiple competitors raise ranges for the same role simultaneously, the market is shifting. Adjust your ranges or risk losing talent to everyone around you.</p>
+
+<h2>Supplementary Comp Data Sources</h2>
+
+<h3>Levels.fyi</h3>
+
+<p>Best for tech companies. Crowdsourced but verified against offer letters. Includes base salary, equity, and bonus breakdowns. Coverage skews toward large tech companies (FAANG, major startups). Thin for non-tech industries.</p>
+
+<h3>H1B Salary Data</h3>
+
+<p>The Department of Labor publishes exact salaries for H1B visa holders. This gives you company-specific data for specific roles, not ranges. The catch: only covers visa-sponsored positions, which skews toward engineering and data roles. Data lags by 6-12 months.</p>
+
+<h3>SEC Proxy Statements (DEF 14A)</h3>
+
+<p>For public company executives, proxy statements filed with the SEC provide complete compensation packages including base salary, bonus, equity grants, and perks. Search the SEC's EDGAR database for the company name and filter by DEF 14A filing type.</p>
+
+<h3>Traditional Comp Surveys</h3>
+
+<p>If your budget allows, Radford (for tech), Mercer (broad), and SHRM (HR roles) provide survey-based comp data. The advantage is structured, normalized data with clear methodology. The disadvantage is cost ($50K+) and lag (6-12 months behind real-time market rates).</p>
+
+<h2>Common Comp Benchmarking Mistakes</h2>
+
+<ul>
+<li><strong>Comparing titles without normalizing.</strong> A "Director" at a 50-person startup is not the same as a "Director" at a 10,000-person enterprise. Normalize by role scope, not title.</li>
+<li><strong>Ignoring equity and benefits.</strong> Base salary is only part of total compensation. A $150K salary with $50K in equity is different from $180K with no equity. Where possible, benchmark total comp, not just base.</li>
+<li><strong>Using stale data.</strong> Comp data from 12 months ago is stale in a fast-moving market. Refresh benchmarks quarterly at minimum.</li>
+<li><strong>Benchmarking too few data points.</strong> Three salary ranges is not a benchmark. Target 15-20 data points per role to get statistically meaningful percentiles.</li>
+<li><strong>Forgetting remote premiums.</strong> Remote roles with no location requirement often pay differently than the same role at a specific office. Track these separately.</li>
+</ul>
+
+<p>Comp benchmarking from job posting data is not a perfect substitute for a $100K survey subscription. But for 90% of companies, it provides 80% of the insight at 0% of the cost. The data is public, the method is straightforward, and the output is directly actionable. <a href="/#sample-report">See how Fieldwork structures comp benchmarking data</a> in our sample report.</p>
+
+
+<div class="faq-section">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+<h3>Which states require salary ranges in job postings?</h3>
+<p>As of early 2026, Colorado, New York, California, Washington, Connecticut, Rhode Island, and several others require salary or pay range disclosure in job postings. New laws continue to take effect. Check your state labor department for current requirements.</p>
+</div>
+<div class="faq-item">
+<h3>How accurate are salary ranges in job postings?</h3>
+<p>Ranges from states with mandatory disclosure laws are legally binding and generally accurate. Companies face penalties for posting misleading ranges. Voluntarily disclosed ranges in other states tend to be wider and less precise.</p>
+</div>
+<div class="faq-item">
+<h3>How do I compare salary ranges across different cities?</h3>
+<p>Apply a cost-of-living adjustment. A $150K salary in Austin is roughly equivalent to $200K in San Francisco based on cost differences. Use the Bureau of Labor Statistics or ERI data for adjustment factors.</p>
+</div>
+<div class="faq-item">
+<h3>What is the difference between posted salary ranges and actual offers?</h3>
+<p>Most offers land in the 40th to 70th percentile of the posted range. Companies post wide ranges to cover multiple experience levels within the same title. Actual offers depend on candidate experience, competing offers, and urgency to fill.</p>
+</div>
+<div class="faq-item">
+<h3>Can I benchmark executive compensation from job postings?</h3>
+<p>Partially. VP and Director roles increasingly include salary ranges in states with disclosure laws. C-suite roles are less likely to post ranges. For public companies, proxy statements (DEF 14A) filed with the SEC provide detailed executive comp data.</p>
+</div>
+</div>
+
+        <div class="cta-banner">
+            <h3>Get Competitive Hiring Intelligence</h3>
+            <p>Track what your competitors are hiring, paying, and signaling. Delivered monthly.</p>
+            <a href="/#sample-report" class="fw-btn fw-btn--primary fw-btn--lg">Get a Free Sample Report</a>
+        </div>
+    </div>
+</article>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>&copy; 2026 Fieldwork. A product of Pariter Media Inc.</span>
+        <div class="footer-links">
+            <a href="mailto:hello@runfieldwork.com">Contact</a>
+            <a href="/blog/">Blog</a>
+            <a href="https://thecroreport.com" target="_blank" rel="noopener">The CRO Report</a>
+            <a href="https://theaimarketpulse.com" target="_blank" rel="noopener">AI Market Pulse</a>
+        </div>
+    </div>
+</footer>
+<script>
+    document.getElementById('mobile-toggle').addEventListener('click', function() {
+        document.getElementById('main-nav').classList.toggle('open');
+    });
+    </script>
+</body>
+</html>
