@@ -229,7 +229,7 @@ function renderCards(selected) {
     html += '<div class="blur-overlay">' +
         '<div class="blur-cta">' +
             '<p>10+ more companies available in your custom report</p>' +
-            '<a href="#sample-report" class="fw-btn fw-btn--primary fw-btn--sm">Get Full Report</a>' +
+            '<a href="#sample-report" class="fw-btn fw-btn--primary fw-btn--sm">Unlock Full Report</a>' +
         '</div>' +
     '</div>';
 
@@ -293,6 +293,7 @@ function initSearch() {
 // ─── CTA FORM ───
 
 function initForm() {
+    var FORMSPREE_ID = "xpwzgkbl"; // Replace with your Formspree form ID
     var submitBtn = document.getElementById("cta-submit");
     if (!submitBtn) return;
 
@@ -316,21 +317,32 @@ function initForm() {
 
         if (!valid) return;
 
-        var lead = {
-            name: name,
-            email: email,
-            company: company,
-            competitor: competitor,
-            timestamp: new Date().toISOString()
-        };
-        console.log("New Fieldwork lead:", lead);
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
 
-        var leads = JSON.parse(localStorage.getItem("fieldwork_leads") || "[]");
-        leads.push(lead);
-        localStorage.setItem("fieldwork_leads", JSON.stringify(leads));
-
-        document.getElementById("cta-form").style.display = "none";
-        document.getElementById("cta-success").style.display = "block";
+        fetch("https://formspree.io/f/" + FORMSPREE_ID, {
+            method: "POST",
+            headers: { "Content-Type": "application/json", "Accept": "application/json" },
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                company: company,
+                competitor: competitor
+            })
+        }).then(function(response) {
+            if (response.ok) {
+                document.getElementById("cta-form").style.display = "none";
+                document.getElementById("cta-success").style.display = "block";
+            } else {
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Show Me What They're Building";
+                alert("Something went wrong. Please try again.");
+            }
+        }).catch(function() {
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Show Me What They're Building";
+            alert("Connection error. Please try again.");
+        });
     });
 
     document.querySelectorAll(".cta-input").forEach(function(input) {
