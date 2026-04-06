@@ -48,7 +48,7 @@ ARTICLES = [
         "content": """
 <h2>Job Postings Are Public Filings of Intent</h2>
 
-<p>Every company with a careers page is publishing a detailed map of where they're headed. Not where they say they're headed in earnings calls or press releases. Where they're actually spending money.</p>
+<p>Every company with a careers page is publishing a detailed map of where they're headed. Not where they say they're headed in earnings calls or press releases. Where they're spending money.</p>
 
 <p>Most competitive intelligence teams overlook this. They're busy monitoring product launches, pricing changes, and executive quotes. All of which can be staged. But nobody hires 15 machine learning engineers as a bluff.</p>
 
@@ -156,7 +156,7 @@ ARTICLES = [
         "faqs": [
             {"q": "How can I benchmark compensation without expensive tools?", "a": "Use public job posting salary data (from states with pay transparency laws), Glassdoor/Levels.fyi/H1B data, and aggregated job board data. The key is building a consistent tracking system rather than doing ad hoc lookups."},
             {"q": "How accurate are salary ranges in job postings?", "a": "Ranges in states with mandatory disclosure (CO, NY, CA, WA) are generally accurate because companies face legal risk for misleading ranges. Voluntary disclosures elsewhere can be wider or less precise."},
-            {"q": "What's the difference between Fieldwork and a comp survey?", "a": "Traditional comp surveys (Radford, Mercer) collect self-reported data from participating companies, often with a 6-12 month lag. Fieldwork pulls real-time salary data from active job postings, giving you current market rates for the roles competitors are actually filling."},
+            {"q": "What's the difference between Fieldwork and a comp survey?", "a": "Traditional comp surveys (Radford, Mercer) collect self-reported data from participating companies, often with a 6-12 month lag. Fieldwork pulls real-time salary data from active job postings, giving you current market rates for the roles competitors are filling."},
             {"q": "How often does compensation data change?", "a": "Market rates shift quarterly in fast-moving sectors like tech. Monthly tracking catches significant movements before they compound. Annual surveys miss too much in a dynamic market."},
             {"q": "Can I benchmark comp without revealing my own data?", "a": "Yes. Job posting data is public. You can analyze competitor pay without participating in any data exchange. Traditional surveys require you to share your own compensation data to access the dataset."},
         ],
@@ -215,7 +215,7 @@ ARTICLES = [
 
 <p>This is where most people run out of discipline. The first month is interesting. By month three, it's a chore. That's the moment when a tool like <a href="/#pricing">Fieldwork</a> pays for itself. The data collection is the boring part. The analysis is where the value lives.</p>
 
-<h2>What Good Comp Intelligence Actually Looks Like</h2>
+<h2>What Good Comp Intelligence Looks Like</h2>
 
 <p>Raw salary data isn't intelligence. Intelligence is the answer to "what should we do differently?" Here's what matters:</p>
 
@@ -590,7 +590,7 @@ ARTICLES = [
 <li><strong>Internal transfers:</strong> A company reassigning 20 engineers from one product to another. No external signal for this.</li>
 <li><strong>Contractor and agency hires:</strong> Often invisible in both datasets.</li>
 <li><strong>Confidential searches:</strong> Executive placements through search firms bypass both channels.</li>
-<li><strong>Layoffs that are backfilled:</strong> A team that lost 5 people and hired 5 replacements looks stable from the outside but is actually in turmoil.</li>
+<li><strong>Layoffs that are backfilled:</strong> A team that lost 5 people and hired 5 replacements looks stable from the outside but is in turmoil.</li>
 </ul>
 
 <p>No data source is complete. The best CI programs acknowledge these blind spots and use multiple inputs to triangulate. Job postings and LinkedIn are two of the most accessible and highest-signal sources available. Using only one is leaving intelligence on the table.</p>
@@ -607,7 +607,7 @@ ARTICLES = [
         "meta_description": "What enterprise job postings reveal about real AI adoption in 2026. Beyond the hype, here's who's hiring, what they need, and what it signals.",
         "date": "2026-03-29",
         "category": "Market Trends",
-        "excerpt": "Everyone says they're doing AI. Job postings tell you who's actually spending money on it. The gap between talk and talent investment is revealing.",
+        "excerpt": "Everyone says they're doing AI. Job postings tell you who's spending money on it. The gap between talk and talent investment is revealing.",
         "faqs": [
             {"q": "What AI roles are companies hiring for in 2026?", "a": "The fastest-growing categories are AI/ML Engineer, Prompt Engineer, AI Product Manager, ML Infrastructure Engineer, and AI Ethics/Safety roles. The shift from research-focused to production-focused AI hiring is the defining trend of 2026."},
             {"q": "How can I tell if a company is serious about AI from their job postings?", "a": "Look for production-oriented roles (ML Engineers, MLOps), not just research roles (Research Scientists). Check for AI leadership hires (VP/Head of AI). And look at the ratio of AI roles to total engineering roles. Above 20% signals a real commitment."},
@@ -619,9 +619,9 @@ ARTICLES = [
 
 <p>In 2026, every company's investor deck mentions AI. Every quarterly earnings call includes the phrase "AI-powered." Every product marketing page has at least one reference to machine learning.</p>
 
-<p>Job postings tell a different story. They tell you which companies are actually committing budget to AI capabilities, and which are just borrowing the vocabulary. The gap between the two is enormous.</p>
+<p>Job postings tell a different story. They tell you which companies are committing budget to AI capabilities, and which are just borrowing the vocabulary. The gap between the two is enormous.</p>
 
-<p>By analyzing job posting data across thousands of companies, clear patterns emerge about where enterprise AI adoption actually stands, not where press releases claim it stands.</p>
+<p>By analyzing job posting data across thousands of companies, clear patterns emerge about where enterprise AI adoption stands, not where press releases claim it stands.</p>
 
 <h2>The Three Phases of Enterprise AI Hiring</h2>
 
@@ -826,7 +826,7 @@ ARTICLES = [
     {
         "slug": "talent-acquisition-analytics-metrics-that-matter",
         "title": "Talent Acquisition Analytics: Metrics That Matter",
-        "meta_title": "TA Analytics: Metrics That Actually Matter | Fieldwork",
+        "meta_title": "TA Analytics: Metrics That Matter | Fieldwork",
         "meta_description": "Most TA teams track the wrong metrics. Here are the talent acquisition analytics that drive hiring outcomes, with benchmarks from real job posting data.",
         "date": "2026-03-29",
         "category": "Talent Acquisition",
@@ -834,14 +834,14 @@ ARTICLES = [
         "faqs": [
             {"q": "What are the most important talent acquisition metrics?", "a": "Quality of hire (measured by performance and retention), competitive win rate (offers accepted vs. lost to competitors), source effectiveness (which channels produce the best hires), and comp competitiveness (how your offers compare to market). Time-to-fill and cost-per-hire matter less than most teams think."},
             {"q": "How do I benchmark my hiring against competitors?", "a": "Track competitor job posting volume and duration. If competitors fill similar roles faster (shorter posting duration), they may have a more efficient process or more competitive offers. Fieldwork provides competitor hiring velocity data to support this benchmarking."},
-            {"q": "What does time-to-fill actually measure?", "a": "Time-to-fill measures your process speed, not your hiring effectiveness. A fast fill with a wrong hire costs more than a slow fill with the right one. Use time-to-fill as a process efficiency metric, not a success metric."},
+            {"q": "What does time-to-fill measure?", "a": "Time-to-fill measures your process speed, not your hiring effectiveness. A fast fill with a wrong hire costs more than a slow fill with the right one. Use time-to-fill as a process efficiency metric, not a success metric."},
             {"q": "How can I tell if my compensation is competitive?", "a": "Compare your offer ranges against active job postings for equivalent roles at your talent competitors. If candidates are declining offers, pull comp data for the companies they're choosing instead. Fieldwork provides this data across your competitor set."},
             {"q": "What metrics should a TA team present to the C-suite?", "a": "Focus on business impact metrics: revenue per employee, time to productivity for new hires, competitive offer win rate, and hiring pipeline velocity for revenue-critical roles. Executives care about business outcomes, not recruiting funnel metrics."},
         ],
         "content": """
 <h2>The Metrics Most TA Teams Track (And Shouldn't)</h2>
 
-<p>Open any talent acquisition dashboard and you'll find the same metrics: time-to-fill, cost-per-hire, applicants per opening, and offer acceptance rate. These are easy to measure. They look good in quarterly presentations. And most of them are a distraction from what actually matters.</p>
+<p>Open any talent acquisition dashboard and you'll find the same metrics: time-to-fill, cost-per-hire, applicants per opening, and offer acceptance rate. These are easy to measure. They look good in quarterly presentations. And most of them are a distraction from what matters.</p>
 
 <p>Time-to-fill rewards speed over quality. Cost-per-hire penalizes investment in good sourcing. Applicants per opening measures your job board spend, not your hiring effectiveness. These metrics optimize for the process of hiring, not the outcome.</p>
 
@@ -1060,7 +1060,7 @@ ARTICLES = [
         "meta_description": "Fintech job postings reveal regulatory bets, product launches, and market expansion plans. Learn to decode the signals competitors broadcast through hiring.",
         "date": "2026-03-29",
         "category": "Industry Intelligence",
-        "excerpt": "Fintech hiring patterns reveal regulatory bets, product direction, and which companies are actually building versus burning cash.",
+        "excerpt": "Fintech hiring patterns reveal regulatory bets, product direction, and which companies are building versus burning cash.",
         "faqs": [
             {"q": "What do fintech hiring patterns reveal about a company's strategy?", "a": "Fintech hiring shows regulatory intent (compliance hires), geographic expansion (banking license roles), product direction (payments vs. lending vs. crypto engineering), and financial health (hiring velocity correlates with runway and revenue growth)."},
             {"q": "How can I spot a fintech competitor entering my market?", "a": "Watch for state-specific compliance hires, money transmitter license roles, and banking partnership managers. These roles appear 6-12 months before a product launch in a new financial vertical."},
@@ -1153,7 +1153,7 @@ ARTICLES = [
 <li><strong>Leadership hires:</strong> New C-level or VP roles in functions that did not previously have senior leadership.</li>
 </ol>
 
-<p>Fieldwork tracks all of these dimensions across your fintech competitive set and delivers structured analysis monthly. The <a href="/#reports">monthly reports</a> separate signal from noise so you focus on the changes that actually matter.</p>
+<p>Fieldwork tracks all of these dimensions across your fintech competitive set and delivers structured analysis monthly. The <a href="/#reports">monthly reports</a> separate signal from noise so you focus on the changes that matter.</p>
 
 <h2>Turning Fintech Hiring Data Into Action</h2>
 
@@ -1430,7 +1430,7 @@ ARTICLES = [
         "content": """
 <h2>Why Most Competitive Monitoring Fails</h2>
 
-<p>Every strategy team says they monitor competitors. Most actually do it for two weeks after the annual planning offsite, then stop. The problem is not awareness. It is sustainability. Manual monitoring is tedious, inconsistent, and hard to maintain when deadlines hit.</p>
+<p>Every strategy team says they monitor competitors. Most do it for two weeks after the annual planning offsite, then stop. The problem is not awareness. It is sustainability. Manual monitoring is tedious, inconsistent, and hard to maintain when deadlines hit.</p>
 
 <p>An alert system solves this by reducing the ongoing effort to near zero. Instead of checking competitors proactively, you set up triggers that notify you when something changes. You react to signals instead of hunting for them.</p>
 
@@ -1944,7 +1944,7 @@ ARTICLES = [
         "content": """
 <h2>Why Job Postings Are the Best Free Intelligence Source</h2>
 
-<p>Every open role on a competitor's careers page is a line item in their budget. Unlike blog posts, conference talks, or press releases, job postings cost real money to fill. Recruiter fees, hiring manager time, onboarding costs. No company spends $15,000-$40,000 per hire on roles they do not actually need.</p>
+<p>Every open role on a competitor's careers page is a line item in their budget. Unlike blog posts, conference talks, or press releases, job postings cost real money to fill. Recruiter fees, hiring manager time, onboarding costs. No company spends $15,000-$40,000 per hire on roles they do not need.</p>
 
 <p>That budget commitment is what makes job postings high-signal. When a competitor posts 12 machine learning engineer roles in a single quarter, they are telling you exactly where their product is going. When they open a regional sales office in Singapore, they are telling you which market they are entering next.</p>
 
@@ -2281,7 +2281,7 @@ ARTICLES = [
 
 <p>The challenge is not finding the data. It is organizing it into something useful. Here is how.</p>
 
-<h2>Understanding What Salary Ranges Actually Mean</h2>
+<h2>Understanding What Salary Ranges Mean</h2>
 
 <p>A job posting that lists "$120,000 - $180,000" is not saying every hire will make $150K. The range covers multiple scenarios:</p>
 
@@ -2344,7 +2344,7 @@ ARTICLES = [
 
 <p>A $150,000 salary means different things in different cities. Apply cost-of-living adjustments to compare across locations. The <a href="https://www.bls.gov/oes/" target="_blank" rel="noopener">Bureau of Labor Statistics Occupational Employment Statistics</a> provides metropolitan-area wage data that can serve as a baseline.</p>
 
-<p>Common adjustment approach: pick a reference city (often San Francisco or New York) and convert all salaries to that city's equivalent. This lets you compare a $130K Austin posting to a $175K NYC posting and determine which one is actually more competitive.</p>
+<p>Common adjustment approach: pick a reference city (often San Francisco or New York) and convert all salaries to that city's equivalent. This lets you compare a $130K Austin posting to a $175K NYC posting and determine which one is more competitive.</p>
 
 <p>For remote roles without location requirements, use a national average or the company's headquarters location as the baseline.</p>
 
@@ -2625,7 +2625,7 @@ ARTICLES = [
 
 <ol>
 <li><strong>Raise the budget.</strong> Match market rates. This is the simplest and most effective approach if the financial capacity exists.</li>
-<li><strong>Reduce headcount.</strong> Hire 6 people at market rate instead of 8 at below market. You get fewer people but can actually attract and retain them.</li>
+<li><strong>Reduce headcount.</strong> Hire 6 people at market rate instead of 8 at below market. You get fewer people but can attract and retain them.</li>
 <li><strong>Shift role requirements.</strong> If senior engineers are above budget, hire mid-level engineers and invest in development. This changes the timeline but keeps the budget intact.</li>
 </ol>
 
@@ -3195,7 +3195,7 @@ ARTICLES = [
 
 <h2>Compensation Trends Across Cybersecurity</h2>
 
-<p>Cybersecurity compensation continues to outpace general technology roles. The persistent talent shortage gives candidates leverage that does not exist in most engineering markets.</p>
+<p>Cybersecurity compensation continues to outpace general technology roles. The persistent talent shortage gives candidates use that does not exist in most engineering markets.</p>
 
 <h3>Entry Level (0-3 years)</h3>
 <ul>
