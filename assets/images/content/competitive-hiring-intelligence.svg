@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#14171C"/>
+  <text x="600" y="44" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="700" fill="#DDE0E6" text-anchor="middle">Competitive Hiring Intelligence</text>
+  <!-- Dashboard mockup -->
+  <g transform="translate(40,70)">
+    <rect width="720" height="520" rx="12" fill="#1C2028" stroke="#222832" stroke-width="1.5"/>
+    <rect width="720" height="44" rx="12" fill="#222832"/>
+    <text x="24" y="28" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="600" fill="#DDE0E6">Hiring Signal Dashboard</text>
+    <circle cx="680" cy="22" r="8" fill="#E07850" opacity="0.3"/>
+    <circle cx="680" cy="22" r="4" fill="#E07850"/>
+    <!-- Company rows -->
+    <g transform="translate(16,60)">
+      <rect width="688" height="48" rx="6" fill="rgba(224,120,80,0.06)"/>
+      <circle cx="24" cy="24" r="16" fill="#E07850" opacity="0.2"/>
+      <text x="24" y="29" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="700" fill="#E07850" text-anchor="middle">A</text>
+      <text x="52" y="20" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="600" fill="#DDE0E6">Acme Corp</text>
+      <text x="52" y="38" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#8a9499">12 new postings this week</text>
+      <rect x="420" y="12" width="80" height="24" rx="4" fill="#E07850" opacity="0.15"/>
+      <text x="460" y="28" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#E07850" text-anchor="middle">+340%</text>
+      <rect x="520" y="12" width="64" height="24" rx="4" fill="#5B9EA6" opacity="0.15"/>
+      <text x="552" y="28" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#5B9EA6" text-anchor="middle">Eng</text>
+      <rect x="596" y="12" width="80" height="24" rx="4" fill="rgba(224,120,80,0.1)"/>
+      <text x="636" y="28" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#E07850" text-anchor="middle">Expanding</text>
+    </g>
+    <g transform="translate(16,116)">
+      <rect width="688" height="48" rx="6" fill="rgba(91,158,166,0.04)"/>
+      <circle cx="24" cy="24" r="16" fill="#5B9EA6" opacity="0.2"/>
+      <text x="24" y="29" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="700" fill="#5B9EA6" text-anchor="middle">B</text>
+      <text x="52" y="20" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="600" fill="#DDE0E6">Beta Industries</text>
+      <text x="52" y="38" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#8a9499">3 new postings this week</text>
+      <rect x="420" y="12" width="80" height="24" rx="4" fill="#5B9EA6" opacity="0.15"/>
+      <text x="460" y="28" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#5B9EA6" text-anchor="middle">-15%</text>
+      <rect x="520" y="12" width="64" height="24" rx="4" fill="#5B9EA6" opacity="0.15"/>
+      <text x="552" y="28" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#5B9EA6" text-anchor="middle">Sales</text>
+      <rect x="596" y="12" width="80" height="24" rx="4" fill="rgba(91,158,166,0.1)"/>
+      <text x="636" y="28" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#5B9EA6" text-anchor="middle">Stable</text>
+    </g>
+    <g transform="translate(16,172)">
+      <rect width="688" height="48" rx="6" fill="rgba(224,120,80,0.06)"/>
+      <circle cx="24" cy="24" r="16" fill="#E07850" opacity="0.2"/>
+      <text x="24" y="29" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="700" fill="#E07850" text-anchor="middle">C</text>
+      <text x="52" y="20" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="600" fill="#DDE0E6">Catalyst Tech</text>
+      <text x="52" y="38" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#8a9499">8 new postings this week</text>
+      <rect x="420" y="12" width="80" height="24" rx="4" fill="#E07850" opacity="0.15"/>
+      <text x="460" y="28" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#E07850" text-anchor="middle">+180%</text>
+      <rect x="520" y="12" width="64" height="24" rx="4" fill="#E07850" opacity="0.15"/>
+      <text x="552" y="28" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#E07850" text-anchor="middle">Product</text>
+      <rect x="596" y="12" width="80" height="24" rx="4" fill="rgba(224,120,80,0.1)"/>
+      <text x="636" y="28" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#E07850" text-anchor="middle">Pivoting</text>
+    </g>
+    <!-- Signals panel -->
+    <g transform="translate(16,248)">
+      <rect width="688" height="120" rx="8" fill="#222832"/>
+      <text x="16" y="28" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="600" fill="#DDE0E6">Top Signals This Week</text>
+      <g transform="translate(16,44)">
+        <rect width="200" height="60" rx="6" fill="rgba(224,120,80,0.08)"/>
+        <text x="16" y="24" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="800" fill="#E07850">23</text>
+        <text x="16" y="44" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#8a9499">New engineering hires</text>
+      </g>
+      <g transform="translate(236,44)">
+        <rect width="200" height="60" rx="6" fill="rgba(91,158,166,0.08)"/>
+        <text x="16" y="24" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="800" fill="#5B9EA6">$145K</text>
+        <text x="16" y="44" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#8a9499">Avg salary offered</text>
+      </g>
+      <g transform="translate(456,44)">
+        <rect width="200" height="60" rx="6" fill="rgba(224,120,80,0.08)"/>
+        <text x="16" y="24" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="800" fill="#E07850">7</text>
+        <text x="16" y="44" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#8a9499">New remote positions</text>
+      </g>
+    </g>
+    <!-- Chart area -->
+    <g transform="translate(16,388)">
+      <text x="0" y="16" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="600" fill="#DDE0E6">Hiring Velocity (12 weeks)</text>
+      <rect y="28" width="688" height="90" rx="6" fill="#222832"/>
+      <polyline points="20,90 80,75 140,82 200,60 260,45 320,55 380,40 440,30 500,35 560,20 620,25 668,15" stroke="#E07850" stroke-width="2.5" fill="none"/>
+      <polyline points="20,85 80,88 140,80 200,78 260,82 320,75 380,77 440,72 500,70 560,74 620,68 668,65" stroke="#5B9EA6" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+    </g>
+  </g>
+  <!-- Right panel: insights -->
+  <g transform="translate(800,70)">
+    <rect width="360" height="520" rx="12" fill="#1C2028" stroke="#222832" stroke-width="1.5"/>
+    <text x="24" y="32" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="700" fill="#DDE0E6">What Hiring Data Reveals</text>
+    <g transform="translate(24,52)">
+      <rect width="312" height="72" rx="8" fill="rgba(224,120,80,0.08)"/>
+      <text x="16" y="24" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600" fill="#E07850">Strategic Direction</text>
+      <text x="16" y="44" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#8a9499">New roles reveal product roadmap,</text>
+      <text x="16" y="60" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#8a9499">market expansion, and pivots</text>
+    </g>
+    <g transform="translate(24,136)">
+      <rect width="312" height="72" rx="8" fill="rgba(91,158,166,0.08)"/>
+      <text x="16" y="24" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600" fill="#5B9EA6">Salary Intelligence</text>
+      <text x="16" y="44" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#8a9499">Comp ranges show budget,</text>
+      <text x="16" y="60" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#8a9499">seniority level, and urgency</text>
+    </g>
+    <g transform="translate(24,220)">
+      <rect width="312" height="72" rx="8" fill="rgba(224,120,80,0.08)"/>
+      <text x="16" y="24" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600" fill="#E07850">Team Structure</text>
+      <text x="16" y="44" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#8a9499">Reporting lines and titles map</text>
+      <text x="16" y="60" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#8a9499">org charts without access</text>
+    </g>
+    <g transform="translate(24,304)">
+      <rect width="312" height="72" rx="8" fill="rgba(91,158,166,0.08)"/>
+      <text x="16" y="24" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600" fill="#5B9EA6">Technology Stack</text>
+      <text x="16" y="44" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#8a9499">Required skills reveal tools,</text>
+      <text x="16" y="60" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#8a9499">platforms, and infrastructure</text>
+    </g>
+    <g transform="translate(24,400)">
+      <rect width="312" height="90" rx="8" fill="#222832"/>
+      <text x="156" y="28" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="600" fill="#DDE0E6" text-anchor="middle">Delivered Monthly</text>
+      <text x="156" y="52" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#8a9499" text-anchor="middle">Competitor hiring signals analyzed</text>
+      <text x="156" y="70" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#8a9499" text-anchor="middle">and summarized for your team</text>
+    </g>
+  </g>
+</svg>

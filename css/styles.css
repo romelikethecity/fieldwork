@@ -1,0 +1,4 @@
+
+.content-figure { margin: 2rem 0; border-radius: 12px; overflow: hidden; background: var(--fw-surface, #1C2028); border: 1px solid var(--fw-surface-raised, #222832); }
+.content-figure img { display: block; width: 100%; height: auto; }
+.content-figure figcaption { padding: 0.75rem 1rem; font-size: 0.8125rem; color: var(--fw-text-muted, #8a9499); text-align: center; border-top: 1px solid var(--fw-surface-raised, #222832); }
