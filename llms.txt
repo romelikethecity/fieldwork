@@ -1,0 +1,23 @@
+# Fieldwork
+
+> Fieldwork is a competitive hiring intelligence service that tracks what your competitors are hiring, how much they're paying, and what it signals about their strategy. Built from 27,000+ real job postings across 11,000+ companies, Fieldwork delivers monthly reports showing new roles, salary ranges, department growth, and strategic signals. It provides 80% of Lightcast's insight at 10% of the price.
+
+Fieldwork serves VPs of Talent, HR leaders, competitive intelligence teams, and CEOs who want to know what their competitors are building before it becomes public. Pick up to 25 companies to track, and get a monthly briefing with hiring velocity, compensation benchmarks, and department-level headcount trends.
+
+## Core Pages
+
+- [Homepage](https://runfieldwork.com/): Competitive hiring intelligence delivered monthly from 27,000+ job postings
+- [Pricing](https://runfieldwork.com/#pricing): Starter (10 companies) and Professional (25 companies) plans
+
+## Blog
+
+- [Competitive Intelligence from Job Postings](https://runfieldwork.com/blog/competitive-intelligence-from-job-postings/): How to extract strategic signals from public hiring data
+- [Competitor Hiring Analysis Guide](https://runfieldwork.com/blog/competitor-hiring-analysis-guide/): Step-by-step guide to analyzing competitor hiring patterns
+- [Compensation Benchmarking from Job Data](https://runfieldwork.com/blog/compensation-benchmarking-from-job-data/): Using job posting salary data for comp benchmarking
+- [Compensation Benchmarking Without Expensive Tools](https://runfieldwork.com/blog/compensation-benchmarking-without-expensive-tools/): Lightcast and Radford alternatives using public data
+- [C-Suite Hiring as a Buying Signal](https://runfieldwork.com/blog/c-suite-hiring-as-buying-signal/): What executive hires reveal about company strategy
+- [AI Hiring Trends from Job Postings](https://runfieldwork.com/blog/ai-hiring-trends-job-postings-enterprise-adoption/): AI adoption signals from enterprise hiring data
+- [AI Talent Migration Patterns 2026](https://runfieldwork.com/blog/ai-talent-migration-patterns-2026/): Where AI talent is moving and what it means
+- [Build a Competitive Hiring Dashboard](https://runfieldwork.com/blog/build-competitive-hiring-dashboard/): How to build your own hiring intelligence dashboard
+- [Cybersecurity Hiring Market 2026](https://runfieldwork.com/blog/cybersecurity-hiring-market-2026/): Cybersecurity hiring trends and salary data
+- [Cybersecurity Hiring Signals](https://runfieldwork.com/blog/cybersecurity-hiring-signals-building-security-teams/): What security team buildouts signal about company priorities
